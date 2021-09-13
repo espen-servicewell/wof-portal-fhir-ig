@@ -1,0 +1,32 @@
+I"Ö<p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#itb-implementation-guide" id="markdown-toc-itb-implementation-guide">ITB Implementation Guide</a>    <ul>
+      <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a></li>
+      <li><a href="#api-url-convention" id="markdown-toc-api-url-convention">API URL Convention</a></li>
+      <li><a href="#servers" id="markdown-toc-servers">Servers</a></li>
+      <li><a href="#patient-test-data" id="markdown-toc-patient-test-data">Patient test data</a></li>
+      <li><a href="#getting-started" id="markdown-toc-getting-started">Getting started</a></li>
+      <li><a href="#references" id="markdown-toc-references">References</a></li>
+    </ul>
+  </li>
+</ul>
+
+</div>
+<h1 id="itb-implementation-guide">ITB Implementation Guide</h1>
+
+<h3 id="introduction">Introduction</h3>
+
+<h3 id="api-url-convention">API URL Convention</h3>
+
+<p><code class="language-plaintext highlighter-rouge">https://url/{resourceType}/{id} ?{params}</code></p>
+
+<h3 id="servers">Servers</h3>
+
+<h3 id="patient-test-data">Patient test data</h3>
+
+<h3 id="getting-started">Getting started</h3>
+
+<h3 id="references">References</h3>
+
+:ET

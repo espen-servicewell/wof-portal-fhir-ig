@@ -1,0 +1,590 @@
+﻿<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- broken links = 116, errors = 0, warn = 14, info = 0 -->
+<head>
+  <title>ITBImplementationGuide : Validation Results</title>
+  <link href="fhir.css" rel="stylesheet"/>
+  <style>
+    span.flip  { background-color: #4CAF50; color: white; border: solid 1px #a6d8a8; padding: 2px }
+  </style>
+  <script>
+    function flip(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Reasoning') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Reasoning';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Reasoning';
+      }
+    }
+  </script>
+</head>
+<body style="margin: 20px; background-color: #ffffff">
+ <h1>Validation Results for ITBImplementationGuide</h1>
+ <p>Generated Fri Apr 23 13:45:16 CEST 2021, FHIR version 4.0.1 for portal.wof.purified.link#0.1.0 (canonical = <a href="http://portal.wof.purified.link/fhir">http://portal.wof.purified.link/fhir</a> (<a href="http://portal.wof.purified.link/fhir/history.html">history</a>)). See <a href="c:\repos\wof-opus-fhir-api\itb\conformance\itb_fsh_implementationguide\itb-ig\output\qa.html">Full QA Report</a></p>
+<table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
+ <tr><td>Publisher Version:</td><td><span style="background-color: #ffcccc">IG Publisher Version: v1.1.44, which is out of date. The current version is v1.1.67 <a href="https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar">Download Latest</a></span></td></tr>
+ <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = portal.wof.purified.link, Canonical = http://portal.wof.purified.link/fhir</td></tr>
+ <tr><td>Realm Check:</td><td> <span style="color: maroon; font-weight: bold"></span> : <ul><li>n/a</li></ul></td></tr>
+ <tr><td>Version Check:</td><td>0.1.0: <span stlye="color: marron; font-weight: bold">no package-list.json - the guide is not ready for publishing</span></td></tr>
+ <tr><td>Supressed Messages:</td><td>No Suppressed Issues
+</td></tr>
+ <tr><td>Dependency Checks:</td><td><div><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The NPM Package Id">Package</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of the package">Version</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of FHIR that the package is based on">FHIR Release</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Canonical URL">Canonical</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Web Reference Base">Web Base</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Comments about this entry">Comment</span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAI0lEQVR42u3QIQEAAAACIL/6/4MvTAQOkLYBAAB4kAAAANwMad9AqkRjgNAAAAAASUVORK5CYII=)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> portal.wof.purified.link</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0.1.0</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">4.0.1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://portal.wof.purified.link/fhir</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+</table><para>Templates: d-t.fhir.template#0.1.0 -&gt; fhir.base.template#0.2.1</para></div></td></tr>
+ <tr><td>HL7 Publication Rules:</td><td>Code = n/a. n/a - not an HL7.org or FHIR.org implementation guide
+</td></tr>
+ <tr><td>HTA Analysis:</td><td><i>Non-HL7 Igs are exempt from terminology dependency analysis</i></td></tr>
+ <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://portal.wof.purified.link/fhir (Problem #1 with package-list.json at http://portal.wof.purified.link/fhir: com.google.gson.stream.MalformedJsonException: Use JsonReader.setLenient(true) to accept malformed JSON at line 2 column 12 path $)</td></tr>
+ <tr><td>Summary:</td><td> broken links = 116, errors = 0, warn = 14, info = 0</td></tr>
+</table>
+ <table class="grid">
+   <tr>
+     <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>116</b></td><td><b>4</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__repos_wof-opus-fhir-api_ITB_Conformance_itb_fsh_implementationguide_ITB-IG_fsh-generated_resources_structuredefinition-ITBAppointment"><b>C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\fsh-generated\resources\structuredefinition-ITBAppointment</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__repos_wof-opus-fhir-api_ITB_Conformance_itb_fsh_implementationguide_ITB-IG_fsh-generated_resources_structuredefinition-ITBHealthcareService"><b>C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\fsh-generated\resources\structuredefinition-ITBHealthcareService</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__repos_wof-opus-fhir-api_ITB_Conformance_itb_fsh_implementationguide_ITB-IG_fsh-generated_resources_structuredefinition-ITBOrganization"><b>C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\fsh-generated\resources\structuredefinition-ITBOrganization</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__repos_wof-opus-fhir-api_ITB_Conformance_itb_fsh_implementationguide_ITB-IG_fsh-generated_resources_structuredefinition-ITBPatient"><b>C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\fsh-generated\resources\structuredefinition-ITBPatient</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__repos_wof-opus-fhir-api_ITB_Conformance_itb_fsh_implementationguide_ITB-IG_fsh-generated_resources_structuredefinition-ITBPractitionerRole"><b>C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\fsh-generated\resources\structuredefinition-ITBPractitionerRole</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__repos_wof-opus-fhir-api_ITB_Conformance_itb_fsh_implementationguide_ITB-IG_fsh-generated_resources_structuredefinition-ITBSchedule"><b>C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\fsh-generated\resources\structuredefinition-ITBSchedule</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__repos_wof-opus-fhir-api_ITB_Conformance_itb_fsh_implementationguide_ITB-IG_fsh-generated_resources_structuredefinition-ITBSlot"><b>C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\fsh-generated\resources\structuredefinition-ITBSlot</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__repos_wof-opus-fhir-api_ITB_Conformance_itb_fsh_implementationguide_ITB-IG_fsh-generated_resources_structuredefinition-NoITBPatient"><b>C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\fsh-generated\resources\structuredefinition-NoITBPatient</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__repos_wof-opus-fhir-api_ITB_Conformance_itb_fsh_implementationguide_ITB-IG_fsh-generated_resources_structuredefinition-SEITBPatient"><b>C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\fsh-generated\resources\structuredefinition-SEITBPatient</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__repos_wof-opus-fhir-api_ITB_Conformance_itb_fsh_implementationguide_ITB-IG_fsh-generated_resources_structuredefinition-extBinaryReference"><b>C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\fsh-generated\resources\structuredefinition-extBinaryReference</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="internal"> </a>
+<h2><a href="">n/a</a></h2>
+ <table class="grid">
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/ITBPatient.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/ITBPractitionerRole.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/ITBSchedule.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/ITBSlot.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-itb-booking-categories.change.history.html#1e4b235e-db9f-4d20-a94c-e4dd36d66877">CodeSystem-itb-booking-categories.change.history.html#/html/body/div/div/div/p/a at Line 210, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-itb-booking-categories.html#3f509489-fe06-48ff-902b-e70736f0af9d">CodeSystem-itb-booking-categories.html#/html/body/div/div/div/p/a at Line 217, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-itb-booking-categories.json.html#ffeb3857-303b-4dcb-b5e8-e2d6d6093076">CodeSystem-itb-booking-categories.json.html#/html/body/div/div/div/p/a at Line 232, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-itb-booking-categories.ttl.html#7c165f13-61ed-4d5c-b9a9-42e8f9423f1a">CodeSystem-itb-booking-categories.ttl.html#/html/body/div/div/div/p/a at Line 245, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-itb-booking-categories.xml.html#15cc519c-83f3-40ce-9b5f-bf6058cf6322">CodeSystem-itb-booking-categories.xml.html#/html/body/div/div/div/p/a at Line 231, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-itb-servicetypes.change.history.html#c1e2a8bf-db3d-4818-aaa8-e50af23291c3">CodeSystem-itb-servicetypes.change.history.html#/html/body/div/div/div/p/a at Line 210, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-itb-servicetypes.html#8482ac8f-8fbb-48d2-b9e9-94b4b7c46e65">CodeSystem-itb-servicetypes.html#/html/body/div/div/div/p/a at Line 217, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-itb-servicetypes.json.html#60840c32-c8f9-41c7-a872-aea5a70d1a4f">CodeSystem-itb-servicetypes.json.html#/html/body/div/div/div/p/a at Line 232, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-itb-servicetypes.ttl.html#bab0d771-b986-4b97-a4a6-5ad134da259d">CodeSystem-itb-servicetypes.ttl.html#/html/body/div/div/div/p/a at Line 245, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-itb-servicetypes.xml.html#d695b71c-203d-4e1a-91a2-c9aac3f56c4e">CodeSystem-itb-servicetypes.xml.html#/html/body/div/div/div/p/a at Line 230, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-practitioner-role-codes.change.history.html#1e58fe1f-3df2-4c54-905a-a2c9a90a1d40">CodeSystem-practitioner-role-codes.change.history.html#/html/body/div/div/div/p/a at Line 210, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-practitioner-role-codes.html#e011fe24-8377-4a50-9d4a-19bd0d215663">CodeSystem-practitioner-role-codes.html#/html/body/div/div/div/p/a at Line 217, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-practitioner-role-codes.json.html#968d26d7-4f2e-40da-8be5-0308432cf806">CodeSystem-practitioner-role-codes.json.html#/html/body/div/div/div/p/a at Line 232, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-practitioner-role-codes.ttl.html#67de14b8-c7f0-4503-a93c-9ead4bad55e2">CodeSystem-practitioner-role-codes.ttl.html#/html/body/div/div/div/p/a at Line 245, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-practitioner-role-codes.xml.html#d352723d-3a96-4cac-9c55-f2452b9137b1">CodeSystem-practitioner-role-codes.xml.html#/html/body/div/div/div/p/a at Line 231, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ITBAppointment-definitions.html#ded83554-0847-4dd5-8a5b-e5a37bb7cecb">StructureDefinition-ITBAppointment-definitions.html#/html/body/div/div/div/p/a at Line 582, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ITBAppointment-examples.html#5516e216-677c-45e1-b653-0736fcee5e18">StructureDefinition-ITBAppointment-examples.html#/html/body/div/div/div/p/a at Line 242, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ITBAppointment-mappings.html#c48e1351-98a3-446a-a88b-0c42e8ebc883">StructureDefinition-ITBAppointment-mappings.html#/html/body/div/div/div/p/a at Line 316, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ITBAppointment.html#d6c9a314-f048-416e-baa3-060867653b29">StructureDefinition-ITBAppointment.html#/html/body/div/div/div/p/a at Line 614, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ITBAppointment.profile.history.html#77fc511e-098d-41aa-a3e0-ad145852a6fc">StructureDefinition-ITBAppointment.profile.history.html#/html/body/div/div/div/p/a at Line 231, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ITBAppointment.profile.json.html#75813c1b-1ee2-41b4-aab3-70e283c0e945">StructureDefinition-ITBAppointment.profile.json.html#/html/body/div/div/div/p/a at Line 2309, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ITBAppointment.profile.ttl.html#16554b11-5ce9-4979-bd43-f8e958702e4a">StructureDefinition-ITBAppointment.profile.ttl.html#/html/body/div/div/div/p/a at Line 2046, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ITBAppointment.profile.xml.html#0d25c866-4361-4fd8-b9ab-a749a92c9574">StructureDefinition-ITBAppointment.profile.xml.html#/html/body/div/div/div/p/a at Line 2117, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ITBHealthcareService-definitions.html#c5bcce70-f69a-401f-bc55-e1d662db70af">StructureDefinition-ITBHealthcareService-definitions.html#/html/body/div/div/div/p/a at Line 688, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ITBHealthcareService-examples.html#939f363e-0ea6-4dda-80c7-1ec7f6c98f90">StructureDefinition-ITBHealthcareService-examples.html#/html/body/div/div/div/p/a at Line 242, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ITBHealthcareService-mappings.html#3c97f03d-6172-4783-b48a-3d7cfdd75d42">StructureDefinition-ITBHealthcareService-mappings.html#/html/body/div/div/div/p/a at Line 261, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ITBHealthcareService.html#9ab437a3-5039-4fa2-8eee-a61603f694c7">StructureDefinition-ITBHealthcareService.html#/html/body/div/div/div/p/a at Line 565, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ITBHealthcareService.profile.history.html#9b2a6cae-cbeb-4bba-a230-4a3cbd01271b">StructureDefinition-ITBHealthcareService.profile.history.html#/html/body/div/div/div/p/a at Line 231, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ITBHealthcareService.profile.json.html#77f0fade-d0c5-4871-a376-80bad8a87962">StructureDefinition-ITBHealthcareService.profile.json.html#/html/body/div/div/div/p/a at Line 2533, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ITBHealthcareService.profile.ttl.html#d6a3a1b2-7e75-402a-8135-09aa3b1df3de">StructureDefinition-ITBHealthcareService.profile.ttl.html#/html/body/div/div/div/p/a at Line 2235, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ITBHealthcareService.profile.xml.html#f3b6f9bd-9258-42f6-84fb-4847d3be6444">StructureDefinition-ITBHealthcareService.profile.xml.html#/html/body/div/div/div/p/a at Line 2269, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ITBOrganization-definitions.html#7109ecd2-f64c-4e85-a379-df18346dbd1f">StructureDefinition-ITBOrganization-definitions.html#/html/body/div/div/div/p/a at Line 500, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ITBOrganization-examples.html#961caa9a-87c1-41c2-bf7b-cb18dc631dab">StructureDefinition-ITBOrganization-examples.html#/html/body/div/div/div/p/a at Line 242, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ITBOrganization-mappings.html#1f126f74-7b05-4d6f-aeb7-8087e8646eee">StructureDefinition-ITBOrganization-mappings.html#/html/body/div/div/div/p/a at Line 277, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ITBOrganization.html#a78ed612-36cb-4d29-819f-ddd3ec031478">StructureDefinition-ITBOrganization.html#/html/body/div/div/div/p/a at Line 532, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ITBOrganization.profile.history.html#c627890a-3d0a-4ff6-9ca3-81949467a070">StructureDefinition-ITBOrganization.profile.history.html#/html/body/div/div/div/p/a at Line 231, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ITBOrganization.profile.json.html#a73e2964-d6c4-4a7f-ad03-b0a851c35178">StructureDefinition-ITBOrganization.profile.json.html#/html/body/div/div/div/p/a at Line 1536, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ITBOrganization.profile.ttl.html#6a3caaa1-9124-4317-9c1e-262b3fc98b6c">StructureDefinition-ITBOrganization.profile.ttl.html#/html/body/div/div/div/p/a at Line 1383, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ITBOrganization.profile.xml.html#d91dfc36-3fa0-4356-8ef0-8e2db75f2538">StructureDefinition-ITBOrganization.profile.xml.html#/html/body/div/div/div/p/a at Line 1411, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ITBPatient-definitions.html#ffcb0356-d0c0-4c00-9ec1-6fc6a101981e">StructureDefinition-ITBPatient-definitions.html#/html/body/div/div/div/p/a at Line 718, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ITBPatient-examples.html#a22fd488-11de-4534-913a-8eec22651a5c">StructureDefinition-ITBPatient-examples.html#/html/body/div/div/div/p/a at Line 242, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ITBPatient-mappings.html#fdf52831-f542-4384-ae6e-be4fa0c40c6b">StructureDefinition-ITBPatient-mappings.html#/html/body/div/div/div/p/a at Line 288, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ITBPatient.html#ab601465-97f8-4fc4-8a5f-c008bdf7961c">StructureDefinition-ITBPatient.html#/html/body/div/div/div/p/a at Line 572, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ITBPatient.profile.history.html#582ec1dd-6016-4665-a55b-e3645bd85be5">StructureDefinition-ITBPatient.profile.history.html#/html/body/div/div/div/p/a at Line 231, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ITBPatient.profile.json.html#ea71a463-d050-4cbd-b0b0-ef244ddcbcc4">StructureDefinition-ITBPatient.profile.json.html#/html/body/div/div/div/p/a at Line 2525, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ITBPatient.profile.ttl.html#1b969377-05fe-4e9e-a973-a9c8f9a04059">StructureDefinition-ITBPatient.profile.ttl.html#/html/body/div/div/div/p/a at Line 2224, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ITBPatient.profile.xml.html#b1c91534-f1a5-4817-bae6-45ccac2b80c7">StructureDefinition-ITBPatient.profile.xml.html#/html/body/div/div/div/p/a at Line 2334, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ITBPractitionerRole-definitions.html#3ece7b1c-98de-4794-9cba-b34950139667">StructureDefinition-ITBPractitionerRole-definitions.html#/html/body/div/div/div/p/a at Line 593, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ITBPractitionerRole-examples.html#15fe9d16-2aa3-46b2-a59f-a7c4eb5508db">StructureDefinition-ITBPractitionerRole-examples.html#/html/body/div/div/div/p/a at Line 242, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ITBPractitionerRole-mappings.html#ecb0b3cb-d6e2-474e-aa30-ca993c8d2699">StructureDefinition-ITBPractitionerRole-mappings.html#/html/body/div/div/div/p/a at Line 287, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ITBPractitionerRole.html#adf9c5a8-1232-4556-a6b0-51fbd3002149">StructureDefinition-ITBPractitionerRole.html#/html/body/div/div/div/p/a at Line 602, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ITBPractitionerRole.profile.history.html#32bd55de-9d21-4eda-86dd-e0b3d2025447">StructureDefinition-ITBPractitionerRole.profile.history.html#/html/body/div/div/div/p/a at Line 231, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ITBPractitionerRole.profile.json.html#2f40581f-4fd7-4010-bbad-74c8cf4a8cab">StructureDefinition-ITBPractitionerRole.profile.json.html#/html/body/div/div/div/p/a at Line 2178, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ITBPractitionerRole.profile.ttl.html#8b413b7b-c1c5-4050-8c7d-286ed3862019">StructureDefinition-ITBPractitionerRole.profile.ttl.html#/html/body/div/div/div/p/a at Line 1932, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ITBPractitionerRole.profile.xml.html#8b19a30e-0e2d-45d0-b8b5-8b1c3dd3810e">StructureDefinition-ITBPractitionerRole.profile.xml.html#/html/body/div/div/div/p/a at Line 1967, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ITBSchedule-definitions.html#6ff5e911-7ad6-473b-a13a-bae811ffb575">StructureDefinition-ITBSchedule-definitions.html#/html/body/div/div/div/p/a at Line 387, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ITBSchedule-examples.html#62708b61-9868-4b9f-b7f2-28f2dad5ba1d">StructureDefinition-ITBSchedule-examples.html#/html/body/div/div/div/p/a at Line 242, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ITBSchedule-mappings.html#42871fdc-fcc2-4c45-89d0-55d173cb1c61">StructureDefinition-ITBSchedule-mappings.html#/html/body/div/div/div/p/a at Line 263, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ITBSchedule.html#57ef6792-b804-4d26-9da5-47730515c3bd">StructureDefinition-ITBSchedule.html#/html/body/div/div/div/p/a at Line 522, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ITBSchedule.profile.history.html#a0b4ca63-33a5-49a4-a67a-db5ce092a7e8">StructureDefinition-ITBSchedule.profile.history.html#/html/body/div/div/div/p/a at Line 231, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ITBSchedule.profile.json.html#fe66938c-a73c-4c79-a5ea-828425054489">StructureDefinition-ITBSchedule.profile.json.html#/html/body/div/div/div/p/a at Line 1084, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ITBSchedule.profile.ttl.html#558ed733-ee91-41e4-a7db-648e28fe5f6c">StructureDefinition-ITBSchedule.profile.ttl.html#/html/body/div/div/div/p/a at Line 1006, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ITBSchedule.profile.xml.html#e15d4234-ed6d-4d36-8f02-4ce346c60249">StructureDefinition-ITBSchedule.profile.xml.html#/html/body/div/div/div/p/a at Line 1002, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ITBSlot-definitions.html#68971d5d-fc2c-49f0-b6af-45259a03e712">StructureDefinition-ITBSlot-definitions.html#/html/body/div/div/div/p/a at Line 408, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ITBSlot-examples.html#35f211c8-2500-4368-8abd-fc7baa634e82">StructureDefinition-ITBSlot-examples.html#/html/body/div/div/div/p/a at Line 242, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ITBSlot-mappings.html#7a9c7de1-f51a-4c68-bb5d-05a2ed1a50cb">StructureDefinition-ITBSlot-mappings.html#/html/body/div/div/div/p/a at Line 262, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ITBSlot.html#2cf1c17a-0157-4918-a039-86932a6b93b5">StructureDefinition-ITBSlot.html#/html/body/div/div/div/p/a at Line 539, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ITBSlot.profile.history.html#8138366b-aced-45df-bdfc-c7e9b68eb92d">StructureDefinition-ITBSlot.profile.history.html#/html/body/div/div/div/p/a at Line 231, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ITBSlot.profile.json.html#3a31407d-463e-4d5f-aa09-3dfa3cf4ea38">StructureDefinition-ITBSlot.profile.json.html#/html/body/div/div/div/p/a at Line 1190, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ITBSlot.profile.ttl.html#e02bc248-3cc4-4a38-bdfc-938eca5db5f8">StructureDefinition-ITBSlot.profile.ttl.html#/html/body/div/div/div/p/a at Line 1086, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ITBSlot.profile.xml.html#217e214a-0d46-4e42-bac5-a1f2490208ff">StructureDefinition-ITBSlot.profile.xml.html#/html/body/div/div/div/p/a at Line 1092, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-NoITBPatient-definitions.html#67265ef2-2464-4da4-b5db-b01e6cc34fe7">StructureDefinition-NoITBPatient-definitions.html#/html/body/div/div/div/p/a at Line 727, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-NoITBPatient-examples.html#49277d70-51a6-4449-a834-d1dbd1a3ca55">StructureDefinition-NoITBPatient-examples.html#/html/body/div/div/div/p/a at Line 242, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-NoITBPatient-mappings.html#fd85ee99-2dff-4657-bd54-94fcf130fc01">StructureDefinition-NoITBPatient-mappings.html#/html/body/div/div/div/p/a at Line 354, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-NoITBPatient.html#5689fcda-c84a-469e-87a3-3025a7da2491">StructureDefinition-NoITBPatient.html#/html/body/div/div/div/p/a at Line 706, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-NoITBPatient.profile.history.html#cbbd6bde-de8c-456b-852c-a973dd20778e">StructureDefinition-NoITBPatient.profile.history.html#/html/body/div/div/div/p/a at Line 231, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-NoITBPatient.profile.json.html#b6451217-e2ad-41fe-ba50-1f6753c9b1f0">StructureDefinition-NoITBPatient.profile.json.html#/html/body/div/div/div/p/a at Line 2473, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-NoITBPatient.profile.ttl.html#434bf4f2-bcd5-441a-83ea-78562ebc0054">StructureDefinition-NoITBPatient.profile.ttl.html#/html/body/div/div/div/p/a at Line 2183, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-NoITBPatient.profile.xml.html#23f19dac-6fb6-474a-9761-c527b77be3ae">StructureDefinition-NoITBPatient.profile.xml.html#/html/body/div/div/div/p/a at Line 2271, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-SEITBPatient-definitions.html#2c5fa004-8f18-4e7e-9dca-53217b6402cb">StructureDefinition-SEITBPatient-definitions.html#/html/body/div/div/div/p/a at Line 727, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-SEITBPatient-examples.html#8b2a98a3-604d-4e8e-9da4-686541140ab8">StructureDefinition-SEITBPatient-examples.html#/html/body/div/div/div/p/a at Line 242, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-SEITBPatient-mappings.html#ea111d64-4a36-4ce8-9ed2-30ab387ebffb">StructureDefinition-SEITBPatient-mappings.html#/html/body/div/div/div/p/a at Line 354, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-SEITBPatient.html#d41bc37b-25dd-47ae-963b-a9986b93c3f0">StructureDefinition-SEITBPatient.html#/html/body/div/div/div/p/a at Line 706, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-SEITBPatient.profile.history.html#72e62897-4248-42f4-b5c3-8934b6d38be0">StructureDefinition-SEITBPatient.profile.history.html#/html/body/div/div/div/p/a at Line 231, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-SEITBPatient.profile.json.html#4e868dc3-2108-4f06-aa71-5757d166fa62">StructureDefinition-SEITBPatient.profile.json.html#/html/body/div/div/div/p/a at Line 2473, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-SEITBPatient.profile.ttl.html#ad64d690-c892-46f3-a80e-5225d86d581c">StructureDefinition-SEITBPatient.profile.ttl.html#/html/body/div/div/div/p/a at Line 2183, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-SEITBPatient.profile.xml.html#7d131b68-c8a2-4904-8f64-1132dda271a1">StructureDefinition-SEITBPatient.profile.xml.html#/html/body/div/div/div/p/a at Line 2271, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-extBinaryReference-definitions.html#da4a91bb-9bdc-4466-bd26-405fb3508b1a">StructureDefinition-extBinaryReference-definitions.html#/html/body/div/div/div/p/a at Line 280, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-extBinaryReference-mappings.html#9937a14a-2bd2-43dd-8580-4ddcbae45b1c">StructureDefinition-extBinaryReference-mappings.html#/html/body/div/div/div/p/a at Line 248, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-extBinaryReference.html#190e0d3b-687b-4a6f-b893-36b754d80224">StructureDefinition-extBinaryReference.html#/html/body/div/div/div/p/a at Line 462, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-extBinaryReference.profile.history.html#896c4a0e-29d0-4f51-b72b-c7036dceb056">StructureDefinition-extBinaryReference.profile.history.html#/html/body/div/div/div/p/a at Line 231, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-extBinaryReference.profile.json.html#c39ff4f0-c66b-4196-ac30-2cd5a970563c">StructureDefinition-extBinaryReference.profile.json.html#/html/body/div/div/div/p/a at Line 516, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-extBinaryReference.profile.ttl.html#33e57acf-e174-43f9-b09a-7c01ff5f3ac9">StructureDefinition-extBinaryReference.profile.ttl.html#/html/body/div/div/div/p/a at Line 496, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-extBinaryReference.profile.xml.html#c79d4ff2-81b6-4b8c-ad10-97f6ba5acaa8">StructureDefinition-extBinaryReference.profile.xml.html#/html/body/div/div/div/p/a at Line 475, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-role-codes.change.history.html#a567d3d9-1a74-4623-92ac-7b508f5dc72e">ValueSet-role-codes.change.history.html#/html/body/div/div/div/p/a at Line 210, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-role-codes.html#8ea390cf-efaf-4e03-adec-5bb8d324f6a5">ValueSet-role-codes.html#/html/body/div/div/div/p/a at Line 257, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-role-codes.json.html#097ff740-10f3-47f6-b6b6-875d3e8c2330">ValueSet-role-codes.json.html#/html/body/div/div/div/p/a at Line 229, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-role-codes.ttl.html#becb28df-af34-4e57-9bb9-57fb3477b0e1">ValueSet-role-codes.ttl.html#/html/body/div/div/div/p/a at Line 238, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-role-codes.xml.html#a6028136-b1eb-4d52-b864-3f712afc40f3">ValueSet-role-codes.xml.html#/html/body/div/div/div/p/a at Line 225, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-service-types.change.history.html#85165569-f8d0-4a28-8f85-f2e45c83f0ea">ValueSet-service-types.change.history.html#/html/body/div/div/div/p/a at Line 210, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-service-types.html#88bac01b-90ee-47ef-b722-6b832104320e">ValueSet-service-types.html#/html/body/div/div/div/p/a at Line 257, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-service-types.json.html#bb9c4076-06c0-43ec-814f-04f8058f5d3f">ValueSet-service-types.json.html#/html/body/div/div/div/p/a at Line 225, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-service-types.ttl.html#76b6c980-69dd-4dfa-83e8-6ccc73fb6fa4">ValueSet-service-types.ttl.html#/html/body/div/div/div/p/a at Line 235, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-service-types.xml.html#1a0bbcb6-8404-451e-8cee-cfbe36937ea9">ValueSet-service-types.xml.html#/html/body/div/div/div/p/a at Line 221, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-speciality-codes.change.history.html#4142a02c-537c-4673-a96b-b7169fce3183">ValueSet-speciality-codes.change.history.html#/html/body/div/div/div/p/a at Line 210, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-speciality-codes.html#8bfd6850-ea5a-4379-b441-1181815503ae">ValueSet-speciality-codes.html#/html/body/div/div/div/p/a at Line 257, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-speciality-codes.json.html#0692f796-ac59-4bae-a1df-e71bfcb13eb7">ValueSet-speciality-codes.json.html#/html/body/div/div/div/p/a at Line 229, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-speciality-codes.ttl.html#f3804f9a-3f80-4dee-9896-4be873f2c6c2">ValueSet-speciality-codes.ttl.html#/html/body/div/div/div/p/a at Line 238, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-speciality-codes.xml.html#c6a82835-9889-4999-a516-0ddbb1edf72a">ValueSet-speciality-codes.xml.html#/html/body/div/div/div/p/a at Line 225, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="artifacts.html#6d6c84ae-dd21-4e46-818f-a5bb84b3382a">artifacts.html#/html/body/div/div/div/p/a at Line 360, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="codesystems.html#9c562d2e-6db7-41eb-a162-b7844325c2c2">codesystems.html#/html/body/div/div/div/p/a at Line 171, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="extensions.html#67b1696d-c35b-44df-b7b7-22b38e6be193">extensions.html#/html/body/div/div/div/p/a at Line 167, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="index.html#98b8cbba-331c-4b1a-83c3-f712db967dbd">index.html#/html/body/div/div/div/p/a at Line 188, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="profiles.html#b9d97ecc-3dd9-4a18-9edc-30250932ff81">profiles.html#/html/body/div/div/div/p/a at Line 176, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="toc.html#f3c03466-0869-4eab-9c39-09b3a14ac54f">toc.html#/html/body/div/div/div/p/a at Line 146, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="valuesets.html#bb226dec-68a7-49b9-a1a7-6fb63162ee7e">valuesets.html#/html/body/div/div/div/p/a at Line 171, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__repos_wof-opus-fhir-api_ITB_Conformance_itb_fsh_implementationguide_ITB-IG_fsh-generated_resources_structuredefinition-ITBAppointment"> </a>
+<h2><a href="StructureDefinition-ITBAppointment.html">C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\fsh-generated\resources\StructureDefinition-ITBAppointment.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/ITBAppointment: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'http://portal.wof.purified.link/fhir/StructureDefinition/ITBAppointment')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__repos_wof-opus-fhir-api_ITB_Conformance_itb_fsh_implementationguide_ITB-IG_fsh-generated_resources_structuredefinition-ITBHealthcareService"> </a>
+<h2><a href="StructureDefinition-ITBHealthcareService.html">C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\fsh-generated\resources\StructureDefinition-ITBHealthcareService.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/ITBHealthcareService: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'http://portal.wof.purified.link/fhir/StructureDefinition/ITBHealthcareService')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__repos_wof-opus-fhir-api_ITB_Conformance_itb_fsh_implementationguide_ITB-IG_fsh-generated_resources_structuredefinition-ITBOrganization"> </a>
+<h2><a href="StructureDefinition-ITBOrganization.html">C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\fsh-generated\resources\StructureDefinition-ITBOrganization.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/ITBOrganization: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'http://portal.wof.purified.link/fhir/StructureDefinition/ITBOrganization')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__repos_wof-opus-fhir-api_ITB_Conformance_itb_fsh_implementationguide_ITB-IG_fsh-generated_resources_structuredefinition-ITBPatient"> </a>
+<h2><a href="StructureDefinition-ITBPatient.html">C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\fsh-generated\resources\StructureDefinition-ITBPatient.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/ITBPatient: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'http://portal.wof.purified.link/fhir/StructureDefinition/ITBPatient')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__repos_wof-opus-fhir-api_ITB_Conformance_itb_fsh_implementationguide_ITB-IG_fsh-generated_resources_structuredefinition-ITBPractitionerRole"> </a>
+<h2><a href="StructureDefinition-ITBPractitionerRole.html">C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\fsh-generated\resources\StructureDefinition-ITBPractitionerRole.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/ITBPractitionerRole: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'http://portal.wof.purified.link/fhir/StructureDefinition/ITBPractitionerRole')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__repos_wof-opus-fhir-api_ITB_Conformance_itb_fsh_implementationguide_ITB-IG_fsh-generated_resources_structuredefinition-ITBSchedule"> </a>
+<h2><a href="StructureDefinition-ITBSchedule.html">C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\fsh-generated\resources\StructureDefinition-ITBSchedule.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/ITBSchedule: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'http://portal.wof.purified.link/fhir/StructureDefinition/ITBSchedule')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__repos_wof-opus-fhir-api_ITB_Conformance_itb_fsh_implementationguide_ITB-IG_fsh-generated_resources_structuredefinition-ITBSlot"> </a>
+<h2><a href="StructureDefinition-ITBSlot.html">C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\fsh-generated\resources\StructureDefinition-ITBSlot.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/ITBSlot: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'http://portal.wof.purified.link/fhir/StructureDefinition/ITBSlot')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__repos_wof-opus-fhir-api_ITB_Conformance_itb_fsh_implementationguide_ITB-IG_fsh-generated_resources_structuredefinition-NoITBPatient"> </a>
+<h2><a href="StructureDefinition-NoITBPatient.html">C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\fsh-generated\resources\StructureDefinition-NoITBPatient.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/NoITBPatient: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'http://portal.wof.purified.link/fhir/StructureDefinition/NoITBPatient')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__repos_wof-opus-fhir-api_ITB_Conformance_itb_fsh_implementationguide_ITB-IG_fsh-generated_resources_structuredefinition-SEITBPatient"> </a>
+<h2><a href="StructureDefinition-SEITBPatient.html">C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\fsh-generated\resources\StructureDefinition-SEITBPatient.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/SEITBPatient: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'http://portal.wof.purified.link/fhir/StructureDefinition/SEITBPatient')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__repos_wof-opus-fhir-api_ITB_Conformance_itb_fsh_implementationguide_ITB-IG_fsh-generated_resources_structuredefinition-extBinaryReference"> </a>
+<h2><a href="StructureDefinition-extBinaryReference.html">C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\fsh-generated\resources\StructureDefinition-extBinaryReference.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/extBinaryReference: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'http://portal.wof.purified.link/fhir/StructureDefinition/extBinaryReference')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this extension</b></td>
+   </tr>
+</table>
+<a name="suppressed"> </a>
+<p><b>Suppressed Messages (Warnings, hints, broken links)</b></p>
+<p>No suppressed messsages</p><a name="sorted"> </a>
+<p><b>Errors sorted by type</b></p>
+</body>
+</html>

@@ -1,0 +1,205 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ITBPractitionerRole",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Base.Individuals"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "individual"
+    }
+  ],
+  "url": "http://portal.wof.purified.link/fhir/StructureDefinition/ITBPractitionerRole",
+  "version": "0.1.0",
+  "name": "ITBPractitionerRole",
+  "title": "ITB PractitionerRole",
+  "status": "active",
+  "description": "PractitionerRole is an actor in Patient Portal and can become a bookable entity",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "servd",
+      "uri": "http://www.omg.org/spec/ServD/1.0/",
+      "name": "ServD"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "PractitionerRole",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "PractitionerRole.id",
+        "path": "PractitionerRole.id",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.contained",
+        "path": "PractitionerRole.contained",
+        "short": "This should contain a picture of the practitioner",
+        "max": "1",
+        "type": [
+          {
+            "code": "Binary"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.extension",
+        "path": "PractitionerRole.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "PractitionerRole.extension:BinaryReferenceExtension",
+        "path": "PractitionerRole.extension",
+        "sliceName": "BinaryReferenceExtension",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://portal.wof.purified.link/fhir/StructureDefinition/extBinaryReference"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "PractitionerRole.identifier",
+        "path": "PractitionerRole.identifier",
+        "short": "Extern identifiering.",
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.active",
+        "path": "PractitionerRole.active",
+        "definition": "Indicates if this role is active and bookable at the HealthcareService",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.period",
+        "path": "PractitionerRole.period",
+        "short": "Period under viken behandlare kan iträda roll",
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.period.start",
+        "path": "PractitionerRole.period.start",
+        "short": "Starttid",
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.period.end",
+        "path": "PractitionerRole.period.end",
+        "short": "Sluttid",
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.practitioner",
+        "path": "PractitionerRole.practitioner",
+        "short": "Connects to EHRs that containes the practitioner where the appointment will be stored   --> example: DB01/fhir/Practitioner/123",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.practitioner.display",
+        "path": "PractitionerRole.practitioner.display",
+        "short": "Used in GUI for representing the practitioner",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.organization",
+        "path": "PractitionerRole.organization",
+        "short": "Connects to EHRs soureSystem organization --> example:  DB01/fhir/Organization/123",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.organization.type",
+        "path": "PractitionerRole.organization.type",
+        "short": "Describes what type of organization --> example: eco unit"
+      },
+      {
+        "id": "PractitionerRole.organization.display",
+        "path": "PractitionerRole.organization.display",
+        "short": "Used in backoffice GUI for representing the organization",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.code",
+        "path": "PractitionerRole.code",
+        "short": "Role that can be beformed - connected to ActivityDefinition.participant.role",
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.specialty",
+        "path": "PractitionerRole.specialty",
+        "short": "Only used in GUI no logic attached",
+        "mustSupport": true,
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "http://portal.wof.purified.link/fhir/ValueSet/speciality-codes"
+        }
+      },
+      {
+        "id": "PractitionerRole.healthcareService",
+        "path": "PractitionerRole.healthcareService",
+        "short": "The HealthcareService where this PractitionerRole is bookable",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.healthcareService.display",
+        "path": "PractitionerRole.healthcareService.display",
+        "short": "Used in GUI please use this if possible"
+      },
+      {
+        "id": "PractitionerRole.endpoint",
+        "path": "PractitionerRole.endpoint",
+        "short": "The FHIR endpoint where the practitioner and the organization exist",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.endpoint.display",
+        "path": "PractitionerRole.endpoint.display",
+        "short": "Used in GUI please use this if possible"
+      }
+    ]
+  }
+}

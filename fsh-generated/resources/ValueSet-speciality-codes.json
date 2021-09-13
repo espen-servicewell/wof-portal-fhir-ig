@@ -1,0 +1,27 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "ITBSpecialityCodes",
+  "id": "speciality-codes",
+  "title": "ITB Speciality Codes",
+  "description": "This value set defines speciality code",
+  "version": "0.1.0",
+  "url": "http://portal.wof.purified.link/fhir/ValueSet/speciality-codes",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "106289002",
+            "display": "tandläkare"
+          },
+          {
+            "code": "26042002",
+            "display": "tandhygienist"
+          }
+        ]
+      }
+    ]
+  }
+}

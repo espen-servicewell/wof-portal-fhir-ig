@@ -1,0 +1,35 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "itb-booking-categories",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://portal.wof.purified.link/fhir/CodeSystem/itb-booking-categories defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">BCBC1754-A399-48BA-8EEC-10667F19A0D6<a name=\"itb-booking-categories-BCBC1754-A399-48BA-8EEC-10667F19A0D6\"> </a></td><td>usR</td></tr><tr><td style=\"white-space:nowrap\">99229622-01FE-46B6-B430-28B4C0426006<a name=\"itb-booking-categories-99229622-01FE-46B6-B430-28B4C0426006\"> </a></td><td>profylax</td></tr><tr><td style=\"white-space:nowrap\">543BDC1F-CA70-47D3-9A0C-BFE927FE341E<a name=\"itb-booking-categories-543BDC1F-CA70-47D3-9A0C-BFE927FE341E\"> </a></td><td>parodontologi</td></tr><tr><td style=\"white-space:nowrap\">E42BA67C-841D-4AF2-A948-F3280CFD234D<a name=\"itb-booking-categories-E42BA67C-841D-4AF2-A948-F3280CFD234D\"> </a></td><td>emergency</td></tr></table></div>"
+  },
+  "url": "http://portal.wof.purified.link/fhir/CodeSystem/itb-booking-categories",
+  "version": "0.1.0",
+  "name": "ITBBookingCategories",
+  "title": "ITB Booking Categories",
+  "status": "active",
+  "date": "2021-04-23T13:44:18+02:00",
+  "description": "ITB Booking Categories",
+  "content": "complete",
+  "count": 4,
+  "concept": [
+    {
+      "code": "BCBC1754-A399-48BA-8EEC-10667F19A0D6",
+      "display": "usR"
+    },
+    {
+      "code": "99229622-01FE-46B6-B430-28B4C0426006",
+      "display": "profylax"
+    },
+    {
+      "code": "543BDC1F-CA70-47D3-9A0C-BFE927FE341E",
+      "display": "parodontologi"
+    },
+    {
+      "code": "E42BA67C-841D-4AF2-A948-F3280CFD234D",
+      "display": "emergency"
+    }
+  ]
+}

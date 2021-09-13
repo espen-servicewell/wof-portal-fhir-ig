@@ -1,0 +1,11 @@
+I"Ã<p><!-- white space is critical inside of capture --></p>
+<div>
+<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+</div>
+
+<p>This section describes the FHIR extensions that have been defined as part of this IG.</p>
+
+<li><a href="StructureDefinition-extBinaryReference.html">ITB Binary Reference Extension</a> <p>Extension used to be able to inlude binaries in the resource</p>
+</li>
+
+:ET

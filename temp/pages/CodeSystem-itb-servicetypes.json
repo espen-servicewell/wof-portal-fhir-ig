@@ -1,0 +1,35 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "itb-servicetypes",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://portal.wof.purified.link/fhir/CodeSystem/itb-servicetypes defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"itb-servicetypes-1\"> </a></td><td>Profylax</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"itb-servicetypes-2\"> </a></td><td>Undersökning</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"itb-servicetypes-3\"> </a></td><td>Akut</td></tr><tr><td style=\"white-space:nowrap\">0<a name=\"itb-servicetypes-0\"> </a></td><td>Revision ospecificerad behandling</td></tr></table></div>"
+  },
+  "url": "http://portal.wof.purified.link/fhir/CodeSystem/itb-servicetypes",
+  "version": "0.1.0",
+  "name": "ITBServiceTypes",
+  "title": "ITB Service Types",
+  "status": "active",
+  "date": "2021-04-23T13:44:18+02:00",
+  "description": "ITB Service Types",
+  "content": "complete",
+  "count": 4,
+  "concept": [
+    {
+      "code": "1",
+      "display": "Profylax"
+    },
+    {
+      "code": "2",
+      "display": "Undersökning"
+    },
+    {
+      "code": "3",
+      "display": "Akut"
+    },
+    {
+      "code": "0",
+      "display": "Revision ospecificerad behandling"
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ITBSlot",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Base.Workflow"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "business"
+    }
+  ],
+  "url": "http://portal.wof.purified.link/fhir/StructureDefinition/ITBSlot",
+  "version": "0.1.0",
+  "name": "ITBSlot",
+  "title": "ITB Slot",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "ical",
+      "uri": "http://ietf.org/rfc/2445",
+      "name": "iCalendar"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Slot",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Slot",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Slot.id",
+        "path": "Slot.id",
+        "mustSupport": true
+      },
+      {
+        "id": "Slot.identifier",
+        "path": "Slot.identifier",
+        "short": "Extern identifiering vid behov.",
+        "mustSupport": true
+      },
+      {
+        "id": "Slot.serviceType",
+        "path": "Slot.serviceType",
+        "short": "Typ av behandling denna slot gäller för. Kan vara flera beroende på hur man vill göra.",
+        "mustSupport": true
+      },
+      {
+        "id": "Slot.schedule",
+        "path": "Slot.schedule",
+        "short": "Pekar på vilket schema denna slot tillhör.",
+        "mustSupport": true
+      },
+      {
+        "id": "Slot.schedule.reference",
+        "path": "Slot.schedule.reference",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Slot.schedule.display",
+        "path": "Slot.schedule.display",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Slot.status",
+        "path": "Slot.status",
+        "definition": "Just nu använder vi endast \"free\". Men vill man exempelvis kunna rendera upp en tandläkares schema kan det vara intressant att använda andra koder. Exempelvis \"busy\".",
+        "mustSupport": true
+      },
+      {
+        "id": "Slot.start",
+        "path": "Slot.start",
+        "short": "Date/Time that the slot is to begin.",
+        "mustSupport": true
+      },
+      {
+        "id": "Slot.end",
+        "path": "Slot.end",
+        "short": "Date/Time that the slot is to conclude.",
+        "mustSupport": true
+      }
+    ]
+  }
+}

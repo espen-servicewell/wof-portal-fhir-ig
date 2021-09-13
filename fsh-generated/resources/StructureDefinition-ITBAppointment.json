@@ -1,0 +1,134 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ITBAppointment",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Base.Workflow"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "patient"
+    }
+  ],
+  "url": "http://portal.wof.purified.link/fhir/StructureDefinition/ITBAppointment",
+  "version": "0.1.0",
+  "name": "ITBAppointment",
+  "title": "ITB Appointment",
+  "status": "active",
+  "description": "ITBAppointment is used to handle  ..",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "ical",
+      "uri": "http://ietf.org/rfc/2445",
+      "name": "iCalendar"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Appointment",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Appointment",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Appointment.meta.tag",
+        "path": "Appointment.meta.tag",
+        "short": "Kod för tillgänglighet",
+        "mustSupport": true
+      },
+      {
+        "id": "Appointment.meta.tag.system",
+        "path": "Appointment.meta.tag.system",
+        "short": "http://portal.wof.purified.link/fhir/CodeSystem/csAvailableForCancellation OR http://portal.wof.purified.link/fhir/CodeSystem/csAvailableForReschedule"
+      },
+      {
+        "id": "Appointment.status",
+        "path": "Appointment.status",
+        "definition": "The overall status of the Appointment. Each of the participants has their own participation status which indicates their involvement in the process, however this status indicates the shared status. -> Vid första anrop vid bokning är denna exempelvis proposed.",
+        "mustSupport": true
+      },
+      {
+        "id": "Appointment.serviceType",
+        "path": "Appointment.serviceType",
+        "short": "Typ av behandling som skall bokas.",
+        "min": 1,
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://portal.wof.purified.link/fhir/ValueSet/service-type"
+        }
+      },
+      {
+        "id": "Appointment.start",
+        "path": "Appointment.start",
+        "short": "Starttid",
+        "mustSupport": true
+      },
+      {
+        "id": "Appointment.end",
+        "path": "Appointment.end",
+        "short": "Sluttid",
+        "mustSupport": true
+      },
+      {
+        "id": "Appointment.minutesDuration",
+        "path": "Appointment.minutesDuration",
+        "short": "Varaktighet i minuter",
+        "mustSupport": true
+      },
+      {
+        "id": "Appointment.slot",
+        "path": "Appointment.slot",
+        "definition": "I ITBn mot OPUS hanterar vi inte denna referens då vi endast använder start och end för att beskriva tidsintervallet. Det kan dock vara aktuellt att använda slot-referensen vid hantering av t.ex. Pride osv."
+      },
+      {
+        "id": "Appointment.comment",
+        "path": "Appointment.comment",
+        "short": "Möjlighet att fylla på med relevant fritext vid bokning."
+      },
+      {
+        "id": "Appointment.participant.actor",
+        "path": "Appointment.participant.actor",
+        "definition": "Referens till PractitionerRole, kanske även HealthcareService  (Även Patient, Device)",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Patient",
+              "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
+              "http://hl7.org/fhir/StructureDefinition/HealthcareService",
+              "http://hl7.org/fhir/StructureDefinition/Device"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Appointment.participant.status",
+        "path": "Appointment.participant.status",
+        "mustSupport": true
+      }
+    ]
+  }
+}

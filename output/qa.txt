@@ -1,0 +1,191 @@
+﻿ITBImplementationGuide : Validation Results
+=========================================
+
+err = 0, warn = 14, info = 0
+IG Publisher Version: 1.1.44 Out of date - current version is 1.1.67
+Generated Fri Apr 23 13:45:16 CEST 2021. FHIR version 4.0.1 for portal.wof.purified.link#0.1.0 (canonical = http://portal.wof.purified.link/fhir)
+
+ Build Errors : 116 / 4 / 0
+ C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\fsh-generated\resources\ImplementationGuide-portal.wof.purified.link : 0 / 0 / 1
+ C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\fsh-generated\resources\codesystem-itb-booking-categories : 0 / 0 / 1
+ C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\fsh-generated\resources\codesystem-itb-servicetypes : 0 / 0 / 1
+ C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\fsh-generated\resources\codesystem-practitioner-role-codes : 0 / 0 / 1
+ C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\fsh-generated\resources\structuredefinition-ITBAppointment : 0 / 1 / 1
+ C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\fsh-generated\resources\structuredefinition-ITBHealthcareService : 0 / 1 / 1
+ C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\fsh-generated\resources\structuredefinition-ITBOrganization : 0 / 1 / 1
+ C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\fsh-generated\resources\structuredefinition-ITBPatient : 0 / 1 / 1
+ C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\fsh-generated\resources\structuredefinition-ITBPractitionerRole : 0 / 1 / 1
+ C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\fsh-generated\resources\structuredefinition-ITBSchedule : 0 / 1 / 1
+ C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\fsh-generated\resources\structuredefinition-ITBSlot : 0 / 1 / 1
+ C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\fsh-generated\resources\structuredefinition-NoITBPatient : 0 / 1 / 1
+ C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\fsh-generated\resources\structuredefinition-SEITBPatient : 0 / 1 / 1
+ C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\fsh-generated\resources\structuredefinition-extBinaryReference : 0 / 1 / 1
+ C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\fsh-generated\resources\valueset-role-codes : 0 / 0 / 1
+ C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\fsh-generated\resources\valueset-service-types : 0 / 0 / 1
+ C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\fsh-generated\resources\valueset-speciality-codes : 0 / 0 / 1
+</table>
+== n/a ==
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/ITBPatient.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/ITBPractitionerRole.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/ITBSchedule.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/ITBSlot.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\CodeSystem-itb-booking-categories.change.history.html#/html/body/div/div/div/p/a at Line 210, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\CodeSystem-itb-booking-categories.html#/html/body/div/div/div/p/a at Line 217, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\CodeSystem-itb-booking-categories.json.html#/html/body/div/div/div/p/a at Line 232, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\CodeSystem-itb-booking-categories.ttl.html#/html/body/div/div/div/p/a at Line 245, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\CodeSystem-itb-booking-categories.xml.html#/html/body/div/div/div/p/a at Line 231, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\CodeSystem-itb-servicetypes.change.history.html#/html/body/div/div/div/p/a at Line 210, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\CodeSystem-itb-servicetypes.html#/html/body/div/div/div/p/a at Line 217, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\CodeSystem-itb-servicetypes.json.html#/html/body/div/div/div/p/a at Line 232, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\CodeSystem-itb-servicetypes.ttl.html#/html/body/div/div/div/p/a at Line 245, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\CodeSystem-itb-servicetypes.xml.html#/html/body/div/div/div/p/a at Line 230, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\CodeSystem-practitioner-role-codes.change.history.html#/html/body/div/div/div/p/a at Line 210, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\CodeSystem-practitioner-role-codes.html#/html/body/div/div/div/p/a at Line 217, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\CodeSystem-practitioner-role-codes.json.html#/html/body/div/div/div/p/a at Line 232, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\CodeSystem-practitioner-role-codes.ttl.html#/html/body/div/div/div/p/a at Line 245, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\CodeSystem-practitioner-role-codes.xml.html#/html/body/div/div/div/p/a at Line 231, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\StructureDefinition-ITBAppointment-definitions.html#/html/body/div/div/div/p/a at Line 582, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\StructureDefinition-ITBAppointment-examples.html#/html/body/div/div/div/p/a at Line 242, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\StructureDefinition-ITBAppointment-mappings.html#/html/body/div/div/div/p/a at Line 316, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\StructureDefinition-ITBAppointment.html#/html/body/div/div/div/p/a at Line 614, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\StructureDefinition-ITBAppointment.profile.history.html#/html/body/div/div/div/p/a at Line 231, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\StructureDefinition-ITBAppointment.profile.json.html#/html/body/div/div/div/p/a at Line 2309, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\StructureDefinition-ITBAppointment.profile.ttl.html#/html/body/div/div/div/p/a at Line 2046, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\StructureDefinition-ITBAppointment.profile.xml.html#/html/body/div/div/div/p/a at Line 2117, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\StructureDefinition-ITBHealthcareService-definitions.html#/html/body/div/div/div/p/a at Line 688, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\StructureDefinition-ITBHealthcareService-examples.html#/html/body/div/div/div/p/a at Line 242, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\StructureDefinition-ITBHealthcareService-mappings.html#/html/body/div/div/div/p/a at Line 261, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\StructureDefinition-ITBHealthcareService.html#/html/body/div/div/div/p/a at Line 565, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\StructureDefinition-ITBHealthcareService.profile.history.html#/html/body/div/div/div/p/a at Line 231, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\StructureDefinition-ITBHealthcareService.profile.json.html#/html/body/div/div/div/p/a at Line 2533, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\StructureDefinition-ITBHealthcareService.profile.ttl.html#/html/body/div/div/div/p/a at Line 2235, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\StructureDefinition-ITBHealthcareService.profile.xml.html#/html/body/div/div/div/p/a at Line 2269, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\StructureDefinition-ITBOrganization-definitions.html#/html/body/div/div/div/p/a at Line 500, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\StructureDefinition-ITBOrganization-examples.html#/html/body/div/div/div/p/a at Line 242, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\StructureDefinition-ITBOrganization-mappings.html#/html/body/div/div/div/p/a at Line 277, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\StructureDefinition-ITBOrganization.html#/html/body/div/div/div/p/a at Line 532, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\StructureDefinition-ITBOrganization.profile.history.html#/html/body/div/div/div/p/a at Line 231, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\StructureDefinition-ITBOrganization.profile.json.html#/html/body/div/div/div/p/a at Line 1536, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\StructureDefinition-ITBOrganization.profile.ttl.html#/html/body/div/div/div/p/a at Line 1383, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\StructureDefinition-ITBOrganization.profile.xml.html#/html/body/div/div/div/p/a at Line 1411, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\StructureDefinition-ITBPatient-definitions.html#/html/body/div/div/div/p/a at Line 718, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\StructureDefinition-ITBPatient-examples.html#/html/body/div/div/div/p/a at Line 242, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\StructureDefinition-ITBPatient-mappings.html#/html/body/div/div/div/p/a at Line 288, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\StructureDefinition-ITBPatient.html#/html/body/div/div/div/p/a at Line 572, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\StructureDefinition-ITBPatient.profile.history.html#/html/body/div/div/div/p/a at Line 231, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\StructureDefinition-ITBPatient.profile.json.html#/html/body/div/div/div/p/a at Line 2525, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\StructureDefinition-ITBPatient.profile.ttl.html#/html/body/div/div/div/p/a at Line 2224, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\StructureDefinition-ITBPatient.profile.xml.html#/html/body/div/div/div/p/a at Line 2334, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\StructureDefinition-ITBPractitionerRole-definitions.html#/html/body/div/div/div/p/a at Line 593, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\StructureDefinition-ITBPractitionerRole-examples.html#/html/body/div/div/div/p/a at Line 242, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\StructureDefinition-ITBPractitionerRole-mappings.html#/html/body/div/div/div/p/a at Line 287, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\StructureDefinition-ITBPractitionerRole.html#/html/body/div/div/div/p/a at Line 602, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\StructureDefinition-ITBPractitionerRole.profile.history.html#/html/body/div/div/div/p/a at Line 231, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\StructureDefinition-ITBPractitionerRole.profile.json.html#/html/body/div/div/div/p/a at Line 2178, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\StructureDefinition-ITBPractitionerRole.profile.ttl.html#/html/body/div/div/div/p/a at Line 1932, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\StructureDefinition-ITBPractitionerRole.profile.xml.html#/html/body/div/div/div/p/a at Line 1967, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\StructureDefinition-ITBSchedule-definitions.html#/html/body/div/div/div/p/a at Line 387, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\StructureDefinition-ITBSchedule-examples.html#/html/body/div/div/div/p/a at Line 242, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\StructureDefinition-ITBSchedule-mappings.html#/html/body/div/div/div/p/a at Line 263, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\StructureDefinition-ITBSchedule.html#/html/body/div/div/div/p/a at Line 522, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\StructureDefinition-ITBSchedule.profile.history.html#/html/body/div/div/div/p/a at Line 231, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\StructureDefinition-ITBSchedule.profile.json.html#/html/body/div/div/div/p/a at Line 1084, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\StructureDefinition-ITBSchedule.profile.ttl.html#/html/body/div/div/div/p/a at Line 1006, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\StructureDefinition-ITBSchedule.profile.xml.html#/html/body/div/div/div/p/a at Line 1002, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\StructureDefinition-ITBSlot-definitions.html#/html/body/div/div/div/p/a at Line 408, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\StructureDefinition-ITBSlot-examples.html#/html/body/div/div/div/p/a at Line 242, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\StructureDefinition-ITBSlot-mappings.html#/html/body/div/div/div/p/a at Line 262, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\StructureDefinition-ITBSlot.html#/html/body/div/div/div/p/a at Line 539, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\StructureDefinition-ITBSlot.profile.history.html#/html/body/div/div/div/p/a at Line 231, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\StructureDefinition-ITBSlot.profile.json.html#/html/body/div/div/div/p/a at Line 1190, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\StructureDefinition-ITBSlot.profile.ttl.html#/html/body/div/div/div/p/a at Line 1086, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\StructureDefinition-ITBSlot.profile.xml.html#/html/body/div/div/div/p/a at Line 1092, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\StructureDefinition-NoITBPatient-definitions.html#/html/body/div/div/div/p/a at Line 727, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\StructureDefinition-NoITBPatient-examples.html#/html/body/div/div/div/p/a at Line 242, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\StructureDefinition-NoITBPatient-mappings.html#/html/body/div/div/div/p/a at Line 354, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\StructureDefinition-NoITBPatient.html#/html/body/div/div/div/p/a at Line 706, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\StructureDefinition-NoITBPatient.profile.history.html#/html/body/div/div/div/p/a at Line 231, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\StructureDefinition-NoITBPatient.profile.json.html#/html/body/div/div/div/p/a at Line 2473, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\StructureDefinition-NoITBPatient.profile.ttl.html#/html/body/div/div/div/p/a at Line 2183, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\StructureDefinition-NoITBPatient.profile.xml.html#/html/body/div/div/div/p/a at Line 2271, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\StructureDefinition-SEITBPatient-definitions.html#/html/body/div/div/div/p/a at Line 727, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\StructureDefinition-SEITBPatient-examples.html#/html/body/div/div/div/p/a at Line 242, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\StructureDefinition-SEITBPatient-mappings.html#/html/body/div/div/div/p/a at Line 354, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\StructureDefinition-SEITBPatient.html#/html/body/div/div/div/p/a at Line 706, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\StructureDefinition-SEITBPatient.profile.history.html#/html/body/div/div/div/p/a at Line 231, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\StructureDefinition-SEITBPatient.profile.json.html#/html/body/div/div/div/p/a at Line 2473, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\StructureDefinition-SEITBPatient.profile.ttl.html#/html/body/div/div/div/p/a at Line 2183, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\StructureDefinition-SEITBPatient.profile.xml.html#/html/body/div/div/div/p/a at Line 2271, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\StructureDefinition-extBinaryReference-definitions.html#/html/body/div/div/div/p/a at Line 280, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\StructureDefinition-extBinaryReference-mappings.html#/html/body/div/div/div/p/a at Line 248, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\StructureDefinition-extBinaryReference.html#/html/body/div/div/div/p/a at Line 462, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\StructureDefinition-extBinaryReference.profile.history.html#/html/body/div/div/div/p/a at Line 231, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\StructureDefinition-extBinaryReference.profile.json.html#/html/body/div/div/div/p/a at Line 516, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\StructureDefinition-extBinaryReference.profile.ttl.html#/html/body/div/div/div/p/a at Line 496, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\StructureDefinition-extBinaryReference.profile.xml.html#/html/body/div/div/div/p/a at Line 475, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\ValueSet-role-codes.change.history.html#/html/body/div/div/div/p/a at Line 210, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\ValueSet-role-codes.html#/html/body/div/div/div/p/a at Line 257, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\ValueSet-role-codes.json.html#/html/body/div/div/div/p/a at Line 229, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\ValueSet-role-codes.ttl.html#/html/body/div/div/div/p/a at Line 238, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\ValueSet-role-codes.xml.html#/html/body/div/div/div/p/a at Line 225, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\ValueSet-service-types.change.history.html#/html/body/div/div/div/p/a at Line 210, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\ValueSet-service-types.html#/html/body/div/div/div/p/a at Line 257, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\ValueSet-service-types.json.html#/html/body/div/div/div/p/a at Line 225, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\ValueSet-service-types.ttl.html#/html/body/div/div/div/p/a at Line 235, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\ValueSet-service-types.xml.html#/html/body/div/div/div/p/a at Line 221, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\ValueSet-speciality-codes.change.history.html#/html/body/div/div/div/p/a at Line 210, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\ValueSet-speciality-codes.html#/html/body/div/div/div/p/a at Line 257, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\ValueSet-speciality-codes.json.html#/html/body/div/div/div/p/a at Line 229, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\ValueSet-speciality-codes.ttl.html#/html/body/div/div/div/p/a at Line 238, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\ValueSet-speciality-codes.xml.html#/html/body/div/div/div/p/a at Line 225, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\artifacts.html#/html/body/div/div/div/p/a at Line 360, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\codesystems.html#/html/body/div/div/div/p/a at Line 171, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\extensions.html#/html/body/div/div/div/p/a at Line 167, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\index.html#/html/body/div/div/div/p/a at Line 188, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\profiles.html#/html/body/div/div/div/p/a at Line 176, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\toc.html#/html/body/div/div/div/p/a at Line 146, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\output\valuesets.html#/html/body/div/div/div/p/a at Line 171, column 28: The link '' for "" cannot be resolved
+== C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\fsh-generated\resources\ImplementationGuide-portal.wof.purified.link.json ==
+INFORMATION: ImplementationGuide/portal.wof.purified.link: ImplementationGuide: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide
+== C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\fsh-generated\resources\CodeSystem-itb-booking-categories.json ==
+INFORMATION: CodeSystem/itb-booking-categories: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
+== C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\fsh-generated\resources\CodeSystem-itb-servicetypes.json ==
+INFORMATION: CodeSystem/itb-servicetypes: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
+== C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\fsh-generated\resources\CodeSystem-practitioner-role-codes.json ==
+INFORMATION: CodeSystem/practitioner-role-codes: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
+== C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\fsh-generated\resources\StructureDefinition-ITBAppointment.json ==
+INFORMATION: StructureDefinition/ITBAppointment: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+WARNING: StructureDefinition.where(url = 'http://portal.wof.purified.link/fhir/StructureDefinition/ITBAppointment'): The Implementation Guide contains no examples for this profile
+== C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\fsh-generated\resources\StructureDefinition-ITBHealthcareService.json ==
+INFORMATION: StructureDefinition/ITBHealthcareService: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+WARNING: StructureDefinition.where(url = 'http://portal.wof.purified.link/fhir/StructureDefinition/ITBHealthcareService'): The Implementation Guide contains no examples for this profile
+== C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\fsh-generated\resources\StructureDefinition-ITBOrganization.json ==
+INFORMATION: StructureDefinition/ITBOrganization: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+WARNING: StructureDefinition.where(url = 'http://portal.wof.purified.link/fhir/StructureDefinition/ITBOrganization'): The Implementation Guide contains no examples for this profile
+== C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\fsh-generated\resources\StructureDefinition-ITBPatient.json ==
+INFORMATION: StructureDefinition/ITBPatient: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+WARNING: StructureDefinition.where(url = 'http://portal.wof.purified.link/fhir/StructureDefinition/ITBPatient'): The Implementation Guide contains no examples for this profile
+== C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\fsh-generated\resources\StructureDefinition-ITBPractitionerRole.json ==
+INFORMATION: StructureDefinition/ITBPractitionerRole: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+WARNING: StructureDefinition.where(url = 'http://portal.wof.purified.link/fhir/StructureDefinition/ITBPractitionerRole'): The Implementation Guide contains no examples for this profile
+== C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\fsh-generated\resources\StructureDefinition-ITBSchedule.json ==
+INFORMATION: StructureDefinition/ITBSchedule: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+WARNING: StructureDefinition.where(url = 'http://portal.wof.purified.link/fhir/StructureDefinition/ITBSchedule'): The Implementation Guide contains no examples for this profile
+== C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\fsh-generated\resources\StructureDefinition-ITBSlot.json ==
+INFORMATION: StructureDefinition/ITBSlot: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+WARNING: StructureDefinition.where(url = 'http://portal.wof.purified.link/fhir/StructureDefinition/ITBSlot'): The Implementation Guide contains no examples for this profile
+== C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\fsh-generated\resources\StructureDefinition-NoITBPatient.json ==
+INFORMATION: StructureDefinition/NoITBPatient: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+WARNING: StructureDefinition.where(url = 'http://portal.wof.purified.link/fhir/StructureDefinition/NoITBPatient'): The Implementation Guide contains no examples for this profile
+== C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\fsh-generated\resources\StructureDefinition-SEITBPatient.json ==
+INFORMATION: StructureDefinition/SEITBPatient: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+WARNING: StructureDefinition.where(url = 'http://portal.wof.purified.link/fhir/StructureDefinition/SEITBPatient'): The Implementation Guide contains no examples for this profile
+== C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\fsh-generated\resources\StructureDefinition-extBinaryReference.json ==
+INFORMATION: StructureDefinition/extBinaryReference: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+WARNING: StructureDefinition.where(url = 'http://portal.wof.purified.link/fhir/StructureDefinition/extBinaryReference'): The Implementation Guide contains no examples for this extension
+== C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\fsh-generated\resources\ValueSet-role-codes.json ==
+INFORMATION: ValueSet/role-codes: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+== C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\fsh-generated\resources\ValueSet-service-types.json ==
+INFORMATION: ValueSet/service-types: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+== C:\repos\wof-opus-fhir-api\ITB\Conformance\itb_fsh_implementationguide\ITB-IG\fsh-generated\resources\ValueSet-speciality-codes.json ==
+INFORMATION: ValueSet/speciality-codes: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet

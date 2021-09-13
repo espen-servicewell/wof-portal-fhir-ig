@@ -1,0 +1,15 @@
+I"f<p><!-- white space is critical inside of capture --></p>
+<div>
+<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+</div>
+
+<p>This section describes the Code Systems that have been defined as part of this IG.</p>
+
+<li><a href="CodeSystem-itb-booking-categories.html">ITB Booking Categories</a> <p>ITB Booking Categories</p>
+</li>
+<li><a href="CodeSystem-itb-servicetypes.html">ITB Service Types</a> <p>ITB Service Types</p>
+</li>
+<li><a href="CodeSystem-practitioner-role-codes.html">ITB Booking Categories</a> <p>ITB Booking Categories</p>
+</li>
+
+:ET

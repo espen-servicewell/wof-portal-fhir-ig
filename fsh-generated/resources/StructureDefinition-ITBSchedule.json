@@ -1,0 +1,95 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ITBSchedule",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Base.Workflow"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "business"
+    }
+  ],
+  "url": "http://portal.wof.purified.link/fhir/StructureDefinition/ITBSchedule",
+  "version": "0.1.0",
+  "name": "ITBSchedule",
+  "title": "ITB Schedule",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "ical",
+      "uri": "http://ietf.org/rfc/2445",
+      "name": "iCalendar"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Schedule",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Schedule",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Schedule.id",
+        "path": "Schedule.id",
+        "mustSupport": true
+      },
+      {
+        "id": "Schedule.identifier",
+        "path": "Schedule.identifier",
+        "short": "Extern identifiering vid behov.",
+        "mustSupport": true
+      },
+      {
+        "id": "Schedule.serviceType",
+        "path": "Schedule.serviceType",
+        "short": "Typ av behandling.",
+        "mustSupport": true
+      },
+      {
+        "id": "Schedule.actor",
+        "path": "Schedule.actor",
+        "short": "Referens till PractitionerRole samt HealthcareServiceId",
+        "mustSupport": true
+      },
+      {
+        "id": "Schedule.actor.reference",
+        "path": "Schedule.actor.reference",
+        "mustSupport": true
+      },
+      {
+        "id": "Schedule.actor.display",
+        "path": "Schedule.actor.display",
+        "mustSupport": true
+      },
+      {
+        "id": "Schedule.planningHorizon",
+        "path": "Schedule.planningHorizon",
+        "short": "Tidsintervall. Detta kan sättas efter behov, just nu använder vi 5veckors scheman i ITB.",
+        "mustSupport": true
+      },
+      {
+        "id": "Schedule.planningHorizon.start",
+        "path": "Schedule.planningHorizon.start",
+        "mustSupport": true
+      },
+      {
+        "id": "Schedule.planningHorizon.end",
+        "path": "Schedule.planningHorizon.end",
+        "mustSupport": true
+      }
+    ]
+  }
+}

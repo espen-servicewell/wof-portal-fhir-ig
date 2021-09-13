@@ -1,0 +1,16 @@
+{
+  "package-id": "portal.wof.purified.link",
+  "title": "ITB Implementation Guide",
+  "canonical":"http://portal.wof.purified.link/fhir/ImplementationGuide/portal.wof.purified.link",
+  "introduction": "**Well on Fhir ITB** Implementation Guide",
+  "category": "Research",
+  "list": [
+    {
+      "version": "current",
+      "desc": "Continuous Integration Build",
+      "path": http://build.fhir.org/ig/WellOnFHIR/wof-portal-fhir-ig,
+      "status": "ci-build",
+      "current": true
+    }
+  ]
+}

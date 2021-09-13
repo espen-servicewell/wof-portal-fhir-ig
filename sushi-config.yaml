@@ -1,0 +1,32 @@
+# ╭──────────────────────────────────────ImplementationGuide───────────────────────────────────────╮
+# │  The properties below are used to create the ImplementationGuide resource. For a list of       │
+# │  supported properties, see: https://fshschool.org/sushi/configuration/                         │
+# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+id: portal.wof.purified.link
+canonical: http://portal.wof.purified.link/fhir
+name: ITBImplementationGuide
+title: ITB Implementation Guide
+description: Implementation Guide for ITB
+status: draft
+version: 0.1.0
+license: CC0-1.0
+fhirVersion: 4.0.1
+parameters:
+  show-inherited-invariants: false
+copyrightYear: 2020+
+releaseLabel: Release Label
+publisher: Service Well AB 
+
+
+dependencies:
+  hl7.fhir.no.basis:
+    uri: http://hl7.fhir.no.basis
+    version: 2.0.17-alpha
+
+  se-baseprofile: current
+
+# ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
+# │  To use a provided ig-data/input/includes/menu.xml file, delete the "menu" property below.     │
+# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+#menu:
+#  IG Home: index.html
