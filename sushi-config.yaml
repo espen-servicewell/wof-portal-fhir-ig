@@ -18,12 +18,12 @@ releaseLabel: Release Label
 publisher: Service Well AB 
 
 
-dependencies:
-  hl7.fhir.no.basis:
-    uri: http://hl7.fhir.no.basis
-    version: 2.0.17-alpha
+#dependencies:
+#  hl7.fhir.no.basis:
+#    uri: http://hl7.fhir.no.basis
+#    version: 2.0.17-alpha
 
-  se-baseprofile: current
+# se-baseprofile: current
 
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
 # │  To use a provided ig-data/input/includes/menu.xml file, delete the "menu" property below.     │
