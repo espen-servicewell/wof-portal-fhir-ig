@@ -9,4 +9,4 @@ Description: "ITB Service Types"
 * #2 "Undersökning" //Undersökning
 * #3 "Akut"
 * #0  "Revision ospecificerad behandling"
-* #123  "Prima Service"
+* #123  "TdlUS60"

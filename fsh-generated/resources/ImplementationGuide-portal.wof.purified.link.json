@@ -12,20 +12,6 @@
   "fhirVersion": [
     "4.0.1"
   ],
-  "dependsOn": [
-    {
-      "packageId": "hl7.fhir.no.basis",
-      "uri": "http://hl7.fhir.no.basis",
-      "version": "2.0.17-alpha",
-      "id": "hl7_fhir_no_basis"
-    },
-    {
-      "packageId": "se-baseprofile",
-      "version": "current",
-      "uri": "http://hl7.se/fhir/ig/base/ImplementationGuide/se-baseprofile",
-      "id": "se_baseprofile"
-    }
-  ],
   "definition": {
     "resource": [
       {
@@ -127,22 +113,6 @@
           "reference": "StructureDefinition/ITBSlot"
         },
         "name": "ITB Slot",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/NoITBPatient"
-        },
-        "name": "Norweigan ITB Patient",
-        "description": "Patient based on Norweigan basis patient. Not yet profiled",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/SEITBPatient"
-        },
-        "name": "Swedish ITB Patient",
-        "description": "Patient based on Swedish base profile",
         "exampleBoolean": false
       },
       {
