@@ -2,6 +2,7 @@
 
 ### Introduction
 
+
 ### API URL Convention
 
 `https://url/{resourceType}/{id} ?{params}`
@@ -14,6 +15,7 @@
 
 ### Getting started
 
+# Resources to use
 
 ### References
 
