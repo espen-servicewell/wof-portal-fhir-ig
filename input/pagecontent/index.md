@@ -8,18 +8,59 @@ This guide describes all the included elements and how they can be used to build
 
 ### Getting started
 
+
+
 #### Steps to show available time slots
 
+
 1. Get the **HealthCareService**s
-* *Get configurations,connect*
+
 2. Get the **ActivityDefinition**s
-* *Get configurations,connect*
+
 3. Get the **PractitionerRole**s for specified HealthCareService
-* *Get configurations,connect*
+
 4. Get the **Schedule**s for specified actor and service-type
-* *Get configurations,connect*
+
 5. Get the **Slot**s by service-type, start-time and duration 
-* *Get configurations,connect*
+
+
+#### Steps to edit and reschedule a booking
+
+
+1. Get the **HealthCareService**s
+
+2. Get the **ActivityDefinition**s
+
+3. Get the **Appointments**s for the specified HealthCareService
+
+    *After completing step 1-3 the appointments for the logged in user can be displayed?*
+
+4. Get the **PractitionerRole**s for the specified HealthCareService
+
+5. Get **Patient**s
+    
+    *What is the patient(s) used for?*
+
+6. Get the **Schedule**s for specified actor and PractitionerRole
+
+    * *Are the steps 4-6 done to be able to select a new time?
+
+7. Get **Appointment** by Id
+
+    The user has selected the booking to be edited/rescheduled -n
+
+8. Get **Schedule** by Id
+
+9. Get **Slot** for specified **Schedule** and **Appointment** 
+
+
+10. Get **Appointment** by Id
+
+11. Get the **Appointment**s for the specified HealthCareService
+
+12. Get **Patient**s
+    
+    *What is the patient(s) used for?*
 
 
 ### FHIR Endpoints
