@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="practitioner-role-code"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://portal.wof.purified.link/fhir/CodeSystem/practitioner-role-code defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td></tr></table></div>
+  </text>
+  <url value="http://portal.wof.purified.link/fhir/CodeSystem/practitioner-role-code"/>
+  <version value="0.1.0"/>
+  <name value="PractitionerRoleCode"/>
+  <title value="ITB Practitioner Role Codes"/>
+  <status value="active"/>
+  <date value="2021-09-29T15:21:42+02:00"/>
+  <description value="ITB Practitioner Role Codes"/>
+  <content value="complete"/>
+</CodeSystem>

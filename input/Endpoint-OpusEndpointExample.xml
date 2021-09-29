@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Endpoint xmlns="http://hl7.org/fhir">
+  <id value="OpusEndpointExample"/>
+  <meta>
+    <versionId value="1"/>
+    <lastUpdated value="2021-03-13T14:33:11.391+00:00"/>
+    <profile value="http://portal.wof.purified.link/fhir/StructureDefinition/ITBEndpoint"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: itbDev-colosseum-opus-sandvika, id: -003</p><p><b>status</b>: active</p><p><b>connectionType</b>: <span title="{http://terminology.hl7.org/CodeSystem/endpoint-connection-type hl7-fhir-rest}">HL7 FHIR</span></p><p><b>name</b>: FhirDataBaseEndPoint</p><p><b>payloadType</b>: <span title="Codes: {http://hl7.org/fhir/resource-types Practitioner}">Practitioner</span>, <span title="Codes: {http://hl7.org/fhir/resource-types Patient}">Patient</span></p><p><b>payloadMimeType</b>: application/fhir+xml</p><p><b>address</b>: <a href="http://swcloud.fhir.link:8081">http://swcloud.fhir.link:8081</a></p><p><b>header</b>: bearer-code itbDev-colosseum-opus-sandvika</p></div>
+  </text>
+  <identifier>
+    <system value="http://swcloud.fhir.link:8081/namingsystem/endpoint-identifier"/>
+    <value value="itbDev-colosseum-opus-sandvika"/>
+  </identifier>
+  <identifier>
+    <system value="http://swcloud.fhir.link:8081/namingsystem/primarykey-sufix"/>
+    <value value="-003"/>
+  </identifier>
+  <status value="active"/>
+  <connectionType>
+    <system value="http://terminology.hl7.org/CodeSystem/endpoint-connection-type"/>
+    <code value="hl7-fhir-rest"/>
+  </connectionType>
+  <name value="FhirDataBaseEndPoint"/>
+  <payloadType>
+    <coding>
+      <system value="http://hl7.org/fhir/resource-types"/>
+      <code value="Practitioner"/>
+    </coding>
+  </payloadType>
+  <payloadType>
+    <coding>
+      <system value="http://hl7.org/fhir/resource-types"/>
+      <code value="Patient"/>
+    </coding>
+  </payloadType>
+  <payloadMimeType value="application/fhir+xml"/>
+  <address value="http://swcloud.fhir.link:8081"/>
+  <header value="bearer-code itbDev-colosseum-opus-sandvika"/>
+</Endpoint>

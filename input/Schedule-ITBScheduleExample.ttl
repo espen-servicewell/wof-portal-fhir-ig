@@ -1,0 +1,61 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://portal.wof.purified.link/fhir/Schedule/ITBScheduleExample> a fhir:Schedule;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "ITBScheduleExample"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://portal.wof.purified.link/fhir/StructureDefinition/ITBSchedule";
+       fhir:index 0;
+       fhir:link <http://portal.wof.purified.link/fhir/StructureDefinition/ITBSchedule>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>serviceType</b>: <span title=\"Codes: {http://portal.wof.purified.link/fhir/CodeSystem/csServiceType blek-kampanje}\">blek-kampanje</span></p><p><b>actor</b>: </p><ul><li><a href=\"HealthcareService/939970ef-5e09-4597-977c-d6ae56ac81c5\">My clinic</a></li><li><a href=\"itbDev-colosseum-opus-sandvika/fhir/Practitioner/505\">Tannpleier Ruth Ellen Brubakken</a></li><li><a href=\"itbDev-colosseum-opus-sandvika/fhir/Organization/578\">itbDev-colosseum-opus-sandvika/fhir/Organization/578</a></li><li><a href=\"PractitionerRole/6194e8d0-2873-4569-915f-0ae8e4047854\">Tannpleier Ruth Ellen Brubakken</a></li></ul><p><b>planningHorizon</b>: Apr 14, 2021 12:00:00 AM --&gt; May 19, 2021 12:00:00 AM</p></div>"
+  ];
+  fhir:Schedule.serviceType [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://portal.wof.purified.link/fhir/CodeSystem/csServiceType" ];
+       fhir:Coding.code [ fhir:value "blek-kampanje" ]
+     ]
+  ];
+  fhir:Schedule.actor [
+     fhir:index 0;
+     fhir:link <http://portal.wof.purified.link/fhir/HealthcareService/939970ef-5e09-4597-977c-d6ae56ac81c5>;
+     fhir:Reference.reference [ fhir:value "HealthcareService/939970ef-5e09-4597-977c-d6ae56ac81c5" ];
+     fhir:Reference.display [ fhir:value "My clinic" ]
+  ], [
+     fhir:index 1;
+     fhir:link <http://portal.wof.purified.link/fhir/itbDev-colosseum-opus-sandvika/fhir/Practitioner/505>;
+     fhir:Reference.reference [ fhir:value "itbDev-colosseum-opus-sandvika/fhir/Practitioner/505" ];
+     fhir:Reference.display [ fhir:value "Tannpleier Ruth Ellen Brubakken" ]
+  ], [
+     fhir:index 2;
+     fhir:link <http://portal.wof.purified.link/fhir/itbDev-colosseum-opus-sandvika/fhir/Organization/578>;
+     fhir:Reference.reference [ fhir:value "itbDev-colosseum-opus-sandvika/fhir/Organization/578" ]
+  ], [
+     fhir:index 3;
+     fhir:link <http://portal.wof.purified.link/fhir/PractitionerRole/6194e8d0-2873-4569-915f-0ae8e4047854>;
+     fhir:Reference.reference [ fhir:value "PractitionerRole/6194e8d0-2873-4569-915f-0ae8e4047854" ];
+     fhir:Reference.display [ fhir:value "Tannpleier Ruth Ellen Brubakken" ]
+  ];
+  fhir:Schedule.planningHorizon [
+     fhir:Period.start [ fhir:value "2021-04-13T22:00:00+00:00"^^xsd:dateTime ];
+     fhir:Period.end [ fhir:value "2021-05-18T22:00:00+00:00"^^xsd:dateTime ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://portal.wof.purified.link/fhir/Schedule/ITBScheduleExample.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

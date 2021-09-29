@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ActivityDefinition xmlns="http://hl7.org/fhir">
+  <id value="ITBActivityDefinition"/>
+  <meta>
+    <profile value="http://portal.wof.purified.link/fhir/StructureDefinition/ITBActivityDefinition"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>OpusCryptobookingText Extension</b>: XYÅZÅÄA</p><p><b>Opus Booking Category Extension</b>: 3</p><p><b>url</b>: <code>http://portal.wof.purified.link/fhir/ActivityDefinition/ITBActivityDefinition</code></p><p><b>version</b>: 0.1.0</p><p><b>name</b>: TdlUS60</p><p><b>title</b>: Undersökning tandläkare</p><p><b>subtitle</b>: Här får du dina tänder undersökta av en utbildad tandläkare</p><p><b>status</b>: active</p><p><b>date</b>: 2021-09-06</p><p><b>description</b>: Desc</p><p><b>kind</b>: Appointment</p><p><b>code</b>: <span title="Codes: {http://portal.wof.purified.link/fhir/CodeSystem/csServiceType 123}">Desc</span></p><p><b>timing</b>: 60 min</p><h3>Participants</h3><table class="grid"><tr><td>-</td><td><b>Type</b></td><td><b>Role</b></td></tr><tr><td>*</td><td>practitioner</td><td><span title="Codes: {http://snomed.info/sct 106289002}">Tandläkare</span></td></tr></table></div>
+  </text>
+  <extension url="http://portal.wof.purified.link/fhir/StructureDefinition/extOpusCryptobookingText">
+    <valueString value="XY&#xC5;Z&#xC5;&#xC4;A"/>
+  </extension>
+  <extension url="http://portal.wof.purified.link/fhir/StructureDefinition/extOpusBookingCategory">
+    <valueString value="3"/>
+  </extension>
+  <url value="http://portal.wof.purified.link/fhir/ActivityDefinition/ITBActivityDefinition"/>
+  <version value="0.1.0"/>
+  <name value="TdlUS60"/>
+  <title value="Unders&#xF6;kning tandl&#xE4;kare"/>
+  <subtitle value="H&#xE4;r f&#xE5;r du dina t&#xE4;nder unders&#xF6;kta av en utbildad tandl&#xE4;kare"/>
+  <status value="active"/>
+  <date value="2021-09-06"/>
+  <description value="Desc"/>
+  <kind value="Appointment"/>
+  <code>
+    <coding>
+      <system value="http://portal.wof.purified.link/fhir/CodeSystem/csServiceType"/>
+      <code value="123"/>
+      <display value="Bra Service"/>
+    </coding>
+    <text value="Desc"/>
+  </code>
+  <timingDuration>
+    <value value="60"/>
+    <unit value="min"/>
+  </timingDuration>
+  <participant>
+    <type value="practitioner"/>
+    <role>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="106289002"/>
+        <display value="dentist"/>
+      </coding>
+      <text value="Tandl&#xE4;kare"/>
+    </role>
+  </participant>
+</ActivityDefinition>

@@ -1,0 +1,86 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://portal.wof.purified.link/fhir/PractitionerRole/ITBPractitionerRoleExample> a fhir:PractitionerRole;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "ITBPractitionerRoleExample"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>ITB Binary Reference Extension</b>: <a name=\"dceda771-ab94-43da-b2a1-de3941bd76f7\"> </a></p><blockquote><p><b>contentType</b>: image/bmp</p><p><b>securityContext</b>: <a href=\"6c5e67e6-1ee6-4e46-bd6f-560c9ddfaa42\">6c5e67e6-1ee6-4e46-bd6f-560c9ddfaa42</a></p><p><b>data</b>: dGVzdHRlc3Q=</p></blockquote><p><b>active</b>: true</p><p><b>period</b>: Jan 1, 2021 10:23:00 AM --&gt; (ongoing)</p><p><b>practitioner</b>: <a href=\"Practitioner/1234567\">Tandläkar Nils Nilsson</a></p><p><b>organization</b>: <a href=\"Organization/1234567\">Nils Nilsson AB</a></p><p><b>code</b>: <span title=\"Codes: {http://snomed.info/sct 106289002}\">tandläkare</span></p><p><b>specialty</b>: <span title=\"Codes: {http://snomed.info/sct 106289002}\">tandläkare</span></p><p><b>healthcareService</b>: <a href=\"HealthcareService/1234567\">My Healthcare servicecenter</a></p><p><b>endpoint</b>: <a href=\"http://fhir.link/jdjdjdj\">OpusDatabas</a></p></div>"
+  ];
+  fhir:DomainResource.contained [
+     a fhir:Binary;
+     fhir:index 0;
+     fhir:Resource.id [ fhir:value "dceda771-ab94-43da-b2a1-de3941bd76f7" ];
+     fhir:Binary.contentType [ fhir:value "image/bmp" ];
+     fhir:Binary.securityContext [
+       fhir:Reference.reference [ fhir:value "6c5e67e6-1ee6-4e46-bd6f-560c9ddfaa42" ]
+     ];
+     fhir:Binary.data [ fhir:value "dGVzdHRlc3Q="^^xsd:base64Binary ]
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Extension.url [ fhir:value "http://portal.wof.purified.link/fhir/StructureDefinition/extBinaryReference" ];
+     fhir:Extension.valueReference [
+       fhir:Reference.reference [ fhir:value "#dceda771-ab94-43da-b2a1-de3941bd76f7" ]
+     ]
+  ];
+  fhir:PractitionerRole.active [ fhir:value "true"^^xsd:boolean];
+  fhir:PractitionerRole.period [
+     fhir:Period.start [ fhir:value "2021-01-01T10:23:00+01:00"^^xsd:dateTime ]
+  ];
+  fhir:PractitionerRole.practitioner [
+     fhir:link <http://portal.wof.purified.link/fhir/Practitioner/1234567>;
+     fhir:Reference.reference [ fhir:value "Practitioner/1234567" ];
+     fhir:Reference.display [ fhir:value "Tandläkar Nils Nilsson" ]
+  ];
+  fhir:PractitionerRole.organization [
+     fhir:link <http://portal.wof.purified.link/fhir/Organization/1234567>;
+     fhir:Reference.reference [ fhir:value "Organization/1234567" ];
+     fhir:Reference.display [ fhir:value "Nils Nilsson AB" ]
+  ];
+  fhir:PractitionerRole.code [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:106289002;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "106289002" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "tandläkare" ]
+  ];
+  fhir:PractitionerRole.specialty [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:106289002;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "106289002" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "tandläkare" ]
+  ];
+  fhir:PractitionerRole.healthcareService [
+     fhir:index 0;
+     fhir:link <http://portal.wof.purified.link/fhir/HealthcareService/1234567>;
+     fhir:Reference.reference [ fhir:value "HealthcareService/1234567" ];
+     fhir:Reference.display [ fhir:value "My Healthcare servicecenter" ]
+  ];
+  fhir:PractitionerRole.endpoint [
+     fhir:index 0;
+     fhir:link <http://fhir.link/jdjdjdj>;
+     fhir:Reference.reference [ fhir:value "http://fhir.link/jdjdjdj" ];
+     fhir:Reference.display [ fhir:value "OpusDatabas" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://portal.wof.purified.link/fhir/PractitionerRole/ITBPractitionerRoleExample.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -117,6 +117,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/PortalPerson"
+        },
+        "name": "Portal Person",
+        "description": "This resource can be used to handle for example related persons, patients and practitioners",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/extBinaryReference"
         },
         "name": "ITB Binary Reference Extension",
@@ -169,6 +177,14 @@
         },
         "name": "OpusCryptobookingText Extension",
         "description": "Special cryptated text for OpusDental Booking description. Maps to ValueSet",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/extCreated"
+        },
+        "name": "Portal Created Extension",
+        "description": "Used in meta to specify date create",
         "exampleBoolean": false
       },
       {

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Appointment xmlns="http://hl7.org/fhir">
+  <id value="PostAppointmentWithoutPatient"/>
+  <meta>
+    <profile value="http://portal.wof.purified.link/fhir/StructureDefinition/ITBAppointment"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>status</b>: proposed</p><p><b>serviceType</b>: <span title="Codes: {http://portal.wof.purified.link/fhir/CodeSystem/csServiceType {{serviceTypeCode}}}">{{serviceTypeCode}}</span></p><p><b>start</b>: May 14, 2021 8:30:00 AM</p><p><b>end</b>: May 14, 2021 9:00:00 AM</p><blockquote><p><b>participant</b></p><p><b>actor</b>: <a href="HealthcareService/{{healthCareServiceID}}">HealthcareService/{{healthCareServiceID}}</a></p><p><b>status</b>: accepted</p></blockquote><blockquote><p><b>participant</b></p><p><b>actor</b>: <a href="Patient/649">Patient/649</a></p><p><b>status</b>: accepted</p></blockquote><blockquote><p><b>participant</b></p><p><b>actor</b>: <a href="PractitionerRole/{{practitionerRoleId}}">PractitionerRole/{{practitionerRoleId}}</a></p><p><b>status</b>: accepted</p></blockquote></div>
+  </text>
+  <status value="proposed"/>
+  <serviceType>
+    <coding>
+      <system value="http://portal.wof.purified.link/fhir/CodeSystem/csServiceType"/>
+      <code value="{{serviceTypeCode}}"/>
+    </coding>
+  </serviceType>
+  <start value="2021-05-14T06:30:00+00:00"/>
+  <end value="2021-05-14T07:00:00+00:00"/>
+  <participant>
+    <actor>
+      <reference value="HealthcareService/{{healthCareServiceID}}"/>
+    </actor>
+    <status value="accepted"/>
+  </participant>
+  <participant>
+    <actor>
+      <reference value="Patient/649"/>
+    </actor>
+    <status value="accepted"/>
+  </participant>
+  <participant>
+    <actor>
+      <reference value="PractitionerRole/{{practitionerRoleId}}"/>
+    </actor>
+    <status value="accepted"/>
+  </participant>
+</Appointment>

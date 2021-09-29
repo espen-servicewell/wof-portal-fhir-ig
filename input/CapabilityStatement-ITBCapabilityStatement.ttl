@@ -1,0 +1,356 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://portal.wof.purified.link/fhir/CapabilityStatement/ITBCapabilityStatement> a fhir:CapabilityStatement;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "ITBCapabilityStatement"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ITB</h2><div><p>This is the FHIR capability statement for the ITB interface</p>\n</div><table><tr><td>Mode</td><td>SERVER</td></tr><tr><td>Description</td><td><div><p>Main FHIR endpoint for ITB</p>\n</div></td></tr><tr><td>Transaction</td><td></td></tr><tr><td>System History</td><td></td></tr><tr><td>System Search</td><td></td></tr></table><table><tr><th><b>Resource Type</b></th><th><b>Profile</b></th><th><b title=\"GET a resource (read interaction)\">Read</b></th><th><b title=\"GET past versions of resources (vread interaction)\">V-Read</b></th><th><b title=\"GET all set of resources of the type (search interaction)\">Search</b></th><th><b title=\"PUT a new resource version (update interaction)\">Update</b></th><th><b title=\"POST a new resource (create interaction)\">Create</b></th><th><b title=\"DELETE a resource (delete interaction)\">Delete</b></th><th><b title=\"GET changes to a resource (history interaction on instance)\">Updates</b></th><th><b title=\"GET changes for all resources of the type (history interaction on type)\">History</b></th></tr><tr><td>ITBActivityDefinition</td><td>y</td><td>y</td><td></td><td>y</td><td>y</td><td></td><td>y</td><td>y</td></tr><tr><td>ITBAppointment</td><td><a href=\"http://portal.wof.purified.link/fhir/StructureDefinition/ITBAppointment\">http://portal.wof.purified.link/fhir/StructureDefinition/ITBAppointment</a></td><td>y</td><td>y</td><td></td><td>y</td><td>y</td><td></td><td>y</td><td>y</td></tr><tr><td>ITBAppointmentResponse</td><td><a href=\"http://portal.wof.purified.link/fhir/StructureDefinition/ITBAppointmentResponse\">http://portal.wof.purified.link/fhir/StructureDefinition/ITBAppointmentResponse</a></td><td></td><td></td><td></td><td></td><td>y</td><td></td><td></td><td></td></tr><tr><td>ITBEndPoint</td><td><a href=\"http://portal.wof.purified.link/fhir/StructureDefinition/ITBEndpoint\">http://portal.wof.purified.link/fhir/StructureDefinition/ITBEndpoint</a></td><td>y</td><td>y</td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>ITBHealthcareService</td><td><a href=\"http://portal.wof.purified.link/fhir/StructureDefinition/ITBHealthcareService\">http://portal.wof.purified.link/fhir/StructureDefinition/ITBHealthcareService</a></td><td>y</td><td>y</td><td></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td></tr><tr><td>ITBOrganization</td><td><a href=\"http://portal.wof.purified.link/fhir/StructureDefinition/ITBOrganization\">http://portal.wof.purified.link/fhir/StructureDefinition/ITBOrganization</a></td><td>y</td><td>y</td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>ITBPatient</td><td><a href=\"http://portal.wof.purified.link/fhir/StructureDefinition/ITBPatient\">http://portal.wof.purified.link/fhir/StructureDefinition/ITBPatient</a></td><td>y</td><td>y</td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>ITBPractitioner</td><td><a href=\"http://portal.wof.purified.link/fhir/StructureDefinition/ITBPractitioner\">http://portal.wof.purified.link/fhir/StructureDefinition/ITBPractitioner</a></td><td>y</td><td>y</td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>ITBSchedule</td><td><a href=\"http://portal.wof.purified.link/fhir/StructureDefinition/ITBSchedule\">http://portal.wof.purified.link/fhir/StructureDefinition/ITBSchedule</a></td><td>y</td><td>y</td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>ITBSlot</td><td><a href=\"http://portal.wof.purified.link/fhir/StructureDefinition/ITBSlot\">http://portal.wof.purified.link/fhir/StructureDefinition/ITBSlot</a></td><td>y</td><td>y</td><td></td><td></td><td></td><td></td><td></td><td></td></tr></table></div>"
+  ];
+  fhir:CapabilityStatement.url [ fhir:value "http://portal.wof.purified.link/fhir/CapabilityStatement"];
+  fhir:CapabilityStatement.version [ fhir:value "0.1.0"];
+  fhir:CapabilityStatement.name [ fhir:value "ITB"];
+  fhir:CapabilityStatement.title [ fhir:value "ITB capability statement"];
+  fhir:CapabilityStatement.status [ fhir:value "draft"];
+  fhir:CapabilityStatement.experimental [ fhir:value "true"^^xsd:boolean];
+  fhir:CapabilityStatement.date [ fhir:value "2021-06-22"^^xsd:date];
+  fhir:CapabilityStatement.publisher [ fhir:value "Service Well"];
+  fhir:CapabilityStatement.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "System Administrator" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "kontakt@servicewell.se" ]
+     ]
+  ];
+  fhir:CapabilityStatement.description [ fhir:value "This is the FHIR capability statement for the ITB interface"];
+  fhir:CapabilityStatement.useContext [
+     fhir:index 0;
+     fhir:UsageContext.code [
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/usage-context-type" ];
+       fhir:Coding.code [ fhir:value "focus" ]
+     ];
+     fhir:UsageContext.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/variant-state" ];
+         fhir:Coding.code [ fhir:value "positive" ]
+       ]
+     ]
+  ];
+  fhir:CapabilityStatement.purpose [ fhir:value "ITB capability statement, published for contracting and operational support"];
+  fhir:CapabilityStatement.copyright [ fhir:value "Copyright © Service Well AB"];
+  fhir:CapabilityStatement.kind [ fhir:value "instance"];
+  fhir:CapabilityStatement.instantiates [
+     fhir:value "http://ihe.org/fhir/CapabilityStatement/pixm-client";
+     fhir:index 0;
+     fhir:link <http://ihe.org/fhir/CapabilityStatement/pixm-client>
+  ];
+  fhir:CapabilityStatement.software [
+     fhir:CapabilityStatement.software.name [ fhir:value "ITB" ];
+     fhir:CapabilityStatement.software.version [ fhir:value "0.0.0" ];
+     fhir:CapabilityStatement.software.releaseDate [ fhir:value "2021-09-01"^^xsd:date ]
+  ];
+  fhir:CapabilityStatement.implementation [
+     fhir:CapabilityStatement.implementation.description [ fhir:value "WOF" ]
+  ];
+  fhir:CapabilityStatement.fhirVersion [ fhir:value "4.0.1"];
+  fhir:CapabilityStatement.format [
+     fhir:value "json";
+     fhir:index 0
+  ];
+  fhir:CapabilityStatement.patchFormat [
+     fhir:value "application/json-patch+json";
+     fhir:index 0
+  ];
+  fhir:CapabilityStatement.implementationGuide [
+     fhir:value "https://build.fhir.org/ig/barbrov/wof-portal-fhir-ig/";
+     fhir:index 0;
+     fhir:link <https://build.fhir.org/ig/barbrov/wof-portal-fhir-ig/>
+  ];
+  fhir:CapabilityStatement.rest [
+     fhir:index 0;
+     fhir:CapabilityStatement.rest.mode [ fhir:value "server" ];
+     fhir:CapabilityStatement.rest.documentation [ fhir:value "Main FHIR endpoint for ITB" ];
+     fhir:CapabilityStatement.rest.security [
+       fhir:CapabilityStatement.rest.security.cors [ fhir:value "true"^^xsd:boolean ];
+       fhir:CapabilityStatement.rest.security.service [
+         fhir:index 0;
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/restful-security-service" ];
+           fhir:Coding.code [ fhir:value "SMART-on-FHIR" ]
+         ]
+       ];
+       fhir:CapabilityStatement.rest.security.description [ fhir:value "See Smart on FHIR documentation" ]
+     ];
+     fhir:CapabilityStatement.rest.resource [
+       fhir:index 0;
+       fhir:CapabilityStatement.rest.resource.type [ fhir:value "ITBActivityDefinition" ];
+       fhir:CapabilityStatement.rest.resource.supportedProfile [
+         fhir:value "http://portal.wof.purified.link/fhir/StructureDefinition/ITBActivityDefinition";
+         fhir:index 0;
+         fhir:link <http://portal.wof.purified.link/fhir/StructureDefinition/ITBActivityDefinition>
+       ];
+       fhir:CapabilityStatement.rest.resource.documentation [ fhir:value "https://build.fhir.org/ig/servicewell/wof-portal-fhir-ig/StructureDefinition-ITBActivityDefinition.html" ];
+       fhir:CapabilityStatement.rest.resource.interaction [
+         fhir:index 0;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "read" ]
+       ], [
+         fhir:index 1;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "vread" ]
+       ], [
+         fhir:index 2;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "update" ]
+       ], [
+         fhir:index 3;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "history-instance" ]
+       ], [
+         fhir:index 4;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "history-type" ]
+       ], [
+         fhir:index 5;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "create" ]
+       ];
+       fhir:CapabilityStatement.rest.resource.versioning [ fhir:value "versioned-update" ];
+       fhir:CapabilityStatement.rest.resource.readHistory [ fhir:value "true"^^xsd:boolean ];
+       fhir:CapabilityStatement.rest.resource.updateCreate [ fhir:value "false"^^xsd:boolean ];
+       fhir:CapabilityStatement.rest.resource.conditionalCreate [ fhir:value "true"^^xsd:boolean ];
+       fhir:CapabilityStatement.rest.resource.conditionalRead [ fhir:value "full-support" ];
+       fhir:CapabilityStatement.rest.resource.conditionalUpdate [ fhir:value "false"^^xsd:boolean ];
+       fhir:CapabilityStatement.rest.resource.conditionalDelete [ fhir:value "not-supported" ]
+     ], [
+       fhir:index 1;
+       fhir:CapabilityStatement.rest.resource.type [ fhir:value "ITBAppointment" ];
+       fhir:CapabilityStatement.rest.resource.profile [
+         fhir:value "http://portal.wof.purified.link/fhir/StructureDefinition/ITBAppointment";
+         fhir:link <http://portal.wof.purified.link/fhir/StructureDefinition/ITBAppointment>
+       ];
+       fhir:CapabilityStatement.rest.resource.documentation [ fhir:value "URL for Documentation to be added" ];
+       fhir:CapabilityStatement.rest.resource.interaction [
+         fhir:index 0;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "read" ]
+       ], [
+         fhir:index 1;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "vread" ]
+       ], [
+         fhir:index 2;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "update" ]
+       ], [
+         fhir:index 3;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "history-instance" ]
+       ], [
+         fhir:index 4;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "history-type" ]
+       ], [
+         fhir:index 5;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "create" ]
+       ];
+       fhir:CapabilityStatement.rest.resource.searchParam [
+         fhir:index 0;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "actor" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "reference" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "Search for example for a HealtCareService referenced as actor." ]
+       ], [
+         fhir:index 1;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "patient" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "reference" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "Search for patient referenced by the Appointment." ]
+       ]
+     ], [
+       fhir:index 2;
+       fhir:CapabilityStatement.rest.resource.type [ fhir:value "ITBAppointmentResponse" ];
+       fhir:CapabilityStatement.rest.resource.profile [
+         fhir:value "http://portal.wof.purified.link/fhir/StructureDefinition/ITBAppointmentResponse";
+         fhir:link <http://portal.wof.purified.link/fhir/StructureDefinition/ITBAppointmentResponse>
+       ];
+       fhir:CapabilityStatement.rest.resource.documentation [ fhir:value "URL for Documentation to be added" ];
+       fhir:CapabilityStatement.rest.resource.interaction [
+         fhir:index 0;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "create" ]
+       ]
+     ], [
+       fhir:index 3;
+       fhir:CapabilityStatement.rest.resource.type [ fhir:value "ITBEndPoint" ];
+       fhir:CapabilityStatement.rest.resource.profile [
+         fhir:value "http://portal.wof.purified.link/fhir/StructureDefinition/ITBEndpoint";
+         fhir:link <http://portal.wof.purified.link/fhir/StructureDefinition/ITBEndpoint>
+       ];
+       fhir:CapabilityStatement.rest.resource.documentation [ fhir:value "URL for Documentation to be added" ];
+       fhir:CapabilityStatement.rest.resource.interaction [
+         fhir:index 0;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "read" ]
+       ], [
+         fhir:index 1;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "vread" ]
+       ]
+     ], [
+       fhir:index 4;
+       fhir:CapabilityStatement.rest.resource.type [ fhir:value "ITBHealthcareService" ];
+       fhir:CapabilityStatement.rest.resource.profile [
+         fhir:value "http://portal.wof.purified.link/fhir/StructureDefinition/ITBHealthcareService";
+         fhir:link <http://portal.wof.purified.link/fhir/StructureDefinition/ITBHealthcareService>
+       ];
+       fhir:CapabilityStatement.rest.resource.documentation [ fhir:value "URL for Documentation to be added" ];
+       fhir:CapabilityStatement.rest.resource.interaction [
+         fhir:index 0;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "read" ]
+       ], [
+         fhir:index 1;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "vread" ]
+       ], [
+         fhir:index 2;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "update" ]
+       ], [
+         fhir:index 3;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "delete" ]
+       ], [
+         fhir:index 4;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "history-instance" ]
+       ], [
+         fhir:index 5;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "history-type" ]
+       ], [
+         fhir:index 6;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "create" ]
+       ];
+       fhir:CapabilityStatement.rest.resource.searchParam [
+         fhir:index 0;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "endpoint" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "reference" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "Endpoint id must be of type guid" ]
+       ]
+     ], [
+       fhir:index 5;
+       fhir:CapabilityStatement.rest.resource.type [ fhir:value "ITBOrganization" ];
+       fhir:CapabilityStatement.rest.resource.profile [
+         fhir:value "http://portal.wof.purified.link/fhir/StructureDefinition/ITBOrganization";
+         fhir:link <http://portal.wof.purified.link/fhir/StructureDefinition/ITBOrganization>
+       ];
+       fhir:CapabilityStatement.rest.resource.documentation [ fhir:value "URL for Documentation to be added" ];
+       fhir:CapabilityStatement.rest.resource.interaction [
+         fhir:index 0;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "read" ]
+       ], [
+         fhir:index 1;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "vread" ]
+       ]
+     ], [
+       fhir:index 6;
+       fhir:CapabilityStatement.rest.resource.type [ fhir:value "ITBPatient" ];
+       fhir:CapabilityStatement.rest.resource.profile [
+         fhir:value "http://portal.wof.purified.link/fhir/StructureDefinition/ITBPatient";
+         fhir:link <http://portal.wof.purified.link/fhir/StructureDefinition/ITBPatient>
+       ];
+       fhir:CapabilityStatement.rest.resource.documentation [ fhir:value "URL for Documentation to be added" ];
+       fhir:CapabilityStatement.rest.resource.interaction [
+         fhir:index 0;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "read" ]
+       ], [
+         fhir:index 1;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "vread" ]
+       ]
+     ], [
+       fhir:index 7;
+       fhir:CapabilityStatement.rest.resource.type [ fhir:value "ITBPractitioner" ];
+       fhir:CapabilityStatement.rest.resource.profile [
+         fhir:value "http://portal.wof.purified.link/fhir/StructureDefinition/ITBPractitioner";
+         fhir:link <http://portal.wof.purified.link/fhir/StructureDefinition/ITBPractitioner>
+       ];
+       fhir:CapabilityStatement.rest.resource.documentation [ fhir:value "URL for Documentation to be added" ];
+       fhir:CapabilityStatement.rest.resource.interaction [
+         fhir:index 0;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "read" ]
+       ], [
+         fhir:index 1;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "vread" ]
+       ]
+     ], [
+       fhir:index 8;
+       fhir:CapabilityStatement.rest.resource.type [ fhir:value "ITBSchedule" ];
+       fhir:CapabilityStatement.rest.resource.profile [
+         fhir:value "http://portal.wof.purified.link/fhir/StructureDefinition/ITBSchedule";
+         fhir:link <http://portal.wof.purified.link/fhir/StructureDefinition/ITBSchedule>
+       ];
+       fhir:CapabilityStatement.rest.resource.documentation [ fhir:value "https://build.fhir.org/ig/servicewell/wof-portal-fhir-ig/StructureDefinition-ITBSchedule.html" ];
+       fhir:CapabilityStatement.rest.resource.interaction [
+         fhir:index 0;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "read" ]
+       ], [
+         fhir:index 1;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "vread" ]
+       ], [
+         fhir:index 2;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "read" ]
+       ], [
+         fhir:index 3;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "vread" ]
+       ];
+       fhir:CapabilityStatement.rest.resource.searchParam [
+         fhir:index 0;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "service" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "reference" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "Search for a referenced HealthCareService" ]
+       ], [
+         fhir:index 1;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "actor" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "reference" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "Search for example for a HealtCareService or PractitionerRole referenced in actor." ]
+       ], [
+         fhir:index 2;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "service-type" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "Search for Schedules with specified service-type" ]
+       ], [
+         fhir:index 3;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "_sort" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "string" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "Specify search order for results" ]
+       ]
+     ], [
+       fhir:index 9;
+       fhir:CapabilityStatement.rest.resource.type [ fhir:value "ITBSlot" ];
+       fhir:CapabilityStatement.rest.resource.profile [
+         fhir:value "http://portal.wof.purified.link/fhir/StructureDefinition/ITBSlot";
+         fhir:link <http://portal.wof.purified.link/fhir/StructureDefinition/ITBSlot>
+       ];
+       fhir:CapabilityStatement.rest.resource.documentation [ fhir:value "https://build.fhir.org/ig/servicewell/wof-portal-fhir-ig/StructureDefinition-ITBSlot.html" ];
+       fhir:CapabilityStatement.rest.resource.interaction [
+         fhir:index 0;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "read" ]
+       ], [
+         fhir:index 1;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "vread" ]
+       ];
+       fhir:CapabilityStatement.rest.resource.searchParam [
+         fhir:index 0;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "schedule" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "reference" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "Search for Slots with reference to specified Schedule." ]
+       ], [
+         fhir:index 1;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "service-type" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "Search for Slots with specified service-type" ]
+       ], [
+         fhir:index 2;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "start" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "date" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "Specify search order for results" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://portal.wof.purified.link/fhir/CapabilityStatement/ITBCapabilityStatement.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

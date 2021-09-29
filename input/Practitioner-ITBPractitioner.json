@@ -1,0 +1,98 @@
+{
+  "resourceType": "Practitioner",
+  "id": "ITBPractitioner",
+  "meta": {
+    "lastUpdated": "2021-02-03T10:02:00+01:00",
+    "profile": [
+      "http://portal.wof.purified.link/fhir/StructureDefinition/ITBPractitioner"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 12121212345, employeeId: 470, employeeNo: 2, employeeLicenseId: 2046</p><p><b>active</b>: true</p><p><b>name</b>: Tannlege Kenth Lyngtest</p></div>"
+  },
+  "contained": [
+    {
+      "resourceType": "PractitionerRole",
+      "id": "Inline-Instance-for-470-1",
+      "active": false,
+      "organization": {
+        "reference": "Organization/559"
+      },
+      "code": [
+        {
+          "text": "WorksAt"
+        }
+      ],
+      "specialty": [
+        {
+          "coding": [
+            {
+              "system": "http://opusdental.purified.link/fhir/CodeSystem/csPractitionerQualification",
+              "code": "dentist"
+            }
+          ],
+          "text": "Dentist"
+        }
+      ],
+      "endpoint": [
+        {
+          "reference": "http://fhir.link/jdjdjdj",
+          "display": "OpusDatabas"
+        }
+      ]
+    }
+  ],
+  "identifier": [
+    {
+      "system": "urn:oid:1.3.6.1.4.1.2428.90.1.5",
+      "value": "12121212345"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://opusdental.purified.link/fhir/CodeSystem/csOpusIdentifier",
+            "code": "employeeId"
+          }
+        ]
+      },
+      "system": "itbDev-colosseum-opus-nationaltheatret",
+      "value": "470"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://opusdental.purified.link/fhir/CodeSystem/csOpusIdentifier",
+            "code": "employeeNo"
+          }
+        ]
+      },
+      "system": "itbDev-colosseum-opus-nationaltheatret",
+      "value": "2"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://opusdental.purified.link/fhir/CodeSystem/csOpusIdentifier",
+            "code": "employeeLicenseId"
+          }
+        ]
+      },
+      "system": "itbDev-colosseum-opus-nationaltheatret",
+      "value": "2046"
+    }
+  ],
+  "active": true,
+  "name": [
+    {
+      "text": "Tannlege Kenth Lyngtest",
+      "family": "Lyngtest",
+      "given": [
+        "Kenth"
+      ]
+    }
+  ]
+}

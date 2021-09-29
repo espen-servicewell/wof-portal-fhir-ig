@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="PatientExample"/>
+  <meta>
+    <profile value="http://portal.wof.purified.link/fhir/StructureDefinition/ITBPatient"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 110384-98330, patientId: 649</p><p><b>name</b>: Johansen Øyvind Petter</p><p><b>telecom</b>: <a href="mailto:test@fhir.link">test@fhir.link</a>, ph: 0708664086(MOBILE)</p><p><b>birthDate</b>: 1984-03-11</p></div>
+  </text>
+  <identifier>
+    <system value="urn:oid:2.16.578.1.12.4.1.4.1"/>
+    <value value="110384-98330"/>
+  </identifier>
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://opusdental.purified.link/fhir/CodeSystem/csOpusIdentifier"/>
+        <code value="patientId"/>
+      </coding>
+    </type>
+    <system value="itbDev-colosseum-opus-nationaltheatret/fhir/NamingSystem/nspatientId"/>
+    <value value="649"/>
+  </identifier>
+  <name>
+    <text value="Johansen &#xD8;yvind Petter"/>
+    <family value="Johansen"/>
+    <given value="&#xD8;yvind Petter"/>
+  </name>
+  <telecom>
+    <system value="email"/>
+    <value value="test@fhir.link"/>
+    <use value="home"/>
+  </telecom>
+  <telecom>
+    <system value="phone"/>
+    <value value="0708664086"/>
+    <use value="mobile"/>
+  </telecom>
+  <birthDate value="1984-03-11"/>
+</Patient>

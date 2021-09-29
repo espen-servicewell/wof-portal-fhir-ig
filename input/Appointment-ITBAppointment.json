@@ -1,0 +1,90 @@
+{
+  "resourceType": "Appointment",
+  "id": "ITBAppointment",
+  "meta": {
+    "profile": [
+      "http://portal.wof.purified.link/fhir/StructureDefinition/ITBAppointment"
+    ],
+    "tag": [
+      {
+        "system": "http://portal.wof.purified.link/fhir/CodeSystem/csAvailableForCancellation",
+        "code": "false"
+      },
+      {
+        "system": "http://portal.wof.purified.link/fhir/CodeSystem/csAvailableForReschedule",
+        "code": "false"
+      }
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: bookingId: 14</p><p><b>status</b>: booked</p><p><b>serviceType</b>: <span title=\"Codes: {http://opusdental.purified.link/fhir/CodeSystem/csBookingCategory bcbc1754-a399-48ba-8eec-10667f19a0d6}\">bcbc1754-a399-48ba-8eec-10667f19a0d6</span>, <span title=\"Codes: {http://portal.wof.purified.link/fhir/CodeSystem/csServiceType itb-not-defined}\">Booket besøk online</span></p><p><b>start</b>: Mar 4, 2021 3:25:00 PM</p><p><b>end</b>: Mar 4, 2021 3:55:00 PM</p><blockquote><p><b>participant</b></p><p><b>actor</b>: <a href=\"PractitionerRole/ecc708b6-95b2-4517-8644-e3b6c2180125\">Tannlege Torunn Lyngstad</a></p><p><b>status</b>: accepted</p></blockquote><blockquote><p><b>participant</b></p><p><b>actor</b>: <a href=\"HealthcareService/b81f2315-7476-45e8-9ae6-51f547e2d82e\">Colosseum Tannlege Nationaltheatret</a></p><p><b>status</b>: accepted</p></blockquote><blockquote><p><b>participant</b></p><p><b>actor</b>: <a href=\"Device/2\">Device</a></p><p><b>status</b>: accepted</p></blockquote><blockquote><p><b>participant</b></p><p><b>actor</b>: <a href=\"Patient/649\">Patient</a></p><p><b>status</b>: accepted</p></blockquote></div>"
+  },
+  "identifier": [
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://opusdental.purified.link/fhir/CodeSystem/csOpusIdentifier",
+            "code": "bookingId"
+          }
+        ]
+      },
+      "system": "http://localhost:7001/http://localhost:7001/fc580e7c-7fd8-4acd-92e9-42cb052763d4/fhir/NamingSystem/nsbookingId",
+      "value": "14"
+    }
+  ],
+  "status": "booked",
+  "serviceType": [
+    {
+      "coding": [
+        {
+          "system": "http://opusdental.purified.link/fhir/CodeSystem/csBookingCategory",
+          "code": "bcbc1754-a399-48ba-8eec-10667f19a0d6"
+        }
+      ]
+    },
+    {
+      "coding": [
+        {
+          "system": "http://portal.wof.purified.link/fhir/CodeSystem/csServiceType",
+          "code": "itb-not-defined",
+          "display": "Booket besøk online"
+        }
+      ],
+      "text": "Booket besøk online"
+    }
+  ],
+  "start": "2021-03-04T14:25:00+00:00",
+  "end": "2021-03-04T14:55:00+00:00",
+  "participant": [
+    {
+      "actor": {
+        "reference": "PractitionerRole/ecc708b6-95b2-4517-8644-e3b6c2180125",
+        "display": "Tannlege Torunn Lyngstad"
+      },
+      "status": "accepted"
+    },
+    {
+      "actor": {
+        "reference": "HealthcareService/b81f2315-7476-45e8-9ae6-51f547e2d82e",
+        "display": "Colosseum Tannlege Nationaltheatret"
+      },
+      "status": "accepted"
+    },
+    {
+      "actor": {
+        "reference": "Device/2",
+        "display": "Device"
+      },
+      "status": "accepted"
+    },
+    {
+      "actor": {
+        "reference": "Patient/649",
+        "display": "Patient"
+      },
+      "status": "accepted"
+    }
+  ]
+}

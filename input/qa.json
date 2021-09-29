@@ -1,0 +1,12 @@
+{
+  "url": "http://portal.wof.purified.link/fhir/ImplementationGuide/portal.wof.purified.link",
+  "name": "ITBImplementationGuide",
+  "package-id": "portal.wof.purified.link",
+  "ig-ver": "0.1.0",
+  "date": "Wed, 29 Sep, 2021 15:21:42 +0200",
+  "errs": 59,
+  "warnings": 25,
+  "hints": 17,
+  "version": "4.0.1",
+  "tool": "4.6.0 (3)"
+}

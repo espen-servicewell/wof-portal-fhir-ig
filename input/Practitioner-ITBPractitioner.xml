@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Practitioner xmlns="http://hl7.org/fhir">
+  <id value="ITBPractitioner"/>
+  <meta>
+    <lastUpdated value="2021-02-03T10:02:00+01:00"/>
+    <profile value="http://portal.wof.purified.link/fhir/StructureDefinition/ITBPractitioner"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 12121212345, employeeId: 470, employeeNo: 2, employeeLicenseId: 2046</p><p><b>active</b>: true</p><p><b>name</b>: Tannlege Kenth Lyngtest</p></div>
+  </text>
+  <contained>
+    <PractitionerRole>
+      <id value="Inline-Instance-for-470-1"/>
+      <active value="false"/>
+      <organization>
+        <reference value="Organization/559"/>
+      </organization>
+      <code>
+        <text value="WorksAt"/>
+      </code>
+      <specialty>
+        <coding>
+          <system value="http://opusdental.purified.link/fhir/CodeSystem/csPractitionerQualification"/>
+          <code value="dentist"/>
+        </coding>
+        <text value="Dentist"/>
+      </specialty>
+      <endpoint>
+        <reference value="http://fhir.link/jdjdjdj"/>
+        <display value="OpusDatabas"/>
+      </endpoint>
+    </PractitionerRole>
+  </contained>
+  <identifier>
+    <system value="urn:oid:1.3.6.1.4.1.2428.90.1.5"/>
+    <value value="12121212345"/>
+  </identifier>
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://opusdental.purified.link/fhir/CodeSystem/csOpusIdentifier"/>
+        <code value="employeeId"/>
+      </coding>
+    </type>
+    <system value="itbDev-colosseum-opus-nationaltheatret"/>
+    <value value="470"/>
+  </identifier>
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://opusdental.purified.link/fhir/CodeSystem/csOpusIdentifier"/>
+        <code value="employeeNo"/>
+      </coding>
+    </type>
+    <system value="itbDev-colosseum-opus-nationaltheatret"/>
+    <value value="2"/>
+  </identifier>
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://opusdental.purified.link/fhir/CodeSystem/csOpusIdentifier"/>
+        <code value="employeeLicenseId"/>
+      </coding>
+    </type>
+    <system value="itbDev-colosseum-opus-nationaltheatret"/>
+    <value value="2046"/>
+  </identifier>
+  <active value="true"/>
+  <name>
+    <text value="Tannlege Kenth Lyngtest"/>
+    <family value="Lyngtest"/>
+    <given value="Kenth"/>
+  </name>
+</Practitioner>

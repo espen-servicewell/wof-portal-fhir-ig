@@ -1,0 +1,221 @@
+{
+  "package": "portal.wof.purified.link",
+  "version": "0.1.0",
+  "fhirVersion": "4.0.1",
+  "extensions": [
+    {
+      "url": "http://portal.wof.purified.link/fhir/StructureDefinition/extBinaryReference",
+      "title": "ITB Binary Reference Extension",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://portal.wof.purified.link/fhir/StructureDefinition/extCreated",
+      "title": "Portal Created Extension",
+      "types": [
+        "dateTime",
+        "dateTime"
+      ]
+    },
+    {
+      "url": "http://portal.wof.purified.link/fhir/StructureDefinition/extListReference",
+      "title": "ITB List Reference Extension",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://portal.wof.purified.link/fhir/StructureDefinition/extOpusBookingCategory",
+      "title": "Opus Booking Category Extension",
+      "types": [
+        "string",
+        "string"
+      ]
+    },
+    {
+      "url": "http://portal.wof.purified.link/fhir/StructureDefinition/extOpusCryptobookingText",
+      "title": "OpusCryptobookingText Extension",
+      "types": [
+        "string",
+        "string"
+      ]
+    },
+    {
+      "url": "http://portal.wof.purified.link/fhir/StructureDefinition/extPriceDefinition",
+      "title": "ITB Price Definition Extension",
+      "types": [
+        "string",
+        "string"
+      ]
+    },
+    {
+      "url": "http://portal.wof.purified.link/fhir/StructureDefinition/extSourceSystemUserId",
+      "title": "ITB Source System User Id Extension",
+      "types": [
+        "string",
+        "string"
+      ]
+    },
+    {
+      "url": "http://portal.wof.purified.link/fhir/StructureDefinition/extUrlPlaceholder",
+      "title": "ITB Url Placeholder Extension",
+      "types": [
+        "string",
+        "string"
+      ]
+    }
+  ],
+  "profiles": {
+    "ActivityDefinition": [
+      {
+        "url": "http://portal.wof.purified.link/fhir/StructureDefinition/ITBActivityDefinition",
+        "title": "ITB ActivityDefinition"
+      }
+    ],
+    "Appointment": [
+      {
+        "url": "http://portal.wof.purified.link/fhir/StructureDefinition/ITBAppointment",
+        "title": "ITB Appointment"
+      }
+    ],
+    "AppointmentResponse": [
+      {
+        "url": "http://portal.wof.purified.link/fhir/StructureDefinition/ITBAppointmentResponse",
+        "title": "ITB AppointmentResponse"
+      }
+    ],
+    "Endpoint": [
+      {
+        "url": "http://portal.wof.purified.link/fhir/StructureDefinition/ITBEndpoint",
+        "title": "ITB Endpoint"
+      }
+    ],
+    "HealthcareService": [
+      {
+        "url": "http://portal.wof.purified.link/fhir/StructureDefinition/ITBHealthcareService",
+        "title": "ITB HealthcareService"
+      }
+    ],
+    "List": [
+      {
+        "url": "http://portal.wof.purified.link/fhir/StructureDefinition/ITBList",
+        "title": "ITB List"
+      }
+    ],
+    "Location": [
+      {
+        "url": "http://portal.wof.purified.link/fhir/StructureDefinition/ITBLocation",
+        "title": "ITB Location"
+      }
+    ],
+    "Organization": [
+      {
+        "url": "http://portal.wof.purified.link/fhir/StructureDefinition/ITBOrganization",
+        "title": "ITB Organization"
+      }
+    ],
+    "Patient": [
+      {
+        "url": "http://portal.wof.purified.link/fhir/StructureDefinition/ITBPatient",
+        "title": "ITB Patient"
+      }
+    ],
+    "Practitioner": [
+      {
+        "url": "http://portal.wof.purified.link/fhir/StructureDefinition/ITBPractitioner",
+        "title": "ITB Practitioner"
+      }
+    ],
+    "PractitionerRole": [
+      {
+        "url": "http://portal.wof.purified.link/fhir/StructureDefinition/ITBPractitionerRole",
+        "title": "ITB PractitionerRole"
+      }
+    ],
+    "Schedule": [
+      {
+        "url": "http://portal.wof.purified.link/fhir/StructureDefinition/ITBSchedule",
+        "title": "ITB Schedule"
+      }
+    ],
+    "Slot": [
+      {
+        "url": "http://portal.wof.purified.link/fhir/StructureDefinition/ITBSlot",
+        "title": "ITB Slot"
+      }
+    ],
+    "Person": [
+      {
+        "url": "http://portal.wof.purified.link/fhir/StructureDefinition/PortalPerson",
+        "title": "Portal Person"
+      }
+    ]
+  },
+  "usage": {
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-category": [
+      "StructureDefinition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category": [
+      "StructureDefinition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
+      "ImplementationGuide.definition.resource"
+    ],
+    "http://portal.wof.purified.link/fhir/StructureDefinition/extBinaryReference": [
+      "PractitionerRole"
+    ],
+    "http://portal.wof.purified.link/fhir/StructureDefinition/extCreated": [
+      "Person"
+    ],
+    "http://portal.wof.purified.link/fhir/StructureDefinition/extListReference": [
+      "HealthcareService"
+    ],
+    "http://portal.wof.purified.link/fhir/StructureDefinition/extOpusBookingCategory": [
+      "ActivityDefinition"
+    ],
+    "http://portal.wof.purified.link/fhir/StructureDefinition/extOpusCryptobookingText": [
+      "ActivityDefinition"
+    ],
+    "http://portal.wof.purified.link/fhir/StructureDefinition/extPriceDefinition": [
+      "HealthcareService.contained.entry",
+      "List"
+    ],
+    "http://portal.wof.purified.link/fhir/StructureDefinition/extSourceSystemUserId": [
+      "Endpoint"
+    ],
+    "http://portal.wof.purified.link/fhir/StructureDefinition/extUrlPlaceholder": [
+      "HealthcareService"
+    ]
+  }
+}

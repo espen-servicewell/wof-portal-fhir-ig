@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Appointment xmlns="http://hl7.org/fhir">
+  <id value="ITBAppointmentAvailableForReschedule"/>
+  <meta>
+    <profile value="http://portal.wof.purified.link/fhir/StructureDefinition/ITBAppointment"/>
+    <tag>
+      <system value="http://portal.wof.purified.link/fhir/CodeSystem/csAvailableForCancellation"/>
+      <code value="false"/>
+    </tag>
+    <tag>
+      <system value="http://portal.wof.purified.link/fhir/CodeSystem/csAvailableForReschedule"/>
+      <code value="true"/>
+    </tag>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>status</b>: booked</p><p><b>serviceType</b>: <span title="Codes: {http://portal.wof.purified.link/fhir/CodeSystem/csServiceType examination}">examination</span></p><p><b>start</b>: May 7, 2021 10:00:00 AM</p><p><b>end</b>: May 7, 2021 10:30:00 AM</p><p><b>minutesDuration</b>: 30</p><blockquote><p><b>participant</b></p><p><b>actor</b>: <a href="Patient/649">Patient</a></p><p><b>status</b>: accepted</p></blockquote><blockquote><p><b>participant</b></p><p><b>actor</b>: <a href="PractitionerRole/53248079-fd9b-4de5-8d22-d93068542def">Tannpleier Laila Rindal-Flatlie</a></p><p><b>status</b>: accepted</p></blockquote><blockquote><p><b>participant</b></p><p><b>actor</b>: <a href="HealthcareService/b81f2315-7476-45e8-9ae6-51f547e2d82e">En sjov gutt clinic</a></p><p><b>status</b>: accepted</p></blockquote><blockquote><p><b>participant</b></p><p><b>actor</b>: <a href="Device/4">Device</a></p><p><b>status</b>: accepted</p></blockquote></div>
+  </text>
+  <status value="booked"/>
+  <serviceType>
+    <coding>
+      <system value="http://portal.wof.purified.link/fhir/CodeSystem/csServiceType"/>
+      <code value="examination"/>
+    </coding>
+  </serviceType>
+  <start value="2021-05-07T08:00:00+00:00"/>
+  <end value="2021-05-07T08:30:00+00:00"/>
+  <minutesDuration value="30"/>
+  <participant>
+    <actor>
+      <reference value="Patient/649"/>
+      <display value="Patient"/>
+    </actor>
+    <status value="accepted"/>
+  </participant>
+  <participant>
+    <actor>
+      <reference value="PractitionerRole/53248079-fd9b-4de5-8d22-d93068542def"/>
+      <display value="Tannpleier Laila Rindal-Flatlie"/>
+    </actor>
+    <status value="accepted"/>
+  </participant>
+  <participant>
+    <actor>
+      <reference value="HealthcareService/b81f2315-7476-45e8-9ae6-51f547e2d82e"/>
+      <display value="En sjov gutt clinic"/>
+    </actor>
+    <status value="accepted"/>
+  </participant>
+  <participant>
+    <actor>
+      <reference value="Device/4"/>
+      <display value="Device"/>
+    </actor>
+    <status value="accepted"/>
+  </participant>
+</Appointment>

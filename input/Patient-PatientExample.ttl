@@ -1,0 +1,66 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://portal.wof.purified.link/fhir/Patient/PatientExample> a fhir:Patient;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "PatientExample"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://portal.wof.purified.link/fhir/StructureDefinition/ITBPatient";
+       fhir:index 0;
+       fhir:link <http://portal.wof.purified.link/fhir/StructureDefinition/ITBPatient>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 110384-98330, patientId: 649</p><p><b>name</b>: Johansen Øyvind Petter</p><p><b>telecom</b>: <a href=\"mailto:test@fhir.link\">test@fhir.link</a>, ph: 0708664086(MOBILE)</p><p><b>birthDate</b>: 1984-03-11</p></div>"
+  ];
+  fhir:Patient.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "urn:oid:2.16.578.1.12.4.1.4.1" ];
+     fhir:Identifier.value [ fhir:value "110384-98330" ]
+  ], [
+     fhir:index 1;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://opusdental.purified.link/fhir/CodeSystem/csOpusIdentifier" ];
+         fhir:Coding.code [ fhir:value "patientId" ]
+       ]
+     ];
+     fhir:Identifier.system [ fhir:value "itbDev-colosseum-opus-nationaltheatret/fhir/NamingSystem/nspatientId" ];
+     fhir:Identifier.value [ fhir:value "649" ]
+  ];
+  fhir:Patient.name [
+     fhir:index 0;
+     fhir:HumanName.text [ fhir:value "Johansen Øyvind Petter" ];
+     fhir:HumanName.family [ fhir:value "Johansen" ];
+     fhir:HumanName.given [
+       fhir:value "Øyvind Petter";
+       fhir:index 0
+     ]
+  ];
+  fhir:Patient.telecom [
+     fhir:index 0;
+     fhir:ContactPoint.system [ fhir:value "email" ];
+     fhir:ContactPoint.value [ fhir:value "test@fhir.link" ];
+     fhir:ContactPoint.use [ fhir:value "home" ]
+  ], [
+     fhir:index 1;
+     fhir:ContactPoint.system [ fhir:value "phone" ];
+     fhir:ContactPoint.value [ fhir:value "0708664086" ];
+     fhir:ContactPoint.use [ fhir:value "mobile" ]
+  ];
+  fhir:Patient.birthDate [ fhir:value "1984-03-11"^^xsd:date] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://portal.wof.purified.link/fhir/Patient/PatientExample.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

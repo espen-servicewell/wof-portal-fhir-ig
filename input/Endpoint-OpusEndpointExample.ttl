@@ -1,0 +1,70 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://portal.wof.purified.link/fhir/Endpoint/OpusEndpointExample> a fhir:Endpoint;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "OpusEndpointExample"];
+  fhir:Resource.meta [
+     fhir:Meta.versionId [ fhir:value "1" ];
+     fhir:Meta.lastUpdated [ fhir:value "2021-03-13T14:33:11.391+00:00"^^xsd:dateTime ];
+     fhir:Meta.profile [
+       fhir:value "http://portal.wof.purified.link/fhir/StructureDefinition/ITBEndpoint";
+       fhir:index 0;
+       fhir:link <http://portal.wof.purified.link/fhir/StructureDefinition/ITBEndpoint>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: itbDev-colosseum-opus-sandvika, id: -003</p><p><b>status</b>: active</p><p><b>connectionType</b>: <span title=\"{http://terminology.hl7.org/CodeSystem/endpoint-connection-type hl7-fhir-rest}\">HL7 FHIR</span></p><p><b>name</b>: FhirDataBaseEndPoint</p><p><b>payloadType</b>: <span title=\"Codes: {http://hl7.org/fhir/resource-types Practitioner}\">Practitioner</span>, <span title=\"Codes: {http://hl7.org/fhir/resource-types Patient}\">Patient</span></p><p><b>payloadMimeType</b>: application/fhir+xml</p><p><b>address</b>: <a href=\"http://swcloud.fhir.link:8081\">http://swcloud.fhir.link:8081</a></p><p><b>header</b>: bearer-code itbDev-colosseum-opus-sandvika</p></div>"
+  ];
+  fhir:Endpoint.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "http://swcloud.fhir.link:8081/namingsystem/endpoint-identifier" ];
+     fhir:Identifier.value [ fhir:value "itbDev-colosseum-opus-sandvika" ]
+  ], [
+     fhir:index 1;
+     fhir:Identifier.system [ fhir:value "http://swcloud.fhir.link:8081/namingsystem/primarykey-sufix" ];
+     fhir:Identifier.value [ fhir:value "-003" ]
+  ];
+  fhir:Endpoint.status [ fhir:value "active"];
+  fhir:Endpoint.connectionType [
+     fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/endpoint-connection-type" ];
+     fhir:Coding.code [ fhir:value "hl7-fhir-rest" ]
+  ];
+  fhir:Endpoint.name [ fhir:value "FhirDataBaseEndPoint"];
+  fhir:Endpoint.payloadType [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/resource-types" ];
+       fhir:Coding.code [ fhir:value "Practitioner" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/resource-types" ];
+       fhir:Coding.code [ fhir:value "Patient" ]
+     ]
+  ];
+  fhir:Endpoint.payloadMimeType [
+     fhir:value "application/fhir+xml";
+     fhir:index 0
+  ];
+  fhir:Endpoint.address [ fhir:value "http://swcloud.fhir.link:8081"];
+  fhir:Endpoint.header [
+     fhir:value "bearer-code itbDev-colosseum-opus-sandvika";
+     fhir:index 0
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://portal.wof.purified.link/fhir/Endpoint/OpusEndpointExample.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

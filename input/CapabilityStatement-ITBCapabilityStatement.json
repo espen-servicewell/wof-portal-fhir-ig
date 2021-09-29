@@ -1,0 +1,329 @@
+{
+  "resourceType": "CapabilityStatement",
+  "id": "ITBCapabilityStatement",
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ITB</h2><div><p>This is the FHIR capability statement for the ITB interface</p>\n</div><table><tr><td>Mode</td><td>SERVER</td></tr><tr><td>Description</td><td><div><p>Main FHIR endpoint for ITB</p>\n</div></td></tr><tr><td>Transaction</td><td></td></tr><tr><td>System History</td><td></td></tr><tr><td>System Search</td><td></td></tr></table><table><tr><th><b>Resource Type</b></th><th><b>Profile</b></th><th><b title=\"GET a resource (read interaction)\">Read</b></th><th><b title=\"GET past versions of resources (vread interaction)\">V-Read</b></th><th><b title=\"GET all set of resources of the type (search interaction)\">Search</b></th><th><b title=\"PUT a new resource version (update interaction)\">Update</b></th><th><b title=\"POST a new resource (create interaction)\">Create</b></th><th><b title=\"DELETE a resource (delete interaction)\">Delete</b></th><th><b title=\"GET changes to a resource (history interaction on instance)\">Updates</b></th><th><b title=\"GET changes for all resources of the type (history interaction on type)\">History</b></th></tr><tr><td>ITBActivityDefinition</td><td>y</td><td>y</td><td></td><td>y</td><td>y</td><td></td><td>y</td><td>y</td></tr><tr><td>ITBAppointment</td><td><a href=\"http://portal.wof.purified.link/fhir/StructureDefinition/ITBAppointment\">http://portal.wof.purified.link/fhir/StructureDefinition/ITBAppointment</a></td><td>y</td><td>y</td><td></td><td>y</td><td>y</td><td></td><td>y</td><td>y</td></tr><tr><td>ITBAppointmentResponse</td><td><a href=\"http://portal.wof.purified.link/fhir/StructureDefinition/ITBAppointmentResponse\">http://portal.wof.purified.link/fhir/StructureDefinition/ITBAppointmentResponse</a></td><td></td><td></td><td></td><td></td><td>y</td><td></td><td></td><td></td></tr><tr><td>ITBEndPoint</td><td><a href=\"http://portal.wof.purified.link/fhir/StructureDefinition/ITBEndpoint\">http://portal.wof.purified.link/fhir/StructureDefinition/ITBEndpoint</a></td><td>y</td><td>y</td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>ITBHealthcareService</td><td><a href=\"http://portal.wof.purified.link/fhir/StructureDefinition/ITBHealthcareService\">http://portal.wof.purified.link/fhir/StructureDefinition/ITBHealthcareService</a></td><td>y</td><td>y</td><td></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td></tr><tr><td>ITBOrganization</td><td><a href=\"http://portal.wof.purified.link/fhir/StructureDefinition/ITBOrganization\">http://portal.wof.purified.link/fhir/StructureDefinition/ITBOrganization</a></td><td>y</td><td>y</td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>ITBPatient</td><td><a href=\"http://portal.wof.purified.link/fhir/StructureDefinition/ITBPatient\">http://portal.wof.purified.link/fhir/StructureDefinition/ITBPatient</a></td><td>y</td><td>y</td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>ITBPractitioner</td><td><a href=\"http://portal.wof.purified.link/fhir/StructureDefinition/ITBPractitioner\">http://portal.wof.purified.link/fhir/StructureDefinition/ITBPractitioner</a></td><td>y</td><td>y</td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>ITBSchedule</td><td><a href=\"http://portal.wof.purified.link/fhir/StructureDefinition/ITBSchedule\">http://portal.wof.purified.link/fhir/StructureDefinition/ITBSchedule</a></td><td>y</td><td>y</td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>ITBSlot</td><td><a href=\"http://portal.wof.purified.link/fhir/StructureDefinition/ITBSlot\">http://portal.wof.purified.link/fhir/StructureDefinition/ITBSlot</a></td><td>y</td><td>y</td><td></td><td></td><td></td><td></td><td></td><td></td></tr></table></div>"
+  },
+  "url": "http://portal.wof.purified.link/fhir/CapabilityStatement",
+  "version": "0.1.0",
+  "name": "ITB",
+  "title": "ITB capability statement",
+  "status": "draft",
+  "experimental": true,
+  "date": "2021-06-22",
+  "publisher": "Service Well",
+  "contact": [
+    {
+      "name": "System Administrator",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "kontakt@servicewell.se"
+        }
+      ]
+    }
+  ],
+  "description": "This is the FHIR capability statement for the ITB interface",
+  "useContext": [
+    {
+      "code": {
+        "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+        "code": "focus"
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/variant-state",
+            "code": "positive"
+          }
+        ]
+      }
+    }
+  ],
+  "purpose": "ITB capability statement, published for contracting and operational support",
+  "copyright": "Copyright © Service Well AB",
+  "kind": "instance",
+  "instantiates": [
+    "http://ihe.org/fhir/CapabilityStatement/pixm-client"
+  ],
+  "software": {
+    "name": "ITB",
+    "version": "0.0.0",
+    "releaseDate": "2021-09-01"
+  },
+  "implementation": {
+    "description": "WOF"
+  },
+  "fhirVersion": "4.0.1",
+  "format": [
+    "json"
+  ],
+  "patchFormat": [
+    "application/json-patch+json"
+  ],
+  "implementationGuide": [
+    "https://build.fhir.org/ig/barbrov/wof-portal-fhir-ig/"
+  ],
+  "rest": [
+    {
+      "mode": "server",
+      "documentation": "Main FHIR endpoint for ITB",
+      "security": {
+        "cors": true,
+        "service": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/restful-security-service",
+                "code": "SMART-on-FHIR"
+              }
+            ]
+          }
+        ],
+        "description": "See Smart on FHIR documentation"
+      },
+      "resource": [
+        {
+          "type": "ITBActivityDefinition",
+          "supportedProfile": [
+            "http://portal.wof.purified.link/fhir/StructureDefinition/ITBActivityDefinition"
+          ],
+          "documentation": "https://build.fhir.org/ig/servicewell/wof-portal-fhir-ig/StructureDefinition-ITBActivityDefinition.html",
+          "interaction": [
+            {
+              "code": "read"
+            },
+            {
+              "code": "vread"
+            },
+            {
+              "code": "update"
+            },
+            {
+              "code": "history-instance"
+            },
+            {
+              "code": "history-type"
+            },
+            {
+              "code": "create"
+            }
+          ],
+          "versioning": "versioned-update",
+          "readHistory": true,
+          "updateCreate": false,
+          "conditionalCreate": true,
+          "conditionalRead": "full-support",
+          "conditionalUpdate": false,
+          "conditionalDelete": "not-supported"
+        },
+        {
+          "type": "ITBAppointment",
+          "profile": "http://portal.wof.purified.link/fhir/StructureDefinition/ITBAppointment",
+          "documentation": "URL for Documentation to be added",
+          "interaction": [
+            {
+              "code": "read"
+            },
+            {
+              "code": "vread"
+            },
+            {
+              "code": "update"
+            },
+            {
+              "code": "history-instance"
+            },
+            {
+              "code": "history-type"
+            },
+            {
+              "code": "create"
+            }
+          ],
+          "searchParam": [
+            {
+              "name": "actor",
+              "type": "reference",
+              "documentation": "Search for example for a HealtCareService referenced as actor."
+            },
+            {
+              "name": "patient",
+              "type": "reference",
+              "documentation": "Search for patient referenced by the Appointment."
+            }
+          ]
+        },
+        {
+          "type": "ITBAppointmentResponse",
+          "profile": "http://portal.wof.purified.link/fhir/StructureDefinition/ITBAppointmentResponse",
+          "documentation": "URL for Documentation to be added",
+          "interaction": [
+            {
+              "code": "create"
+            }
+          ]
+        },
+        {
+          "type": "ITBEndPoint",
+          "profile": "http://portal.wof.purified.link/fhir/StructureDefinition/ITBEndpoint",
+          "documentation": "URL for Documentation to be added",
+          "interaction": [
+            {
+              "code": "read"
+            },
+            {
+              "code": "vread"
+            }
+          ]
+        },
+        {
+          "type": "ITBHealthcareService",
+          "profile": "http://portal.wof.purified.link/fhir/StructureDefinition/ITBHealthcareService",
+          "documentation": "URL for Documentation to be added",
+          "interaction": [
+            {
+              "code": "read"
+            },
+            {
+              "code": "vread"
+            },
+            {
+              "code": "update"
+            },
+            {
+              "code": "delete"
+            },
+            {
+              "code": "history-instance"
+            },
+            {
+              "code": "history-type"
+            },
+            {
+              "code": "create"
+            }
+          ],
+          "searchParam": [
+            {
+              "name": "endpoint",
+              "type": "reference",
+              "documentation": "Endpoint id must be of type guid"
+            }
+          ]
+        },
+        {
+          "type": "ITBOrganization",
+          "profile": "http://portal.wof.purified.link/fhir/StructureDefinition/ITBOrganization",
+          "documentation": "URL for Documentation to be added",
+          "interaction": [
+            {
+              "code": "read"
+            },
+            {
+              "code": "vread"
+            }
+          ]
+        },
+        {
+          "type": "ITBPatient",
+          "profile": "http://portal.wof.purified.link/fhir/StructureDefinition/ITBPatient",
+          "documentation": "URL for Documentation to be added",
+          "interaction": [
+            {
+              "code": "read"
+            },
+            {
+              "code": "vread"
+            }
+          ]
+        },
+        {
+          "type": "ITBPractitioner",
+          "profile": "http://portal.wof.purified.link/fhir/StructureDefinition/ITBPractitioner",
+          "documentation": "URL for Documentation to be added",
+          "interaction": [
+            {
+              "code": "read"
+            },
+            {
+              "code": "vread"
+            }
+          ]
+        },
+        {
+          "type": "ITBSchedule",
+          "profile": "http://portal.wof.purified.link/fhir/StructureDefinition/ITBSchedule",
+          "documentation": "https://build.fhir.org/ig/servicewell/wof-portal-fhir-ig/StructureDefinition-ITBSchedule.html",
+          "interaction": [
+            {
+              "code": "read"
+            },
+            {
+              "code": "vread"
+            },
+            {
+              "code": "read"
+            },
+            {
+              "code": "vread"
+            }
+          ],
+          "searchParam": [
+            {
+              "name": "service",
+              "type": "reference",
+              "documentation": "Search for a referenced HealthCareService"
+            },
+            {
+              "name": "actor",
+              "type": "reference",
+              "documentation": "Search for example for a HealtCareService or PractitionerRole referenced in actor."
+            },
+            {
+              "name": "service-type",
+              "type": "token",
+              "documentation": "Search for Schedules with specified service-type"
+            },
+            {
+              "name": "_sort",
+              "type": "string",
+              "documentation": "Specify search order for results"
+            }
+          ]
+        },
+        {
+          "type": "ITBSlot",
+          "profile": "http://portal.wof.purified.link/fhir/StructureDefinition/ITBSlot",
+          "documentation": "https://build.fhir.org/ig/servicewell/wof-portal-fhir-ig/StructureDefinition-ITBSlot.html",
+          "interaction": [
+            {
+              "code": "read"
+            },
+            {
+              "code": "vread"
+            }
+          ],
+          "searchParam": [
+            {
+              "name": "schedule",
+              "type": "reference",
+              "documentation": "Search for Slots with reference to specified Schedule."
+            },
+            {
+              "name": "service-type",
+              "type": "token",
+              "documentation": "Search for Slots with specified service-type"
+            },
+            {
+              "name": "start",
+              "type": "date",
+              "documentation": "Specify search order for results"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

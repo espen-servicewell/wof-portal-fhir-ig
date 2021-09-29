@@ -1,0 +1,37 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://portal.wof.purified.link/fhir/Slot/ITBSlot> a fhir:Slot;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "ITBSlot"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://portal.wof.purified.link/fhir/StructureDefinition/ITBSlot";
+       fhir:index 0;
+       fhir:link <http://portal.wof.purified.link/fhir/StructureDefinition/ITBSlot>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>schedule</b>: <a href=\"Schedule/d35df5c2-3929-4c57-88df-7b031f401e03\">Schedule</a></p><p><b>status</b>: free</p><p><b>start</b>: Apr 15, 2021 4:30:00 PM</p><p><b>end</b>: Apr 15, 2021 5:00:00 PM</p></div>"
+  ];
+  fhir:Slot.schedule [
+     fhir:link <http://portal.wof.purified.link/fhir/Schedule/d35df5c2-3929-4c57-88df-7b031f401e03>;
+     fhir:Reference.reference [ fhir:value "Schedule/d35df5c2-3929-4c57-88df-7b031f401e03" ];
+     fhir:Reference.display [ fhir:value "Schedule" ]
+  ];
+  fhir:Slot.status [ fhir:value "free"];
+  fhir:Slot.start [ fhir:value "2021-04-15T14:30:00+00:00"^^xsd:dateTime];
+  fhir:Slot.end [ fhir:value "2021-04-15T15:00:00+00:00"^^xsd:dateTime] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://portal.wof.purified.link/fhir/Slot/ITBSlot.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

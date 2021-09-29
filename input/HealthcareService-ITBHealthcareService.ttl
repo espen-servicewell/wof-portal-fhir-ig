@@ -1,0 +1,119 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://portal.wof.purified.link/fhir/HealthcareService/ITBHealthcareService> a fhir:HealthcareService;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "ITBHealthcareService"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://portal.wof.purified.link/fhir/StructureDefinition/ITBHealthcareService";
+       fhir:index 0;
+       fhir:link <http://portal.wof.purified.link/fhir/StructureDefinition/ITBHealthcareService>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>ITB List Reference Extension</b>: <a name=\"listId\"> </a></p><blockquote><p><b>status</b>: current</p><p><b>mode</b>: working</p><blockquote><p><b>entry</b></p><p><b>ITB Price Definition Extension</b>: 2.000 SEK</p><p><b>item</b>: <a href=\"ActivityDefinition/5e54aeb0-339d-49ed-af21-386f6ce0c730\">Dårlig Ånde</a></p></blockquote><blockquote><p><b>entry</b></p><p><b>ITB Price Definition Extension</b>: 850 NOK</p><p><b>item</b>: <a href=\"ActivityDefinition/bcfafc6d-98df-4985-97ea-5ddd75fe858f\">Tannlegeskrekk</a></p></blockquote><blockquote><p><b>entry</b></p><p><b>ITB Price Definition Extension</b>: 5 dollahs</p><p><b>item</b>: <a href=\"ActivityDefinition/30491f7e-786e-4f48-a555-982ee5828641\">Tannrens</a></p></blockquote></blockquote><p><b>ITB Url Placeholder Extension</b>: http://portal.wof</p><p><b>identifier</b>: id: Colosseum Tannlege Nationaltheatret</p><p><b>active</b>: true</p><p><b>location</b>: <a name=\"adressId\"> </a></p><blockquote><p><b>address</b>: Stortingsgata 30(WORK)</p><h3>Positions</h3><table class=\"grid\"><tr><td>-</td><td><b>Longitude</b></td><td><b>Latitude</b></td></tr><tr><td>*</td><td>10.729501</td><td>59.91475</td></tr></table></blockquote><p><b>name</b>: colosseum-nationaltheatret</p><p><b>telecom</b>: <a href=\"tel:+4712345678\">+4712345678</a></p><p><b>endpoint</b>: <a href=\"Endpoint/fc580e7c-7fd8-4acd-92e9-42cb052763d4\">itbDev-colosseum-opus-nationaltheatret</a></p></div>"
+  ];
+  fhir:DomainResource.contained [
+     a fhir:Location;
+     fhir:index 0;
+     fhir:Resource.id [ fhir:value "adressId" ];
+     fhir:Location.address [
+       fhir:Address.use [ fhir:value "work" ];
+       fhir:Address.text [ fhir:value "Stortingsgata 30" ];
+       fhir:Address.city [ fhir:value "Oslo" ]
+     ];
+     fhir:Location.position [
+       fhir:Location.position.longitude [ fhir:value "10.729501"^^xsd:decimal ];
+       fhir:Location.position.latitude [ fhir:value "59.91475"^^xsd:decimal ]
+     ]
+  ], [
+     a fhir:List;
+     fhir:index 1;
+     fhir:Resource.id [ fhir:value "listId" ];
+     fhir:List.status [ fhir:value "current" ];
+     fhir:List.mode [ fhir:value "working" ];
+     fhir:List.entry [
+       fhir:index 0;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://portal.wof.purified.link/fhir/StructureDefinition/extPriceDefinition" ];
+         fhir:Extension.valueString [ fhir:value "2.000 SEK" ]
+       ];
+       fhir:List.entry.item [
+         fhir:link <http://portal.wof.purified.link/fhir/ActivityDefinition/5e54aeb0-339d-49ed-af21-386f6ce0c730>;
+         fhir:Reference.reference [ fhir:value "ActivityDefinition/5e54aeb0-339d-49ed-af21-386f6ce0c730" ];
+         fhir:Reference.display [ fhir:value "Dårlig Ånde" ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://portal.wof.purified.link/fhir/StructureDefinition/extPriceDefinition" ];
+         fhir:Extension.valueString [ fhir:value "850 NOK" ]
+       ];
+       fhir:List.entry.item [
+         fhir:link <http://portal.wof.purified.link/fhir/ActivityDefinition/bcfafc6d-98df-4985-97ea-5ddd75fe858f>;
+         fhir:Reference.reference [ fhir:value "ActivityDefinition/bcfafc6d-98df-4985-97ea-5ddd75fe858f" ];
+         fhir:Reference.display [ fhir:value "Tannlegeskrekk" ]
+       ]
+     ], [
+       fhir:index 2;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://portal.wof.purified.link/fhir/StructureDefinition/extPriceDefinition" ];
+         fhir:Extension.valueString [ fhir:value "5 dollahs" ]
+       ];
+       fhir:List.entry.item [
+         fhir:link <http://portal.wof.purified.link/fhir/ActivityDefinition/30491f7e-786e-4f48-a555-982ee5828641>;
+         fhir:Reference.reference [ fhir:value "ActivityDefinition/30491f7e-786e-4f48-a555-982ee5828641" ];
+         fhir:Reference.display [ fhir:value "Tannrens" ]
+       ]
+     ]
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Extension.url [ fhir:value "http://portal.wof.purified.link/fhir/StructureDefinition/extListReference" ];
+     fhir:Extension.valueReference [
+       fhir:Reference.reference [ fhir:value "#listId" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Extension.url [ fhir:value "http://portal.wof.purified.link/fhir/StructureDefinition/extUrlPlaceholder" ];
+     fhir:Extension.valueString [ fhir:value "http://portal.wof" ]
+  ];
+  fhir:HealthcareService.identifier [
+     fhir:index 0;
+     fhir:Identifier.value [ fhir:value "Colosseum Tannlege Nationaltheatret" ]
+  ];
+  fhir:HealthcareService.active [ fhir:value "true"^^xsd:boolean];
+  fhir:HealthcareService.location [
+     fhir:index 0;
+     fhir:Reference.reference [ fhir:value "#adressId" ]
+  ];
+  fhir:HealthcareService.name [ fhir:value "colosseum-nationaltheatret"];
+  fhir:HealthcareService.telecom [
+     fhir:index 0;
+     fhir:ContactPoint.system [ fhir:value "phone" ];
+     fhir:ContactPoint.value [ fhir:value "+4712345678" ];
+     fhir:ContactPoint.use [ fhir:value "work" ]
+  ];
+  fhir:HealthcareService.endpoint [
+     fhir:index 0;
+     fhir:link <http://portal.wof.purified.link/fhir/Endpoint/fc580e7c-7fd8-4acd-92e9-42cb052763d4>;
+     fhir:Reference.reference [ fhir:value "Endpoint/fc580e7c-7fd8-4acd-92e9-42cb052763d4" ];
+     fhir:Reference.display [ fhir:value "itbDev-colosseum-opus-nationaltheatret" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://portal.wof.purified.link/fhir/HealthcareService/ITBHealthcareService.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

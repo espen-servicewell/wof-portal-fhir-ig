@@ -1,0 +1,21 @@
+{
+  "resourceType": "AppointmentResponse",
+  "id": "AppointmentResponseExample",
+  "meta": {
+    "profile": [
+      "http://portal.wof.purified.link/fhir/StructureDefinition/ITBAppointmentResponse"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>appointment</b>: <a href=\"Appointment/47\">Appointment/47</a></p><p><b>actor</b>: <a href=\"HealthcareService/b81f2315-7476-45e8-9ae6-51f547e2d82e\">En sjov gutt clinic</a></p><p><b>participantStatus</b>: declined</p></div>"
+  },
+  "appointment": {
+    "reference": "Appointment/47"
+  },
+  "actor": {
+    "reference": "HealthcareService/b81f2315-7476-45e8-9ae6-51f547e2d82e",
+    "display": "En sjov gutt clinic"
+  },
+  "participantStatus": "declined"
+}

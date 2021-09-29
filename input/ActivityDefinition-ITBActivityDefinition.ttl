@@ -1,0 +1,75 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://portal.wof.purified.link/fhir/ActivityDefinition/ITBActivityDefinition> a fhir:ActivityDefinition;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "ITBActivityDefinition"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://portal.wof.purified.link/fhir/StructureDefinition/ITBActivityDefinition";
+       fhir:index 0;
+       fhir:link <http://portal.wof.purified.link/fhir/StructureDefinition/ITBActivityDefinition>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>OpusCryptobookingText Extension</b>: XYÅZÅÄA</p><p><b>Opus Booking Category Extension</b>: 3</p><p><b>url</b>: <code>http://portal.wof.purified.link/fhir/ActivityDefinition/ITBActivityDefinition</code></p><p><b>version</b>: 0.1.0</p><p><b>name</b>: TdlUS60</p><p><b>title</b>: Undersökning tandläkare</p><p><b>subtitle</b>: Här får du dina tänder undersökta av en utbildad tandläkare</p><p><b>status</b>: active</p><p><b>date</b>: 2021-09-06</p><p><b>description</b>: Desc</p><p><b>kind</b>: Appointment</p><p><b>code</b>: <span title=\"Codes: {http://portal.wof.purified.link/fhir/CodeSystem/csServiceType 123}\">Desc</span></p><p><b>timing</b>: 60 min</p><h3>Participants</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Role</b></td></tr><tr><td>*</td><td>practitioner</td><td><span title=\"Codes: {http://snomed.info/sct 106289002}\">Tandläkare</span></td></tr></table></div>"
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Extension.url [ fhir:value "http://portal.wof.purified.link/fhir/StructureDefinition/extOpusCryptobookingText" ];
+     fhir:Extension.valueString [ fhir:value "XYÅZÅÄA" ]
+  ], [
+     fhir:index 1;
+     fhir:Extension.url [ fhir:value "http://portal.wof.purified.link/fhir/StructureDefinition/extOpusBookingCategory" ];
+     fhir:Extension.valueString [ fhir:value "3" ]
+  ];
+  fhir:ActivityDefinition.url [ fhir:value "http://portal.wof.purified.link/fhir/ActivityDefinition/ITBActivityDefinition"];
+  fhir:ActivityDefinition.version [ fhir:value "0.1.0"];
+  fhir:ActivityDefinition.name [ fhir:value "TdlUS60"];
+  fhir:ActivityDefinition.title [ fhir:value "Undersökning tandläkare"];
+  fhir:ActivityDefinition.subtitle [ fhir:value "Här får du dina tänder undersökta av en utbildad tandläkare"];
+  fhir:ActivityDefinition.status [ fhir:value "active"];
+  fhir:ActivityDefinition.date [ fhir:value "2021-09-06"^^xsd:date];
+  fhir:ActivityDefinition.description [ fhir:value "Desc"];
+  fhir:ActivityDefinition.kind [ fhir:value "Appointment"];
+  fhir:ActivityDefinition.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://portal.wof.purified.link/fhir/CodeSystem/csServiceType" ];
+       fhir:Coding.code [ fhir:value "123" ];
+       fhir:Coding.display [ fhir:value "Bra Service" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "Desc" ]
+  ];
+  fhir:ActivityDefinition.timingDuration [
+     fhir:Quantity.value [ fhir:value "60"^^xsd:decimal ];
+     fhir:Quantity.unit [ fhir:value "min" ]
+  ];
+  fhir:ActivityDefinition.participant [
+     fhir:index 0;
+     fhir:ActivityDefinition.participant.type [ fhir:value "practitioner" ];
+     fhir:ActivityDefinition.participant.role [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a sct:106289002;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:Coding.code [ fhir:value "106289002" ];
+         fhir:Coding.display [ fhir:value "dentist" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "Tandläkare" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://portal.wof.purified.link/fhir/ActivityDefinition/ITBActivityDefinition.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

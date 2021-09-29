@@ -1,0 +1,44 @@
+{
+  "resourceType": "Schedule",
+  "id": "ITBScheduleExample",
+  "meta": {
+    "profile": [
+      "http://portal.wof.purified.link/fhir/StructureDefinition/ITBSchedule"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>serviceType</b>: <span title=\"Codes: {http://portal.wof.purified.link/fhir/CodeSystem/csServiceType blek-kampanje}\">blek-kampanje</span></p><p><b>actor</b>: </p><ul><li><a href=\"HealthcareService/939970ef-5e09-4597-977c-d6ae56ac81c5\">My clinic</a></li><li><a href=\"itbDev-colosseum-opus-sandvika/fhir/Practitioner/505\">Tannpleier Ruth Ellen Brubakken</a></li><li><a href=\"itbDev-colosseum-opus-sandvika/fhir/Organization/578\">itbDev-colosseum-opus-sandvika/fhir/Organization/578</a></li><li><a href=\"PractitionerRole/6194e8d0-2873-4569-915f-0ae8e4047854\">Tannpleier Ruth Ellen Brubakken</a></li></ul><p><b>planningHorizon</b>: Apr 14, 2021 12:00:00 AM --&gt; May 19, 2021 12:00:00 AM</p></div>"
+  },
+  "serviceType": [
+    {
+      "coding": [
+        {
+          "system": "http://portal.wof.purified.link/fhir/CodeSystem/csServiceType",
+          "code": "blek-kampanje"
+        }
+      ]
+    }
+  ],
+  "actor": [
+    {
+      "reference": "HealthcareService/939970ef-5e09-4597-977c-d6ae56ac81c5",
+      "display": "My clinic"
+    },
+    {
+      "reference": "itbDev-colosseum-opus-sandvika/fhir/Practitioner/505",
+      "display": "Tannpleier Ruth Ellen Brubakken"
+    },
+    {
+      "reference": "itbDev-colosseum-opus-sandvika/fhir/Organization/578"
+    },
+    {
+      "reference": "PractitionerRole/6194e8d0-2873-4569-915f-0ae8e4047854",
+      "display": "Tannpleier Ruth Ellen Brubakken"
+    }
+  ],
+  "planningHorizon": {
+    "start": "2021-04-13T22:00:00+00:00",
+    "end": "2021-05-18T22:00:00+00:00"
+  }
+}

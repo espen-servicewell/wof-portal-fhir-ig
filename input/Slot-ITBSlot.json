@@ -1,0 +1,20 @@
+{
+  "resourceType": "Slot",
+  "id": "ITBSlot",
+  "meta": {
+    "profile": [
+      "http://portal.wof.purified.link/fhir/StructureDefinition/ITBSlot"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>schedule</b>: <a href=\"Schedule/d35df5c2-3929-4c57-88df-7b031f401e03\">Schedule</a></p><p><b>status</b>: free</p><p><b>start</b>: Apr 15, 2021 4:30:00 PM</p><p><b>end</b>: Apr 15, 2021 5:00:00 PM</p></div>"
+  },
+  "schedule": {
+    "reference": "Schedule/d35df5c2-3929-4c57-88df-7b031f401e03",
+    "display": "Schedule"
+  },
+  "status": "free",
+  "start": "2021-04-15T14:30:00+00:00",
+  "end": "2021-04-15T15:00:00+00:00"
+}

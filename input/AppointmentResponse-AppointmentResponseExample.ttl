@@ -1,0 +1,39 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://portal.wof.purified.link/fhir/AppointmentResponse/AppointmentResponseExample> a fhir:AppointmentResponse;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "AppointmentResponseExample"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://portal.wof.purified.link/fhir/StructureDefinition/ITBAppointmentResponse";
+       fhir:index 0;
+       fhir:link <http://portal.wof.purified.link/fhir/StructureDefinition/ITBAppointmentResponse>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>appointment</b>: <a href=\"Appointment/47\">Appointment/47</a></p><p><b>actor</b>: <a href=\"HealthcareService/b81f2315-7476-45e8-9ae6-51f547e2d82e\">En sjov gutt clinic</a></p><p><b>participantStatus</b>: declined</p></div>"
+  ];
+  fhir:AppointmentResponse.appointment [
+     fhir:link <http://portal.wof.purified.link/fhir/Appointment/47>;
+     fhir:Reference.reference [ fhir:value "Appointment/47" ]
+  ];
+  fhir:AppointmentResponse.actor [
+     fhir:link <http://portal.wof.purified.link/fhir/HealthcareService/b81f2315-7476-45e8-9ae6-51f547e2d82e>;
+     fhir:Reference.reference [ fhir:value "HealthcareService/b81f2315-7476-45e8-9ae6-51f547e2d82e" ];
+     fhir:Reference.display [ fhir:value "En sjov gutt clinic" ]
+  ];
+  fhir:AppointmentResponse.participantStatus [ fhir:value "declined"] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://portal.wof.purified.link/fhir/AppointmentResponse/AppointmentResponseExample.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="csServiceType"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://portal.wof.purified.link/fhir/CodeSystem/csServiceType defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">1<a name="csServiceType-1"> </a></td><td>Profylax</td></tr><tr><td style="white-space:nowrap">2<a name="csServiceType-2"> </a></td><td>Undersökning</td></tr><tr><td style="white-space:nowrap">3<a name="csServiceType-3"> </a></td><td>Akut</td></tr><tr><td style="white-space:nowrap">0<a name="csServiceType-0"> </a></td><td>Revision ospecificerad behandling</td></tr><tr><td style="white-space:nowrap">123<a name="csServiceType-123"> </a></td><td>TdlUS60</td></tr></table></div>
+  </text>
+  <url value="http://portal.wof.purified.link/fhir/CodeSystem/csServiceType"/>
+  <version value="0.1.0"/>
+  <name value="ITBServiceType"/>
+  <title value="ITB Service Types"/>
+  <status value="active"/>
+  <date value="2021-09-29T15:21:42+02:00"/>
+  <description value="ITB Service Types"/>
+  <content value="complete"/>
+  <count value="5"/>
+  <concept>
+    <code value="1"/>
+    <display value="Profylax"/>
+  </concept>
+  <concept>
+    <code value="2"/>
+    <display value="Unders&#xF6;kning"/>
+  </concept>
+  <concept>
+    <code value="3"/>
+    <display value="Akut"/>
+  </concept>
+  <concept>
+    <code value="0"/>
+    <display value="Revision ospecificerad behandling"/>
+  </concept>
+  <concept>
+    <code value="123"/>
+    <display value="TdlUS60"/>
+  </concept>
+</CodeSystem>

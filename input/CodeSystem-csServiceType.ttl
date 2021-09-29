@@ -1,0 +1,52 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://portal.wof.purified.link/fhir/CodeSystem/csServiceType> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "csServiceType"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://portal.wof.purified.link/fhir/CodeSystem/csServiceType defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"csServiceType-1\"> </a></td><td>Profylax</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"csServiceType-2\"> </a></td><td>Undersökning</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"csServiceType-3\"> </a></td><td>Akut</td></tr><tr><td style=\"white-space:nowrap\">0<a name=\"csServiceType-0\"> </a></td><td>Revision ospecificerad behandling</td></tr><tr><td style=\"white-space:nowrap\">123<a name=\"csServiceType-123\"> </a></td><td>TdlUS60</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "http://portal.wof.purified.link/fhir/CodeSystem/csServiceType"];
+  fhir:CodeSystem.version [ fhir:value "0.1.0"];
+  fhir:CodeSystem.name [ fhir:value "ITBServiceType"];
+  fhir:CodeSystem.title [ fhir:value "ITB Service Types"];
+  fhir:CodeSystem.status [ fhir:value "active"];
+  fhir:CodeSystem.date [ fhir:value "2021-09-29T15:21:42+02:00"^^xsd:dateTime];
+  fhir:CodeSystem.description [ fhir:value "ITB Service Types"];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.count [ fhir:value "5"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "1" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Profylax" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "2" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Undersökning" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "3" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Akut" ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "0" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Revision ospecificerad behandling" ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "123" ];
+     fhir:CodeSystem.concept.display [ fhir:value "TdlUS60" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://portal.wof.purified.link/fhir/CodeSystem/csServiceType.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,109 @@
+{
+  "resourceType": "HealthcareService",
+  "id": "ITBHealthcareService",
+  "meta": {
+    "profile": [
+      "http://portal.wof.purified.link/fhir/StructureDefinition/ITBHealthcareService"
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>ITB List Reference Extension</b>: <a name=\"listId\"> </a></p><blockquote><p><b>status</b>: current</p><p><b>mode</b>: working</p><blockquote><p><b>entry</b></p><p><b>ITB Price Definition Extension</b>: 2.000 SEK</p><p><b>item</b>: <a href=\"ActivityDefinition/5e54aeb0-339d-49ed-af21-386f6ce0c730\">Dårlig Ånde</a></p></blockquote><blockquote><p><b>entry</b></p><p><b>ITB Price Definition Extension</b>: 850 NOK</p><p><b>item</b>: <a href=\"ActivityDefinition/bcfafc6d-98df-4985-97ea-5ddd75fe858f\">Tannlegeskrekk</a></p></blockquote><blockquote><p><b>entry</b></p><p><b>ITB Price Definition Extension</b>: 5 dollahs</p><p><b>item</b>: <a href=\"ActivityDefinition/30491f7e-786e-4f48-a555-982ee5828641\">Tannrens</a></p></blockquote></blockquote><p><b>ITB Url Placeholder Extension</b>: http://portal.wof</p><p><b>identifier</b>: id: Colosseum Tannlege Nationaltheatret</p><p><b>active</b>: true</p><p><b>location</b>: <a name=\"adressId\"> </a></p><blockquote><p><b>address</b>: Stortingsgata 30(WORK)</p><h3>Positions</h3><table class=\"grid\"><tr><td>-</td><td><b>Longitude</b></td><td><b>Latitude</b></td></tr><tr><td>*</td><td>10.729501</td><td>59.91475</td></tr></table></blockquote><p><b>name</b>: colosseum-nationaltheatret</p><p><b>telecom</b>: <a href=\"tel:+4712345678\">+4712345678</a></p><p><b>endpoint</b>: <a href=\"Endpoint/fc580e7c-7fd8-4acd-92e9-42cb052763d4\">itbDev-colosseum-opus-nationaltheatret</a></p></div>"
+  },
+  "contained": [
+    {
+      "resourceType": "Location",
+      "id": "adressId",
+      "address": {
+        "use": "work",
+        "text": "Stortingsgata 30",
+        "city": "Oslo"
+      },
+      "position": {
+        "longitude": 10.729501,
+        "latitude": 59.91475
+      }
+    },
+    {
+      "resourceType": "List",
+      "id": "listId",
+      "status": "current",
+      "mode": "working",
+      "entry": [
+        {
+          "extension": [
+            {
+              "url": "http://portal.wof.purified.link/fhir/StructureDefinition/extPriceDefinition",
+              "valueString": "2.000 SEK"
+            }
+          ],
+          "item": {
+            "reference": "ActivityDefinition/5e54aeb0-339d-49ed-af21-386f6ce0c730",
+            "display": "Dårlig Ånde"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://portal.wof.purified.link/fhir/StructureDefinition/extPriceDefinition",
+              "valueString": "850 NOK"
+            }
+          ],
+          "item": {
+            "reference": "ActivityDefinition/bcfafc6d-98df-4985-97ea-5ddd75fe858f",
+            "display": "Tannlegeskrekk"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://portal.wof.purified.link/fhir/StructureDefinition/extPriceDefinition",
+              "valueString": "5 dollahs"
+            }
+          ],
+          "item": {
+            "reference": "ActivityDefinition/30491f7e-786e-4f48-a555-982ee5828641",
+            "display": "Tannrens"
+          }
+        }
+      ]
+    }
+  ],
+  "extension": [
+    {
+      "url": "http://portal.wof.purified.link/fhir/StructureDefinition/extListReference",
+      "valueReference": {
+        "reference": "#listId"
+      }
+    },
+    {
+      "url": "http://portal.wof.purified.link/fhir/StructureDefinition/extUrlPlaceholder",
+      "valueString": "http://portal.wof"
+    }
+  ],
+  "identifier": [
+    {
+      "value": "Colosseum Tannlege Nationaltheatret"
+    }
+  ],
+  "active": true,
+  "location": [
+    {
+      "reference": "#adressId"
+    }
+  ],
+  "name": "colosseum-nationaltheatret",
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "+4712345678",
+      "use": "work"
+    }
+  ],
+  "endpoint": [
+    {
+      "reference": "Endpoint/fc580e7c-7fd8-4acd-92e9-42cb052763d4",
+      "display": "itbDev-colosseum-opus-nationaltheatret"
+    }
+  ]
+}

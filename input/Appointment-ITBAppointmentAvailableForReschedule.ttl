@@ -1,0 +1,83 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://portal.wof.purified.link/fhir/Appointment/ITBAppointmentAvailableForReschedule> a fhir:Appointment;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "ITBAppointmentAvailableForReschedule"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://portal.wof.purified.link/fhir/StructureDefinition/ITBAppointment";
+       fhir:index 0;
+       fhir:link <http://portal.wof.purified.link/fhir/StructureDefinition/ITBAppointment>
+     ];
+     fhir:Meta.tag [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://portal.wof.purified.link/fhir/CodeSystem/csAvailableForCancellation" ];
+       fhir:Coding.code [ fhir:value "false" ]
+     ], [
+       fhir:index 1;
+       fhir:Coding.system [ fhir:value "http://portal.wof.purified.link/fhir/CodeSystem/csAvailableForReschedule" ];
+       fhir:Coding.code [ fhir:value "true" ]
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: booked</p><p><b>serviceType</b>: <span title=\"Codes: {http://portal.wof.purified.link/fhir/CodeSystem/csServiceType examination}\">examination</span></p><p><b>start</b>: May 7, 2021 10:00:00 AM</p><p><b>end</b>: May 7, 2021 10:30:00 AM</p><p><b>minutesDuration</b>: 30</p><blockquote><p><b>participant</b></p><p><b>actor</b>: <a href=\"Patient/649\">Patient</a></p><p><b>status</b>: accepted</p></blockquote><blockquote><p><b>participant</b></p><p><b>actor</b>: <a href=\"PractitionerRole/53248079-fd9b-4de5-8d22-d93068542def\">Tannpleier Laila Rindal-Flatlie</a></p><p><b>status</b>: accepted</p></blockquote><blockquote><p><b>participant</b></p><p><b>actor</b>: <a href=\"HealthcareService/b81f2315-7476-45e8-9ae6-51f547e2d82e\">En sjov gutt clinic</a></p><p><b>status</b>: accepted</p></blockquote><blockquote><p><b>participant</b></p><p><b>actor</b>: <a href=\"Device/4\">Device</a></p><p><b>status</b>: accepted</p></blockquote></div>"
+  ];
+  fhir:Appointment.status [ fhir:value "booked"];
+  fhir:Appointment.serviceType [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://portal.wof.purified.link/fhir/CodeSystem/csServiceType" ];
+       fhir:Coding.code [ fhir:value "examination" ]
+     ]
+  ];
+  fhir:Appointment.start [ fhir:value "2021-05-07T08:00:00+00:00"^^xsd:dateTime];
+  fhir:Appointment.end [ fhir:value "2021-05-07T08:30:00+00:00"^^xsd:dateTime];
+  fhir:Appointment.minutesDuration [ fhir:value "30"^^xsd:positiveInteger];
+  fhir:Appointment.participant [
+     fhir:index 0;
+     fhir:Appointment.participant.actor [
+       fhir:link <http://portal.wof.purified.link/fhir/Patient/649>;
+       fhir:Reference.reference [ fhir:value "Patient/649" ];
+       fhir:Reference.display [ fhir:value "Patient" ]
+     ];
+     fhir:Appointment.participant.status [ fhir:value "accepted" ]
+  ], [
+     fhir:index 1;
+     fhir:Appointment.participant.actor [
+       fhir:link <http://portal.wof.purified.link/fhir/PractitionerRole/53248079-fd9b-4de5-8d22-d93068542def>;
+       fhir:Reference.reference [ fhir:value "PractitionerRole/53248079-fd9b-4de5-8d22-d93068542def" ];
+       fhir:Reference.display [ fhir:value "Tannpleier Laila Rindal-Flatlie" ]
+     ];
+     fhir:Appointment.participant.status [ fhir:value "accepted" ]
+  ], [
+     fhir:index 2;
+     fhir:Appointment.participant.actor [
+       fhir:link <http://portal.wof.purified.link/fhir/HealthcareService/b81f2315-7476-45e8-9ae6-51f547e2d82e>;
+       fhir:Reference.reference [ fhir:value "HealthcareService/b81f2315-7476-45e8-9ae6-51f547e2d82e" ];
+       fhir:Reference.display [ fhir:value "En sjov gutt clinic" ]
+     ];
+     fhir:Appointment.participant.status [ fhir:value "accepted" ]
+  ], [
+     fhir:index 3;
+     fhir:Appointment.participant.actor [
+       fhir:link <http://portal.wof.purified.link/fhir/Device/4>;
+       fhir:Reference.reference [ fhir:value "Device/4" ];
+       fhir:Reference.display [ fhir:value "Device" ]
+     ];
+     fhir:Appointment.participant.status [ fhir:value "accepted" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://portal.wof.purified.link/fhir/Appointment/ITBAppointmentAvailableForReschedule.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,233 @@
+[
+  {
+    "id": "ITBActivityDefinition",
+    "type": "ActivityDefinition",
+    "url": "http://portal.wof.purified.link/fhir/ActivityDefinition/ITBActivityDefinition",
+    "version": "0.1.0",
+    "name": "TdlUS60"
+  },
+  {
+    "id": "ITBCapabilityStatement",
+    "type": "CapabilityStatement",
+    "url": "http://portal.wof.purified.link/fhir/CapabilityStatement",
+    "version": "0.1.0",
+    "name": "ITB"
+  },
+  {
+    "id": "csOpusIdentifier",
+    "type": "CodeSystem",
+    "url": "http://portal.wof.purified.link/fhir/CodeSystem/csOpusIdentifier",
+    "version": "0.1.0",
+    "name": "OpusIdentifier"
+  },
+  {
+    "id": "csServiceType",
+    "type": "CodeSystem",
+    "url": "http://portal.wof.purified.link/fhir/CodeSystem/csServiceType",
+    "version": "0.1.0",
+    "name": "ITBServiceType"
+  },
+  {
+    "id": "itb-booking-categories",
+    "type": "CodeSystem",
+    "url": "http://portal.wof.purified.link/fhir/CodeSystem/itb-booking-categories",
+    "version": "0.1.0",
+    "name": "ITBBookingCategories"
+  },
+  {
+    "id": "practitioner-role-code",
+    "type": "CodeSystem",
+    "url": "http://portal.wof.purified.link/fhir/CodeSystem/practitioner-role-code",
+    "version": "0.1.0",
+    "name": "PractitionerRoleCode"
+  },
+  {
+    "id": "portal.wof.purified.link",
+    "type": "ImplementationGuide",
+    "url": "http://portal.wof.purified.link/fhir/ImplementationGuide/portal.wof.purified.link",
+    "version": "0.1.0",
+    "name": "ITBImplementationGuide"
+  },
+  {
+    "id": "ITBActivityDefinition",
+    "type": "StructureDefinition",
+    "url": "http://portal.wof.purified.link/fhir/StructureDefinition/ITBActivityDefinition",
+    "version": "0.1.0",
+    "name": "ITBActivityDefinition"
+  },
+  {
+    "id": "ITBAppointment",
+    "type": "StructureDefinition",
+    "url": "http://portal.wof.purified.link/fhir/StructureDefinition/ITBAppointment",
+    "version": "0.1.0",
+    "name": "ITBAppointment"
+  },
+  {
+    "id": "ITBAppointmentResponse",
+    "type": "StructureDefinition",
+    "url": "http://portal.wof.purified.link/fhir/StructureDefinition/ITBAppointmentResponse",
+    "version": "0.1.0",
+    "name": "ITBAppointmentResponse"
+  },
+  {
+    "id": "ITBEndpoint",
+    "type": "StructureDefinition",
+    "url": "http://portal.wof.purified.link/fhir/StructureDefinition/ITBEndpoint",
+    "version": "0.1.0",
+    "name": "ITBEndpoint"
+  },
+  {
+    "id": "ITBHealthcareService",
+    "type": "StructureDefinition",
+    "url": "http://portal.wof.purified.link/fhir/StructureDefinition/ITBHealthcareService",
+    "version": "0.1.0",
+    "name": "ITBHealthcareService"
+  },
+  {
+    "id": "ITBList",
+    "type": "StructureDefinition",
+    "url": "http://portal.wof.purified.link/fhir/StructureDefinition/ITBList",
+    "version": "0.1.0",
+    "name": "ITBList"
+  },
+  {
+    "id": "ITBLocation",
+    "type": "StructureDefinition",
+    "url": "http://portal.wof.purified.link/fhir/StructureDefinition/ITBLocation",
+    "version": "0.1.0",
+    "name": "ITBLocation"
+  },
+  {
+    "id": "ITBOrganization",
+    "type": "StructureDefinition",
+    "url": "http://portal.wof.purified.link/fhir/StructureDefinition/ITBOrganization",
+    "version": "0.1.0",
+    "name": "ITBOrganization"
+  },
+  {
+    "id": "ITBPatient",
+    "type": "StructureDefinition",
+    "url": "http://portal.wof.purified.link/fhir/StructureDefinition/ITBPatient",
+    "version": "0.1.0",
+    "name": "ITBPatient"
+  },
+  {
+    "id": "ITBPractitioner",
+    "type": "StructureDefinition",
+    "url": "http://portal.wof.purified.link/fhir/StructureDefinition/ITBPractitioner",
+    "version": "0.1.0",
+    "name": "ITBPractitioner"
+  },
+  {
+    "id": "ITBPractitionerRole",
+    "type": "StructureDefinition",
+    "url": "http://portal.wof.purified.link/fhir/StructureDefinition/ITBPractitionerRole",
+    "version": "0.1.0",
+    "name": "ITBPractitionerRole"
+  },
+  {
+    "id": "ITBSchedule",
+    "type": "StructureDefinition",
+    "url": "http://portal.wof.purified.link/fhir/StructureDefinition/ITBSchedule",
+    "version": "0.1.0",
+    "name": "ITBSchedule"
+  },
+  {
+    "id": "ITBSlot",
+    "type": "StructureDefinition",
+    "url": "http://portal.wof.purified.link/fhir/StructureDefinition/ITBSlot",
+    "version": "0.1.0",
+    "name": "ITBSlot"
+  },
+  {
+    "id": "PortalPerson",
+    "type": "StructureDefinition",
+    "url": "http://portal.wof.purified.link/fhir/StructureDefinition/PortalPerson",
+    "version": "0.1.0",
+    "name": "PortalPerson"
+  },
+  {
+    "id": "extBinaryReference",
+    "type": "StructureDefinition",
+    "url": "http://portal.wof.purified.link/fhir/StructureDefinition/extBinaryReference",
+    "version": "0.1.0",
+    "name": "ITBBinaryReference"
+  },
+  {
+    "id": "extCreated",
+    "type": "StructureDefinition",
+    "url": "http://portal.wof.purified.link/fhir/StructureDefinition/extCreated",
+    "version": "0.1.0",
+    "name": "PortalCreated"
+  },
+  {
+    "id": "extListReference",
+    "type": "StructureDefinition",
+    "url": "http://portal.wof.purified.link/fhir/StructureDefinition/extListReference",
+    "version": "0.1.0",
+    "name": "ITBListReference"
+  },
+  {
+    "id": "extOpusBookingCategory",
+    "type": "StructureDefinition",
+    "url": "http://portal.wof.purified.link/fhir/StructureDefinition/extOpusBookingCategory",
+    "version": "0.1.0",
+    "name": "OpusBookingCategory"
+  },
+  {
+    "id": "extOpusCryptobookingText",
+    "type": "StructureDefinition",
+    "url": "http://portal.wof.purified.link/fhir/StructureDefinition/extOpusCryptobookingText",
+    "version": "0.1.0",
+    "name": "OpusCryptobookingText"
+  },
+  {
+    "id": "extPriceDefinition",
+    "type": "StructureDefinition",
+    "url": "http://portal.wof.purified.link/fhir/StructureDefinition/extPriceDefinition",
+    "version": "0.1.0",
+    "name": "ITBPriceDefinition"
+  },
+  {
+    "id": "extSourceSystemUserId",
+    "type": "StructureDefinition",
+    "url": "http://portal.wof.purified.link/fhir/StructureDefinition/extSourceSystemUserId",
+    "version": "0.1.0",
+    "name": "ITBSourceSystemUserId"
+  },
+  {
+    "id": "extUrlPlaceholder",
+    "type": "StructureDefinition",
+    "url": "http://portal.wof.purified.link/fhir/StructureDefinition/extUrlPlaceholder",
+    "version": "0.1.0",
+    "name": "ITBUrlPlaceholder"
+  },
+  {
+    "id": "opus-identifiers",
+    "type": "ValueSet",
+    "url": "http://portal.wof.purified.link/fhir/ValueSet/opus-identifiers",
+    "version": "0.1.0",
+    "name": "OpusIdentifiers"
+  },
+  {
+    "id": "role-codes",
+    "type": "ValueSet",
+    "url": "http://portal.wof.purified.link/fhir/ValueSet/role-codes",
+    "version": "0.1.0",
+    "name": "ITBRoleCodes"
+  },
+  {
+    "id": "service-type",
+    "type": "ValueSet",
+    "url": "http://portal.wof.purified.link/fhir/ValueSet/service-type",
+    "version": "0.1.0",
+    "name": "ITBServiceType"
+  },
+  {
+    "id": "speciality-codes",
+    "type": "ValueSet",
+    "url": "http://portal.wof.purified.link/fhir/ValueSet/speciality-codes",
+    "version": "0.1.0",
+    "name": "ITBSpecialityCodes"
+  }
+]

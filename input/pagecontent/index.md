@@ -15,52 +15,68 @@ This guide describes all the included elements and how they can be used to build
 
 1. Get the **HealthCareService**s
 
-2. Get the **ActivityDefinition**s
+1. Get the **ActivityDefinition**s
 
-3. Get the **PractitionerRole**s for specified HealthCareService
+1. Get the **PractitionerRole**s for specified HealthCareService
 
-4. Get the **Schedule**s for specified actor and service-type
+1. Get the **Schedule**s for specified actor and service-type
 
-5. Get the **Slot**s by service-type, start-time and duration 
+1. Get the **Slot**s by service-type, start-time and duration 
 
 
 #### Steps to edit and reschedule a booking
 
+Pre-requisites: User has logged in
 
-1. Get the **HealthCareService**s
+1. Get the **HealthCareService**s 
 
-2. Get the **ActivityDefinition**s
+*This is a search operation that returns a Bundle of HealthCareServices. Both active and inactive are returned.
 
-3. Get the **Appointments**s for the specified HealthCareService
+1. Get the **ActivityDefinition**s
 
-    *After completing step 1-3 the appointments for the logged in user can be displayed?*
+1. Display the clinics
 
-4. Get the **PractitionerRole**s for the specified HealthCareService
+1. *Select clinic*
 
-5. Get **Patient**s
-    
-    *What is the patient(s) used for?*
+1. Get the **Appointment**s for the specified HealthCareService
 
-6. Get the **Schedule**s for specified actor and PractitionerRole
+1. Get the **PractitionerRole**s for the specified HealthCareService 
 
-    * *Are the steps 4-6 done to be able to select a new time?
+1. *What are the PractitionerRoles used for here?*
 
-7. Get **Appointment** by Id
+1. Get **Patient**  *What is the patient(s) used for here?*
 
-    The user has selected the booking to be edited/rescheduled -n
+1. *After the previous step information about the appointments in the selected clinic can be displayed*
 
-8. Get **Schedule** by Id
+1. *Select appointment to be rescheduled*
 
-9. Get **Slot** for specified **Schedule** and **Appointment** 
+1. Get the **Schedule**s for specified actor and PractitionerRole
+
+1. Get the **HealthCareService**s 
+
+1. Get the **Appointment**s
+
+1. *Select a new date and time*
+
+1. Put **Appointment**. 
+
+1. Get the **HealthCareService**s 
+
+1. Get the **Appointment**s for the specified HealthCareService
+
+1. Get the **PractitionerRole**s for the specified HealthCareService 
+1. Get **Patient**  *What is the patient(s) used for here?*
 
 
-10. Get **Appointment** by Id
 
-11. Get the **Appointment**s for the specified HealthCareService
 
-12. Get **Patient**s
-    
-    *What is the patient(s) used for?*
+----
+1. Get **Schedule** by Id
+1. Get **Slot** for specified **Schedule** and **Appointment** 
+----
+
+
+
 
 
 ### FHIR Endpoints

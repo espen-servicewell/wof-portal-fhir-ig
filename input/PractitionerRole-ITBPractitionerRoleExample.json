@@ -1,0 +1,73 @@
+{
+  "resourceType": "PractitionerRole",
+  "id": "ITBPractitionerRoleExample",
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>ITB Binary Reference Extension</b>: <a name=\"dceda771-ab94-43da-b2a1-de3941bd76f7\"> </a></p><blockquote><p><b>contentType</b>: image/bmp</p><p><b>securityContext</b>: <a href=\"6c5e67e6-1ee6-4e46-bd6f-560c9ddfaa42\">6c5e67e6-1ee6-4e46-bd6f-560c9ddfaa42</a></p><p><b>data</b>: dGVzdHRlc3Q=</p></blockquote><p><b>active</b>: true</p><p><b>period</b>: Jan 1, 2021 10:23:00 AM --&gt; (ongoing)</p><p><b>practitioner</b>: <a href=\"Practitioner/1234567\">Tandläkar Nils Nilsson</a></p><p><b>organization</b>: <a href=\"Organization/1234567\">Nils Nilsson AB</a></p><p><b>code</b>: <span title=\"Codes: {http://snomed.info/sct 106289002}\">tandläkare</span></p><p><b>specialty</b>: <span title=\"Codes: {http://snomed.info/sct 106289002}\">tandläkare</span></p><p><b>healthcareService</b>: <a href=\"HealthcareService/1234567\">My Healthcare servicecenter</a></p><p><b>endpoint</b>: <a href=\"http://fhir.link/jdjdjdj\">OpusDatabas</a></p></div>"
+  },
+  "contained": [
+    {
+      "resourceType": "Binary",
+      "id": "dceda771-ab94-43da-b2a1-de3941bd76f7",
+      "contentType": "image/bmp",
+      "securityContext": {
+        "reference": "6c5e67e6-1ee6-4e46-bd6f-560c9ddfaa42"
+      },
+      "data": "dGVzdHRlc3Q="
+    }
+  ],
+  "extension": [
+    {
+      "url": "http://portal.wof.purified.link/fhir/StructureDefinition/extBinaryReference",
+      "valueReference": {
+        "reference": "#dceda771-ab94-43da-b2a1-de3941bd76f7"
+      }
+    }
+  ],
+  "active": true,
+  "period": {
+    "start": "2021-01-01T10:23:00+01:00"
+  },
+  "practitioner": {
+    "reference": "Practitioner/1234567",
+    "display": "Tandläkar Nils Nilsson"
+  },
+  "organization": {
+    "reference": "Organization/1234567",
+    "display": "Nils Nilsson AB"
+  },
+  "code": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "106289002"
+        }
+      ],
+      "text": "tandläkare"
+    }
+  ],
+  "specialty": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "106289002"
+        }
+      ],
+      "text": "tandläkare"
+    }
+  ],
+  "healthcareService": [
+    {
+      "reference": "HealthcareService/1234567",
+      "display": "My Healthcare servicecenter"
+    }
+  ],
+  "endpoint": [
+    {
+      "reference": "http://fhir.link/jdjdjdj",
+      "display": "OpusDatabas"
+    }
+  ]
+}

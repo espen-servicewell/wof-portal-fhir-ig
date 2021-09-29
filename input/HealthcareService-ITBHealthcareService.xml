@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HealthcareService xmlns="http://hl7.org/fhir">
+  <id value="ITBHealthcareService"/>
+  <meta>
+    <profile value="http://portal.wof.purified.link/fhir/StructureDefinition/ITBHealthcareService"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>ITB List Reference Extension</b>: <a name="listId"> </a></p><blockquote><p><b>status</b>: current</p><p><b>mode</b>: working</p><blockquote><p><b>entry</b></p><p><b>ITB Price Definition Extension</b>: 2.000 SEK</p><p><b>item</b>: <a href="ActivityDefinition/5e54aeb0-339d-49ed-af21-386f6ce0c730">Dårlig Ånde</a></p></blockquote><blockquote><p><b>entry</b></p><p><b>ITB Price Definition Extension</b>: 850 NOK</p><p><b>item</b>: <a href="ActivityDefinition/bcfafc6d-98df-4985-97ea-5ddd75fe858f">Tannlegeskrekk</a></p></blockquote><blockquote><p><b>entry</b></p><p><b>ITB Price Definition Extension</b>: 5 dollahs</p><p><b>item</b>: <a href="ActivityDefinition/30491f7e-786e-4f48-a555-982ee5828641">Tannrens</a></p></blockquote></blockquote><p><b>ITB Url Placeholder Extension</b>: http://portal.wof</p><p><b>identifier</b>: id: Colosseum Tannlege Nationaltheatret</p><p><b>active</b>: true</p><p><b>location</b>: <a name="adressId"> </a></p><blockquote><p><b>address</b>: Stortingsgata 30(WORK)</p><h3>Positions</h3><table class="grid"><tr><td>-</td><td><b>Longitude</b></td><td><b>Latitude</b></td></tr><tr><td>*</td><td>10.729501</td><td>59.91475</td></tr></table></blockquote><p><b>name</b>: colosseum-nationaltheatret</p><p><b>telecom</b>: <a href="tel:+4712345678">+4712345678</a></p><p><b>endpoint</b>: <a href="Endpoint/fc580e7c-7fd8-4acd-92e9-42cb052763d4">itbDev-colosseum-opus-nationaltheatret</a></p></div>
+  </text>
+  <contained>
+    <Location>
+      <id value="adressId"/>
+      <address>
+        <use value="work"/>
+        <text value="Stortingsgata 30"/>
+        <city value="Oslo"/>
+      </address>
+      <position>
+        <longitude value="10.729501"/>
+        <latitude value="59.91475"/>
+      </position>
+    </Location>
+  </contained>
+  <contained>
+    <List>
+      <id value="listId"/>
+      <status value="current"/>
+      <mode value="working"/>
+      <entry>
+        <extension url="http://portal.wof.purified.link/fhir/StructureDefinition/extPriceDefinition">
+          <valueString value="2.000 SEK"/>
+        </extension>
+        <item>
+          <reference value="ActivityDefinition/5e54aeb0-339d-49ed-af21-386f6ce0c730"/>
+          <display value="D&#xE5;rlig &#xC5;nde"/>
+        </item>
+      </entry>
+      <entry>
+        <extension url="http://portal.wof.purified.link/fhir/StructureDefinition/extPriceDefinition">
+          <valueString value="850 NOK"/>
+        </extension>
+        <item>
+          <reference value="ActivityDefinition/bcfafc6d-98df-4985-97ea-5ddd75fe858f"/>
+          <display value="Tannlegeskrekk"/>
+        </item>
+      </entry>
+      <entry>
+        <extension url="http://portal.wof.purified.link/fhir/StructureDefinition/extPriceDefinition">
+          <valueString value="5 dollahs"/>
+        </extension>
+        <item>
+          <reference value="ActivityDefinition/30491f7e-786e-4f48-a555-982ee5828641"/>
+          <display value="Tannrens"/>
+        </item>
+      </entry>
+    </List>
+  </contained>
+  <extension url="http://portal.wof.purified.link/fhir/StructureDefinition/extListReference">
+    <valueReference>
+      <reference value="#listId"/>
+    </valueReference>
+  </extension>
+  <extension url="http://portal.wof.purified.link/fhir/StructureDefinition/extUrlPlaceholder">
+    <valueString value="http://portal.wof"/>
+  </extension>
+  <identifier>
+    <value value="Colosseum Tannlege Nationaltheatret"/>
+  </identifier>
+  <active value="true"/>
+  <location>
+    <reference value="#adressId"/>
+  </location>
+  <name value="colosseum-nationaltheatret"/>
+  <telecom>
+    <system value="phone"/>
+    <value value="+4712345678"/>
+    <use value="work"/>
+  </telecom>
+  <endpoint>
+    <reference value="Endpoint/fc580e7c-7fd8-4acd-92e9-42cb052763d4"/>
+    <display value="itbDev-colosseum-opus-nationaltheatret"/>
+  </endpoint>
+</HealthcareService>
