@@ -14,7 +14,7 @@ Usage: #example
 * minutesDuration = 30
 * participant[0].actor = Reference(Patient/649) "Patient"
 * participant[=].status = #accepted
-* participant[+].actor = Reference(PractitionerRole/53248079-fd9b-4de5-8d22-d93068542def) "Tannpleier Laila Rindal-Flatlie"
+* participant[+].actor = Reference(PractitionerRole/53248079-fd9b-4de5-8d22-d93068542def) "Tannpleier Sara Larsson"
 * participant[=].status = #accepted
 * participant[+].actor = Reference(HealthcareService/b81f2315-7476-45e8-9ae6-51f547e2d82e) "En sjov gutt clinic"
 * participant[=].status = #accepted

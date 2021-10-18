@@ -19,7 +19,7 @@ Usage: #example
 * identifier[=].system = "itbDev-colosseum-opus-nationaltheatret"
 * identifier[=].value = "2046"
 * active = true
-* name.text = "Tannlege Kenth Lyngtest"
+* name.text = "Tannlege Kurt Karlsson"
 * name.family = "Lyngtest"
 * name.given = "Kenth"
 
@@ -28,7 +28,7 @@ InstanceOf: PractitionerRole
 Usage: #inline
 //* id = "470_559"
 * active = false
-//* practitioner = Reference() "Tannlege Kenth Lyngtest"
+//* practitioner = Reference() "Tannlege Kurt Karlsson"
 * organization = Reference(Organization/559)
 //* code = Opus#LnkEmployeeBusiness
 * code.text = "WorksAt"

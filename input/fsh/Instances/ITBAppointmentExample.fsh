@@ -18,7 +18,7 @@ Usage: #example
 * serviceType[=].text = "Booket besøk online"
 * start = "2021-03-04T14:25:00+00:00"
 * end = "2021-03-04T14:55:00+00:00"
-* participant[0].actor = Reference(PractitionerRole/ecc708b6-95b2-4517-8644-e3b6c2180125) "Tannlege Torunn Lyngstad"
+* participant[0].actor = Reference(PractitionerRole/ecc708b6-95b2-4517-8644-e3b6c2180125) "Tannlege Lena Larsson"
 * participant[=].status = #accepted
 * participant[+].actor = Reference(HealthcareService/b81f2315-7476-45e8-9ae6-51f547e2d82e) "Colosseum Tannlege Nationaltheatret"
 * participant[=].status = #accepted

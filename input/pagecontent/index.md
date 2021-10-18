@@ -56,6 +56,8 @@ Pre-requisites: User has logged in
 
 1. Get the **Appointment**s
 
+1. Get **Slot** for specified **Schedule** and **Appointment** 
+
 1. *Select a new date and time*
 
 1. Put **Appointment**. 
@@ -72,7 +74,7 @@ Pre-requisites: User has logged in
 
 ----
 1. Get **Schedule** by Id
-1. Get **Slot** for specified **Schedule** and **Appointment** 
+
 ----
 
 
