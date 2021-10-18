@@ -9,6 +9,7 @@ extCreated named ExtCreated 0..1 MS
 
 * id 0..1 MS
 * meta.profile 0..1 MS
+* meta.lastUpdated 0..1 MS
 
 * identifier 0..* MS
 * identifier ^short = "Extern identifierare. Svenskt personnumer men även andra identifierare"
@@ -17,6 +18,7 @@ extCreated named ExtCreated 0..1 MS
 * identifier.type.coding.code 0..1 MS
 * identifier.system 0..1 MS
 * identifier.value 0..1 MS
+* identifier.assigner 0..1 MS
 
 * active 0..1 MS
 // TODO - kan det vara olika system och koder för identifierar-type
@@ -32,6 +34,14 @@ extCreated named ExtCreated 0..1 MS
 
 * link.target 1..1 MS
 //* link.target ^short
+
+* link.target.type 1..1 MS
+//* link.target.identifier.type.coding.system 0..1 MS
+//* link.target.identifier.coding.code 0..1 MS
+* link.target.identifier.system 0..1 MS
+* link.target.identifier.value 0..1 MS
+* link.target.identifier.assigner 0..1 MS
+* link.target.identifier.assigner.reference 0..1 MS
 
 * link.assurance 0..1 MS
 * link.assurance ^short = "level1 | level2 | level3 | level4"
