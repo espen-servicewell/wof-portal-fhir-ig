@@ -3,7 +3,7 @@ Instance: PostAppointmentWithoutPatient
 InstanceOf: ITBAppointment
 Usage: #example
 * status = #proposed
-* serviceType = $csServiceType#{{serviceTypeCode}}
+* serviceType = $csServiceType#servicetype1
 * start = "2021-05-14T06:30:00+00:00"
 * end = "2021-05-14T07:00:00+00:00"
 * participant[+].actor = Reference(HealthcareService/{{healthCareServiceID}})
