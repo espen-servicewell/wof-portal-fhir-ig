@@ -7,6 +7,9 @@ Description: "This resource can be used to handle for example related persons, p
 * extension contains
 extCreated named ExtCreated 0..1 MS
 
+* extension contains
+extConsentToMarketing named ExtConsentToMarketing 0..1 MS
+
 * id 0..1 MS
 * meta.profile 0..1 MS
 * meta.lastUpdated 0..1 MS

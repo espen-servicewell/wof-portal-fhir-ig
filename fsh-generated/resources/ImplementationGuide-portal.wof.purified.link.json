@@ -16,14 +16,6 @@
     "resource": [
       {
         "reference": {
-          "reference": "StructureDefinition/ClinicalOrganization"
-        },
-        "name": "Portal Clinical Organization",
-        "description": "This resource can be used to handle clinical organizations",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/ITBActivityDefinition"
         },
         "name": "ITB ActivityDefinition",
@@ -133,6 +125,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/extConsentToMarketing"
+        },
+        "name": "Consent to marketing Extension",
+        "description": "Used to handle consent to marketing",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/extBinaryReference"
         },
         "name": "ITB Binary Reference Extension",
@@ -173,14 +173,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/extNameAsCode"
-        },
-        "name": "Name as code Extension",
-        "description": "Extension used to handle code for name",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/extOpusBookingCategory"
         },
         "name": "Opus Booking Category Extension",
@@ -197,26 +189,10 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/extAttachment"
-        },
-        "name": "Attachment Extension",
-        "description": "Extension used to be able add attachments to a resource",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/extCreated"
         },
         "name": "Portal Created Extension",
-        "description": "Used in meta to specify date created",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/extTenantIdenfier"
-        },
-        "name": "Tenant Identifier Extension",
-        "description": "Extension used to be able to inlude binaries in the resource",
+        "description": "Used in meta to specify date create",
         "exampleBoolean": false
       },
       {
