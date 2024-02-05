@@ -3,6 +3,8 @@ Parent: HealthcareService
 Title: "ITB HealthcareService"
 Description: "ITBHealthcareService..."
 
+* ^version = "0.1.1"
+
 
 * extension contains
 ITBListReference named ExtListReference 0..1 MS
@@ -37,18 +39,33 @@ ITBUrlPlaceholder named ExtUrlPlaceholder 0..1
 * endpoint ^short = "TBD"
 * endpoint.display ^short = ""
 
+
 * active 0..1 MS
 * active ^short = ""
-
 
 // Eller ska denna inte vara med eftersom contained?
 * location 0..* MS
 * location only Reference(ITBLocation)
 
-* telecom 0..*
+* telecom ^slicing.discriminator.type = #value
+* telecom ^slicing.discriminator.path = "telecom"
+* telecom ^slicing.rules = #open
+* telecom ^slicing.description = ""
+* telecom ^slicing.ordered = false
+
+* telecom contains
+Phone 0..1 MS and
+Email 0..1 MS
+
 * telecom ^short = "List of contacts related to this specific healthcare service."
-* telecom.system 0..1
+* telecom[Phone].system = #phone
+* telecom[Email].system = #email
+
 * telecom.value 0..1 MS
 
 * availableTime 0..* MS
 * availableTime ^short = "Name or Display name"
+
+* extension contains NotBookableInITB named NotBookableInITB 0..1 MS
+
+* extension[NotBookableInITB] ^short = "Indicates if booking is made outside this ITB"
