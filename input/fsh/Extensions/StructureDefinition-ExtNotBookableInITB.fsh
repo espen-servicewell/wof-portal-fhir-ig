@@ -5,7 +5,7 @@ Description: ""
 Context: ITBHealthcareService
 
 * extension contains
-HasExternalBookingSite named HasExternalBookingSite 0..1 MS ?! and
+HasExternalBookingSite named HasExternalBookingSite 0..1 MS and
 BookingInformation named BookingInformation 0..1 MS and
 ExternalBookingUrl named ExternalBookingUrl 0..1 MS
 

@@ -41,7 +41,6 @@ ITBUrlPlaceholder named ExtUrlPlaceholder 0..1 MS
 * active 0..1 MS
 * active ^short = ""
 
-
 // Eller ska denna inte vara med eftersom contained?
 * location 0..* MS
 * location only Reference(ITBLocation)
