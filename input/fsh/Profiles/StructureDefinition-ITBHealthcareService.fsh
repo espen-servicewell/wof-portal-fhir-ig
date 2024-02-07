@@ -3,12 +3,20 @@ Parent: HealthcareService
 Title: "ITB HealthcareService"
 Description: "ITBHealthcareService..."
 
-* ^version = "0.1.1"
-
+* ^version = "1.0.0"
+* ^status = #active //WIP
 
 * extension contains
-ITBListReference named ExtListReference 0..1 MS
+ITBListReference named ExtListReference 0..1 MS and
+NotBookableInITB named NotBookableInITB 0..1 MS and
+PractitionerSegments named ExtPractitionerSegments 0..1 MS and
+PlanningHorizonInWeeks named ExtPlanningHorizonInWeeks 0..1 MS and
+AllowReschedulingFromDentalUnitLocation named ExtAllowReschedulingFromDentalUnitLocation 0..1 MS and
+// TOOD - revert this
+//ITBUrlPlaceholder named ExtUrlPlaceholder 1..1
+ITBUrlPlaceholder named ExtUrlPlaceholder 0..1 MS
 
+* extension[NotBookableInITB] ^short = "Indicates if booking is made outside this ITB"
 // Which of these ways is preferred. Cannot add short desription to the first
 //* ^contained[+] = List
 //* ^contained[+] = Location
@@ -19,17 +27,8 @@ ITBListReference named ExtListReference 0..1 MS
 * contained only ITBLocation or ITBList
 * contained ^short = "Reference to a List or Location"
 
-* extension contains
-// TOOD - revert this
-//ITBUrlPlaceholder named ExtUrlPlaceholder 1..1
-ITBUrlPlaceholder named ExtUrlPlaceholder 0..1
-
 * id 0..1 MS
 * id ^short = "HealthCareService Id"
-
-// identifier is also used for Display Name?
-* identifier 0..1 MS
-* identifier ^short = "Display Name"
 
 * name 0..1 MS
 * name ^short = "Name visible in GUI"
@@ -39,9 +38,9 @@ ITBUrlPlaceholder named ExtUrlPlaceholder 0..1
 * endpoint ^short = "TBD"
 * endpoint.display ^short = ""
 
-
 * active 0..1 MS
 * active ^short = ""
+
 
 // Eller ska denna inte vara med eftersom contained?
 * location 0..* MS
@@ -57,15 +56,31 @@ ITBUrlPlaceholder named ExtUrlPlaceholder 0..1
 Phone 0..1 MS and
 Email 0..1 MS
 
+* telecom 0..*
 * telecom ^short = "List of contacts related to this specific healthcare service."
 * telecom[Phone].system = #phone
+* telecom[Phone].value 0..1 MS
 * telecom[Email].system = #email
+* telecom[Email].value 0..1 MS
 
-* telecom.value 0..1 MS
 
 * availableTime 0..* MS
 * availableTime ^short = "Name or Display name"
 
-* extension contains NotBookableInITB named NotBookableInITB 0..1 MS
+* providedBy 0..1 MS
+* providedBy only Reference(Organization)
+* providedBy ^short = "Of type 'WofReference'. Organization is named 'CareProvider' in portal"
 
-* extension[NotBookableInITB] ^short = "Indicates if booking is made outside this ITB"
+Extension: PlanningHorizonInWeeks
+Id: PlanningHorizonInWeeks
+Title: "PlanningHorizonInWeeks"
+Description: ""
+Context: ITBHealthcareService
+* value[x] only integer
+
+Extension: AllowReschedulingFromDentalUnitLocation
+Id: AllowReschedulingFromDentalUnitLocation
+Title: "AllowReschedulingFromDentalUnitLocation"
+Description: ""
+Context: ITBHealthcareService
+* value[x] only boolean
