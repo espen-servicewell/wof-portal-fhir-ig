@@ -6,6 +6,8 @@ Description: "ITBHealthcareService..."
 * ^version = "1.0.0"
 * ^status = #active //WIP
 
+* meta only WofMeta
+
 * extension contains
 ITBListReference named ExtListReference 0..1 MS and
 NotBookableInITB named NotBookableInITB 0..1 MS and
@@ -40,6 +42,7 @@ ITBUrlPlaceholder named ExtUrlPlaceholder 0..1 MS
 
 * active 0..1 MS
 * active ^short = ""
+
 
 // Eller ska denna inte vara med eftersom contained?
 * location 0..* MS
