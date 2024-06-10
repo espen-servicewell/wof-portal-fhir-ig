@@ -2,7 +2,7 @@ Profile: ClinicalOrganization
 Parent: Organization
 Title: "Portal Clinical Organization"
 Description: "This resource can be used to handle clinical organizations"
-//
+///
 * extension contains
 extCreated named ExtCreated 0..1 MS
 * extension contains
