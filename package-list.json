@@ -8,7 +8,7 @@
     {
       "version": "current",
       "desc": "Continuous Integration Build",
-      "path": http://build.fhir.org/ig/WellOnFHIR/wof-portal-fhir-ig,
+      "path": "http://build.fhir.org/ig/WellOnFHIR/wof-portal-fhir-ig",
       "status": "ci-build",
       "current": true
     }
