@@ -1,0 +1,92 @@
+#segment-footer  .container a {
+    background-color: #acb5b6;
+    color: #3b89c8;
+}
+
+#segment-footer  .container {
+    background-color: #acb5b6;
+    color: #3b89c8;
+}
+
+.segment-navbar {
+    background-color: #acb5b6;
+    color: #3b89c8;
+}
+
+#rs-nav {
+    float: right;
+    padding: 5px;
+}
+
+#ig-status {
+    line-height: 20px;
+    margin-top: 17px;
+    color: #3B5F79;
+    text-align: center;
+    height: 50px;
+}
+
+#fhir-logo {
+    float: left;
+    padding: 5px;
+}
+
+.navbar-inverse {
+    background-color: #38668b;
+}
+.navbar-inverse .navbar-nav > li > a:hover {
+    background-color: #38668b;
+    color: #3b89c8;
+}
+
+#publish-box {
+    background-color: #8fa9af;
+    border: #16191b;
+    padding: 5px;
+  }
+
+ /* ul.navbar-nav { 
+    padding-top:7px;
+    padding-bottom:10px; 
+
+
+}
+  .navbar-nav li {
+    display:inline-block; 
+     float:none;
+}
+
+.navbar-nav {
+    float: left;
+    margin-top: -25px;
+    margin-bottom: -5px;
+
+
+.navbar-nav > li > a {
+    padding-top:0px;
+    padding-bottom:0px; 
+    line-height: 10px;
+}
+
+.navbar {
+    min-height:1px
+}
+*/
+
+
+.navbar-brand {
+    padding: 0;
+    height: 1px;
+}
+
+.navbar-nav .nav-link {
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 1px;
+    line-height: 1px;
+}
+
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
+    background-color: #2e2f30;
+    color: #38668b;
+} 

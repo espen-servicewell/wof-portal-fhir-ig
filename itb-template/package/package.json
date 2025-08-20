@@ -1,0 +1,13 @@
+{
+"name": "d-t.fhir.template",
+"version": "0.1.0",
+"type": "fhir.template",
+"license": "CC0-1.0",
+"description": "Direkttest FHIR Template",
+"author": "uri.d-t.se",
+"canonical": "uri.d-t.se/templates/d-t.fhir.template",
+"base": "fhir.base.template",
+"dependencies": {
+    "fhir.base.template": "current"
+    }
+}
