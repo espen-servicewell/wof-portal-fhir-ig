@@ -1,3 +1,0 @@
-{% include list-profiles.xhtml %}
-
-
