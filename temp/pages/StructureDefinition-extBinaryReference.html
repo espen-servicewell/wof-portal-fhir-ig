@@ -5,21 +5,20 @@
   <!--ReleaseHeader--><p id="publish-box">Publish Box goes here</p><!--EndReleaseHeader-->
   {% include fragment-profile-navtabs.html type='StructureDefinition' id='extBinaryReference' active='content' %}
   <a name="root"> </a>
-  <h2 id="root">Extension: {{site.data.pages[page.path].title}}</h2>
-  <p>{{site.data.structuredefinitions['extBinaryReference'].description | markdownify}}</p>
-  <p>
-  The official URL for this extension is:
-  </p>
-  <pre>{{site.data.structuredefinitions['extBinaryReference'].url}}</pre>
-  <p>Status: <b>{{site.data.structuredefinitions['extBinaryReference'].status}}</b><br/>
-    Extension maintained by: {{site.data.structuredefinitions['extBinaryReference'].publisher}}</p>
+  <h2 id="root">Extension: {{site.data.pages[page.path].title | escape_once}}
+{% if site.data.resources[resource_].experimental == true %}(Experimental){% endif %}
+  </h2>
+
+{% include fragment-resourceTable.html %}
+{%if site.data.resources[resource_].description %}
+{{site.data.resources[resource_].description|markdownify}}
+{% endif %}{%if site.data.resources[resource_].purpose %}
+{{site.data.resources[resource_].purpose|markdownify}}
+{% endif %}
 
   <p><b>Context of Use</b></p>
-  <p>This extension may be used on the following {{site.data.structuredefinitions['extBinaryReference'].contextType}} element(s):</p>
   <ul>
-    {% for context in site.data.structuredefinitions['extBinaryReference'].contexts %}
-    <li>{{context.type}}</li>
-    {% endfor %}
+  {%include StructureDefinition-extBinaryReference-sd-use-context.xhtml%}
   </ul>
 
   <!-- insert intro if present -->
@@ -32,13 +31,10 @@
   <a name="profile"> </a>
   <h3 id="profile">Formal Views of Extension Content</h3>
   <p>
-    <a href="{{site.data.fhir.path}}profiling.html#representation">Description of Profiles, Differentials, Snapshots, and how the XML and JSON presentations work</a>.
+    <a href="http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#structure-definitions">Description of Profiles, Differentials, Snapshots, and how the XML and JSON presentations work</a>.
   </p>
   <div id="tabs">
     <ul>
-      <li>
-        <a href="#tabs-summ">Text Summary</a>
-      </li>
       <li>
         <a href="#tabs-diff">Differential Table</a>
       </li>
@@ -61,20 +57,12 @@
       </li>-->
 {% endunless %}
       <li>
+        <a href="#tabs-summ">Statistics/References</a>
+      </li>
+      <li>
         <a href="#tabs-all">All</a>
       </li>
     </ul>
-    <a name="tabs-summ"> </a>
-    <div id="tabs-summ">
-      <div id="tbl-summ">
-        <p>This structure is derived from <a href="{{site.data.structuredefinitions['extBinaryReference'].basepath}}">{{site.data.structuredefinitions['extBinaryReference'].basename}}</a>
-        </p>
-        <div id="tbl-summ-inner">
-          <a name="summary"> </a>
-          {%include StructureDefinition-extBinaryReference-summary.xhtml%}
-        </div>
-      </div>
-    </div>
     <a name="tabs-diff"> </a>
     <div id="tabs-diff">
       <div id="tbl-diff">
@@ -123,15 +111,19 @@
       </div>
     </div>-->
 {% endunless %}
-    <a name="tabs-all"> </a>
-    <div id="tabs-all">
-      <div id="all-summ">
+    <a name="tabs-summ"> </a>
+    <div id="tabs-summ">
+      <div id="tbl-summ">
         <p>This structure is derived from <a href="{{site.data.structuredefinitions['extBinaryReference'].basepath}}">{{site.data.structuredefinitions['extBinaryReference'].basename}}</a>
         </p>
-        <div id="all-summ-inner">
+        <div id="tbl-summ-inner">
+          <a name="summary"> </a>
           {%include StructureDefinition-extBinaryReference-summary.xhtml%}
         </div>
       </div>
+    </div>
+    <a name="tabs-all"> </a>
+    <div id="tabs-all">
       <div id="all-tbl-diff">
         <p>
           <b>Differential View</b>
@@ -139,7 +131,7 @@
         <p>This structure is derived from <a href="{{site.data.structuredefinitions['extBinaryReference'].basepath}}">{{site.data.structuredefinitions['extBinaryReference'].basename}}</a>
         </p>
         <div id="all-tbl-diff-inner">
-          {%include StructureDefinition-extBinaryReference-diff.xhtml%}
+          {%include StructureDefinition-extBinaryReference-diff-all.xhtml%}
         </div>
       </div>
       <div id="all-tbl-snap">
@@ -147,7 +139,7 @@
           <b>Snapshot View</b>
         </p>
         <div id="all-tbl-snap-inner">
-          {%include StructureDefinition-extBinaryReference-snapshot.xhtml%}
+          {%include StructureDefinition-extBinaryReference-snapshot-all.xhtml%}
         </div>
       </div>
 {% unless excludexml == 'y' %}
@@ -180,10 +172,17 @@
         </div>
       </div>-->
 {% endunless %}
+      <div id="all-summ">
+        <p>This structure is derived from <a href="{{site.data.structuredefinitions['extBinaryReference'].basepath}}">{{site.data.structuredefinitions['extBinaryReference'].basename}}</a>
+        </p>
+        <div id="all-summ-inner">
+          {%include StructureDefinition-extBinaryReference-summary-all.xhtml%}
+        </div>
+      </div>
     </div>
   </div>
   <p>&#160;</p>
-  <p>Other representations of extension: <a href="StructureDefinition-extBinaryReference.sch">Schematron</a>
+  <p>Other representations of profile: <a href="StructureDefinition-extBinaryReference.csv">CSV</a>, <a href="StructureDefinition-extBinaryReference.xlsx">Excel</a>, <a href="StructureDefinition-extBinaryReference.sch">Schematron</a>
   </p>
   <a name="tx"> </a>
   <!--Terminology Bindings heading in the fragment -->

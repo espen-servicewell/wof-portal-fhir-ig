@@ -10,13 +10,38 @@
 
 <a name="root"> </a>
 <h2 id="root">{{modelType}}: ITBSlot - Detailed Descriptions</h2>
+{% include fragment-simpletable.html %}
 
 <p>Definitions for the ITBSlot {{modelType | downcase}}.</p>
 
   <!-- insert intro if present -->
   {% include fragment-intro.html type='StructureDefinition' id='ITBSlot' %}
 
-  {%include StructureDefinition-ITBSlot-dict.xhtml%}
+  <div id="tabs">
+    <ul>
+      <li>
+        <a href="#tabs-key">Key Elements Table</a>
+      </li>
+      <li>
+        <a href="#tabs-diff">Differential Elements Table</a>
+      </li>
+      <li>
+        <a href="#tabs-snap">Snapshot Elements Table</a>
+      </li>
+    </ul>
+    <a name="tabs-key"> </a>
+    <div id="tabs-key">
+      {%include StructureDefinition-ITBSlot-dict-key.xhtml%}
+    </div>
+    <a name="tabs-diff"> </a>
+    <div id="tabs-diff">
+      {%include StructureDefinition-ITBSlot-dict-diff.xhtml%}
+    </div>
+    <a name="tabs-snap"> </a>
+    <div id="tabs-snap">
+      {%include StructureDefinition-ITBSlot-dict.xhtml%}
+    </div>
+  </div>
 
   <!-- insert notes if present -->
   {% include fragment-notes.html type='StructureDefinition' id='ITBSlot' %}

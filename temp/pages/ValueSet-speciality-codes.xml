@@ -3,21 +3,21 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="speciality-codes"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=106289002">106289002</a></td><td>tandläkare</td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=26042002">26042002</a></td><td>tandhygienist</td></tr></table></li></ul></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet speciality-codes</b></p><a name="speciality-codes"> </a><a name="hcspeciality-codes"> </a><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/106289002">106289002</a></td><td>tandläkare</td></tr><tr><td><a href="http://snomed.info/id/26042002">26042002</a></td><td>tandhygienist</td></tr></table></li></ul></div>
   </text>
   <url value="http://portal.wof.purified.link/fhir/ValueSet/speciality-codes"/>
   <version value="0.1.0"/>
   <name value="ITBSpecialityCodes"/>
   <title value="ITB Speciality Codes"/>
-  <status value="active"/>
-  <date value="2021-04-23T13:44:18+02:00"/>
+  <status value="draft"/>
+  <date value="2025-08-20T14:32:02+02:00"/>
   <description value="This value set defines speciality code"/>
   <compose>
     <include>
       <system value="http://snomed.info/sct"/>
       <concept>
         <code value="106289002"/>
-        <display value="tandl&#xE4;kare"/>
+        <display value="tandläkare"/>
       </concept>
       <concept>
         <code value="26042002"/>
